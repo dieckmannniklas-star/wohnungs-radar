@@ -282,7 +282,7 @@ const hasPos=r=>typeof r.lat==="number"&&typeof r.lng==="number";
 function title(r){return r.isHint?(r.coop+": neue Ausschreibung möglich"):([r.address,[r.zip,r.quartier].filter(Boolean).join(" ")].filter(Boolean).join(", ")||"Adresse unbekannt")}
 function gmapsUrl(r){
   let q="";
-  if(r.address) q=[r.address,[r.zip,"Zürich"].filter(Boolean).join(" ")].join(", ");
+  if(r.address) q=[r.address,[r.zip,r.quartier||"Zürich"].filter(Boolean).join(" ")].join(", ");
   else if(hasPos(r)) q=r.lat+","+r.lng;
   else if(r.zip) q=r.zip+" Zürich";
   return q?"https://www.google.com/maps/search/?api=1&query="+encodeURIComponent(q):null;

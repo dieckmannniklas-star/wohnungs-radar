@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-12T19:00:49+02:00",
+ "updated": "2026-10-12T19:25:57+02:00",
  "filter": {
   "min_rooms": 4.5,
   "max_rent": 4000,
@@ -9,6 +9,1240 @@
   "include_temporary": true
  },
  "listings": [
+  {
+   "id": "grunhaldenstrasse-42-8052-4-5",
+   "kind": "markt",
+   "coop": "",
+   "source": "alle-immobilien",
+   "address": "Grünhaldenstrasse 42",
+   "zip": 8052,
+   "quartier": "Zürich",
+   "rooms": 4.5,
+   "rent": 3839.0,
+   "rentType": "brutto",
+   "area": 107.0,
+   "moveIn": "",
+   "temporary": false,
+   "url": "https://www.homegate.ch/mieten/4003271501",
+   "note": "",
+   "lat": 47.418007,
+   "lng": 8.549093,
+   "firstSeen": "2026-10-12T19:25:57+02:00",
+   "lastSeen": "2026-10-12T19:25:57+02:00",
+   "status": "aktiv"
+  },
+  {
+   "id": "kashaldenstrasse-11-8052-4-5",
+   "kind": "markt",
+   "coop": "",
+   "source": "alle-immobilien",
+   "address": "Käshaldenstrasse 11",
+   "zip": 8052,
+   "quartier": "Zürich",
+   "rooms": 4.5,
+   "rent": 2655.0,
+   "rentType": "brutto",
+   "area": 98.0,
+   "moveIn": "",
+   "temporary": false,
+   "url": "https://www.homegate.ch/mieten/4003523588",
+   "note": "",
+   "lat": 47.429371,
+   "lng": 8.540723,
+   "firstSeen": "2026-10-12T19:25:57+02:00",
+   "lastSeen": "2026-10-12T19:25:57+02:00",
+   "status": "aktiv"
+  },
+  {
+   "id": "klebestrasse-17-8041-5-5",
+   "kind": "markt",
+   "coop": "",
+   "source": "alle-immobilien",
+   "address": "Klebestrasse 17",
+   "zip": 8041,
+   "quartier": "Zürich",
+   "rooms": 5.5,
+   "rent": 2960.0,
+   "rentType": "brutto",
+   "area": 126.0,
+   "moveIn": "",
+   "temporary": false,
+   "url": "https://www.homegate.ch/mieten/4003515744",
+   "note": "",
+   "lat": 47.325466,
+   "lng": 8.513895,
+   "firstSeen": "2026-10-12T19:25:57+02:00",
+   "lastSeen": "2026-10-12T19:25:57+02:00",
+   "status": "aktiv"
+  },
+  {
+   "id": "wallisellenstrasse-3-8050-4-5",
+   "kind": "markt",
+   "coop": "",
+   "source": "alle-immobilien",
+   "address": "Wallisellenstrasse 3",
+   "zip": 8050,
+   "quartier": "Zürich",
+   "rooms": 4.5,
+   "rent": 2785.0,
+   "rentType": "brutto",
+   "area": 89.0,
+   "moveIn": "",
+   "temporary": false,
+   "url": "https://www.homegate.ch/mieten/4003515735",
+   "note": "",
+   "lat": 47.410412,
+   "lng": 8.547116,
+   "firstSeen": "2026-10-12T19:25:57+02:00",
+   "lastSeen": "2026-10-12T19:25:57+02:00",
+   "status": "aktiv"
+  },
+  {
+   "id": "im-straler-30-8047-4-5",
+   "kind": "markt",
+   "coop": "",
+   "source": "alle-immobilien",
+   "address": "Im Sträler 30",
+   "zip": 8047,
+   "quartier": "Zürich",
+   "rooms": 4.5,
+   "rent": 3300.0,
+   "rentType": "brutto",
+   "area": 97.0,
+   "moveIn": "",
+   "temporary": false,
+   "url": "https://www.homegate.ch/mieten/4003499334",
+   "note": "",
+   "lat": 47.371403,
+   "lng": 8.498925,
+   "firstSeen": "2026-10-12T19:25:57+02:00",
+   "lastSeen": "2026-10-12T19:25:57+02:00",
+   "status": "aktiv"
+  },
+  {
+   "id": "giblenstrasse-55-8049-4-5",
+   "kind": "markt",
+   "coop": "",
+   "source": "alle-immobilien",
+   "address": "Giblenstrasse 55",
+   "zip": 8049,
+   "quartier": "Zürich",
+   "rooms": 4.5,
+   "rent": 3540.0,
+   "rentType": "brutto",
+   "area": 102.0,
+   "moveIn": "",
+   "temporary": false,
+   "url": "https://www.homegate.ch/mieten/4003493658",
+   "note": "",
+   "lat": 47.412224,
+   "lng": 8.480392,
+   "firstSeen": "2026-10-12T19:25:57+02:00",
+   "lastSeen": "2026-10-12T19:25:57+02:00",
+   "status": "aktiv"
+  },
+  {
+   "id": "kehlhofstrasse-4-8003-4-5",
+   "kind": "markt",
+   "coop": "",
+   "source": "alle-immobilien",
+   "address": "Kehlhofstrasse 4",
+   "zip": 8003,
+   "quartier": "Zürich",
+   "rooms": 4.5,
+   "rent": 3870.0,
+   "rentType": "brutto",
+   "area": 73.0,
+   "moveIn": "",
+   "temporary": false,
+   "url": "https://www.homegate.ch/mieten/4003539979",
+   "note": "",
+   "lat": 47.369846,
+   "lng": 8.518454,
+   "firstSeen": "2026-10-12T19:25:57+02:00",
+   "lastSeen": "2026-10-12T19:25:57+02:00",
+   "status": "aktiv"
+  },
+  {
+   "id": "saumackerstrasse-62-8048-4-5",
+   "kind": "markt",
+   "coop": "",
+   "source": "alle-immobilien",
+   "address": "Saumackerstrasse 62",
+   "zip": 8048,
+   "quartier": "Zürich",
+   "rooms": 4.5,
+   "rent": 3710.0,
+   "rentType": "brutto",
+   "area": 108.0,
+   "moveIn": "",
+   "temporary": false,
+   "url": "https://www.homegate.ch/mieten/4003452972",
+   "note": "",
+   "lat": 47.386406,
+   "lng": 8.487759,
+   "firstSeen": "2026-10-12T19:25:57+02:00",
+   "lastSeen": "2026-10-12T19:25:57+02:00",
+   "status": "aktiv"
+  },
+  {
+   "id": "riedhofstrasse-299-8049-4-5",
+   "kind": "markt",
+   "coop": "S&A Excellent Housing GmbH",
+   "source": "alle-immobilien, RealAdvisor",
+   "address": "Riedhofstrasse 299",
+   "zip": 8049,
+   "quartier": "Zürich",
+   "rooms": 4.5,
+   "rent": 3700.0,
+   "rentType": "brutto",
+   "area": 117.0,
+   "moveIn": "",
+   "temporary": false,
+   "url": "https://www.homegate.ch/mieten/4003514581",
+   "note": "",
+   "lat": 47.407658,
+   "lng": 8.485052,
+   "firstSeen": "2026-10-12T19:25:57+02:00",
+   "lastSeen": "2026-10-12T19:25:57+02:00",
+   "status": "aktiv"
+  },
+  {
+   "id": "katzenbachstrasse-239-8052-4-5",
+   "kind": "markt",
+   "coop": "",
+   "source": "alle-immobilien",
+   "address": "Katzenbachstrasse 239",
+   "zip": 8052,
+   "quartier": "Zürich",
+   "rooms": 4.5,
+   "rent": 3755.0,
+   "rentType": "brutto",
+   "area": 106.0,
+   "moveIn": "",
+   "temporary": false,
+   "url": "https://www.homegate.ch/mieten/4002891937",
+   "note": "",
+   "lat": 47.424324,
+   "lng": 8.540757,
+   "firstSeen": "2026-10-12T19:25:57+02:00",
+   "lastSeen": "2026-10-12T19:25:57+02:00",
+   "status": "aktiv"
+  },
+  {
+   "id": "grossackerstrasse-75-8041-4-5",
+   "kind": "markt",
+   "coop": "",
+   "source": "alle-immobilien",
+   "address": "Grossackerstrasse 75",
+   "zip": 8041,
+   "quartier": "Zürich",
+   "rooms": 4.5,
+   "rent": 2950.0,
+   "rentType": "brutto",
+   "area": 102.0,
+   "moveIn": "",
+   "temporary": false,
+   "url": "https://www.homegate.ch/mieten/4003526455",
+   "note": "",
+   "lat": 47.323971,
+   "lng": 8.509839,
+   "firstSeen": "2026-10-12T19:25:57+02:00",
+   "lastSeen": "2026-10-12T19:25:57+02:00",
+   "status": "aktiv"
+  },
+  {
+   "id": "renggerstrasse-19-8038-4-5",
+   "kind": "markt",
+   "coop": "",
+   "source": "alle-immobilien",
+   "address": "Renggerstrasse 19",
+   "zip": 8038,
+   "quartier": "Zürich",
+   "rooms": 4.5,
+   "rent": 3750.0,
+   "rentType": "brutto",
+   "area": 72.0,
+   "moveIn": "",
+   "temporary": false,
+   "url": "https://www.homegate.ch/mieten/4003217998",
+   "note": "",
+   "lat": 47.34618,
+   "lng": 8.53238,
+   "firstSeen": "2026-10-12T19:25:57+02:00",
+   "lastSeen": "2026-10-12T19:25:57+02:00",
+   "status": "aktiv"
+  },
+  {
+   "id": "im-glockenacker-53-8053-5-5",
+   "kind": "markt",
+   "coop": "livit ag real estate management",
+   "source": "alle-immobilien, immobilier.ch",
+   "address": "Im Glockenacker 53",
+   "zip": 8053,
+   "quartier": "Zürich",
+   "rooms": 5.5,
+   "rent": 3702.0,
+   "rentType": "brutto",
+   "area": 147.0,
+   "moveIn": "",
+   "temporary": false,
+   "url": "https://www.homegate.ch/mieten/4003547038",
+   "note": "",
+   "lat": 47.360546,
+   "lng": 8.60064,
+   "firstSeen": "2026-10-12T19:25:57+02:00",
+   "lastSeen": "2026-10-12T19:25:57+02:00",
+   "status": "aktiv"
+  },
+  {
+   "id": "niederhofenrain-28-8008-4-5",
+   "kind": "markt",
+   "coop": "livit ag real estate management",
+   "source": "alle-immobilien, immobilier.ch",
+   "address": "Niederhofenrain 28",
+   "zip": 8008,
+   "quartier": "Zürich",
+   "rooms": 4.5,
+   "rent": 2845.0,
+   "rentType": "brutto",
+   "area": 95.0,
+   "moveIn": "",
+   "temporary": false,
+   "url": "https://www.homegate.ch/mieten/4003536737",
+   "note": "",
+   "lat": 47.348568,
+   "lng": 8.576233,
+   "firstSeen": "2026-10-12T19:25:57+02:00",
+   "lastSeen": "2026-10-12T19:25:57+02:00",
+   "status": "aktiv"
+  },
+  {
+   "id": "grossackerstrasse-81-8041-4-5",
+   "kind": "markt",
+   "coop": "livit ag real estate management",
+   "source": "alle-immobilien, immobilier.ch",
+   "address": "Grossackerstrasse 81",
+   "zip": 8041,
+   "quartier": "Zürich",
+   "rooms": 4.5,
+   "rent": 3480.0,
+   "rentType": "brutto",
+   "area": 128.0,
+   "moveIn": "",
+   "temporary": false,
+   "url": "https://www.homegate.ch/mieten/4003526458",
+   "note": "",
+   "lat": 47.3241,
+   "lng": 8.509503,
+   "firstSeen": "2026-10-12T19:25:57+02:00",
+   "lastSeen": "2026-10-12T19:25:57+02:00",
+   "status": "aktiv"
+  },
+  {
+   "id": "tuchmacherstrasse-36-8041-4-5",
+   "kind": "markt",
+   "coop": "livit ag real estate management",
+   "source": "alle-immobilien, immobilier.ch",
+   "address": "Tuchmacherstrasse 36",
+   "zip": 8041,
+   "quartier": "Zürich",
+   "rooms": 4.5,
+   "rent": 3715.0,
+   "rentType": "brutto",
+   "area": 114.0,
+   "moveIn": "",
+   "temporary": false,
+   "url": "https://www.homegate.ch/mieten/4003469389",
+   "note": "",
+   "lat": 47.340191,
+   "lng": 8.521377,
+   "firstSeen": "2026-10-12T19:25:57+02:00",
+   "lastSeen": "2026-10-12T19:25:57+02:00",
+   "status": "aktiv"
+  },
+  {
+   "id": "sihlweidstrasse-64-8041-5-5",
+   "kind": "markt",
+   "coop": "H&B Real Estate AG",
+   "source": "alle-immobilien, RealAdvisor",
+   "address": "Sihlweidstrasse 64",
+   "zip": 8041,
+   "quartier": "Zürich",
+   "rooms": 5.5,
+   "rent": 2630.0,
+   "rentType": "brutto",
+   "area": 96.0,
+   "moveIn": "",
+   "temporary": false,
+   "url": "https://www.homegate.ch/mieten/4003540855",
+   "note": "",
+   "lat": 47.327507,
+   "lng": 8.51837,
+   "firstSeen": "2026-10-12T19:25:57+02:00",
+   "lastSeen": "2026-10-12T19:25:57+02:00",
+   "status": "aktiv"
+  },
+  {
+   "id": "weingartenweg-2-8049-4-5",
+   "kind": "markt",
+   "coop": "GoodLiving AG",
+   "source": "alle-immobilien, RealAdvisor",
+   "address": "Weingartenweg 2",
+   "zip": 8049,
+   "quartier": "Zürich",
+   "rooms": 4.5,
+   "rent": 3700.0,
+   "rentType": "brutto",
+   "area": 101.0,
+   "moveIn": "",
+   "temporary": false,
+   "url": "https://www.homegate.ch/mieten/4003533825",
+   "note": "",
+   "lat": 47.401184,
+   "lng": 8.499769,
+   "firstSeen": "2026-10-12T19:25:57+02:00",
+   "lastSeen": "2026-10-12T19:25:57+02:00",
+   "status": "aktiv"
+  },
+  {
+   "id": "turbinenstrasse-33-8005-4-5",
+   "kind": "markt",
+   "coop": "livit ag real estate management",
+   "source": "alle-immobilien, immobilier.ch",
+   "address": "Turbinenstrasse 33",
+   "zip": 8005,
+   "quartier": "Zürich",
+   "rooms": 4.5,
+   "rent": 3990.0,
+   "rentType": "brutto",
+   "area": 125.0,
+   "moveIn": "",
+   "temporary": false,
+   "url": "https://www.homegate.ch/mieten/4003528140",
+   "note": "",
+   "lat": 47.387066,
+   "lng": 8.515038,
+   "firstSeen": "2026-10-12T19:25:57+02:00",
+   "lastSeen": "2026-10-12T19:25:57+02:00",
+   "status": "aktiv"
+  },
+  {
+   "id": "alle-immobilien-4003484078",
+   "kind": "markt",
+   "coop": "",
+   "source": "alle-immobilien",
+   "address": "",
+   "zip": 8052,
+   "quartier": "Zürich",
+   "rooms": 4.5,
+   "rent": 3400.0,
+   "rentType": "brutto",
+   "area": 104.0,
+   "moveIn": "",
+   "temporary": false,
+   "url": "https://www.homegate.ch/mieten/4003484078",
+   "note": "",
+   "lat": 47.424488,
+   "lng": 8.540656,
+   "approx": true,
+   "firstSeen": "2026-10-12T19:25:57+02:00",
+   "lastSeen": "2026-10-12T19:25:57+02:00",
+   "status": "aktiv"
+  },
+  {
+   "id": "doldertal-17-8032-5",
+   "kind": "markt",
+   "coop": "",
+   "source": "alle-immobilien",
+   "address": "Doldertal 17",
+   "zip": 8032,
+   "quartier": "Zürich",
+   "rooms": 5.0,
+   "rent": 3303.0,
+   "rentType": "brutto",
+   "area": 116.0,
+   "moveIn": "",
+   "temporary": false,
+   "url": "https://www.homegate.ch/mieten/4003457601",
+   "note": "",
+   "lat": 47.373066,
+   "lng": 8.5648,
+   "firstSeen": "2026-10-12T19:25:57+02:00",
+   "lastSeen": "2026-10-12T19:25:57+02:00",
+   "status": "aktiv"
+  },
+  {
+   "id": "seebacherstrasse-32-8052-4-5",
+   "kind": "markt",
+   "coop": "",
+   "source": "alle-immobilien",
+   "address": "Seebacherstrasse 32",
+   "zip": 8052,
+   "quartier": "Seebach",
+   "rooms": 4.5,
+   "rent": 3790.0,
+   "rentType": "brutto",
+   "area": 99.0,
+   "moveIn": "",
+   "temporary": false,
+   "url": "https://www.homegate.ch/mieten/4003357089",
+   "note": "",
+   "lat": 47.421974,
+   "lng": 8.545639,
+   "firstSeen": "2026-10-12T19:25:57+02:00",
+   "lastSeen": "2026-10-12T19:25:57+02:00",
+   "status": "aktiv"
+  },
+  {
+   "id": "luegislandstrasse-86-8051-4-5",
+   "kind": "markt",
+   "coop": "",
+   "source": "alle-immobilien",
+   "address": "Luegislandstrasse 86",
+   "zip": 8051,
+   "quartier": "Zürich",
+   "rooms": 4.5,
+   "rent": 3380.0,
+   "rentType": "brutto",
+   "area": 162.0,
+   "moveIn": "",
+   "temporary": false,
+   "url": "https://www.homegate.ch/mieten/4003515446",
+   "note": "",
+   "lat": 47.407135,
+   "lng": 8.56858,
+   "firstSeen": "2026-10-12T19:25:57+02:00",
+   "lastSeen": "2026-10-12T19:25:57+02:00",
+   "status": "aktiv"
+  },
+  {
+   "id": "glatttalstrasse-24-8052-4-5",
+   "kind": "markt",
+   "coop": "ImmoTrust Schweiz AG - Dübendorf",
+   "source": "alle-immobilien, RealAdvisor",
+   "address": "Glatttalstrasse 24",
+   "zip": 8052,
+   "quartier": "Zürich",
+   "rooms": 4.5,
+   "rent": 2670.0,
+   "rentType": "brutto",
+   "area": 140.0,
+   "moveIn": "",
+   "temporary": false,
+   "url": "https://www.homegate.ch/mieten/4003502088",
+   "note": "",
+   "lat": 47.424084,
+   "lng": 8.549389,
+   "firstSeen": "2026-10-12T19:25:57+02:00",
+   "lastSeen": "2026-10-12T19:25:57+02:00",
+   "status": "aktiv"
+  },
+  {
+   "id": "kaferholzstrasse-246-8046-5-5",
+   "kind": "markt",
+   "coop": "",
+   "source": "alle-immobilien",
+   "address": "Käferholzstrasse 246",
+   "zip": 8046,
+   "quartier": "Zürich",
+   "rooms": 5.5,
+   "rent": 3155.0,
+   "rentType": "brutto",
+   "area": null,
+   "moveIn": "",
+   "temporary": false,
+   "url": "https://www.homegate.ch/mieten/4003457078",
+   "note": "",
+   "lat": 47.410206,
+   "lng": 8.524693,
+   "firstSeen": "2026-10-12T19:25:57+02:00",
+   "lastSeen": "2026-10-12T19:25:57+02:00",
+   "status": "aktiv"
+  },
+  {
+   "id": "lavendelweg-3-8050-4-5",
+   "kind": "markt",
+   "coop": "",
+   "source": "alle-immobilien",
+   "address": "Lavendelweg 3",
+   "zip": 8050,
+   "quartier": "Zürich",
+   "rooms": 4.5,
+   "rent": 3950.0,
+   "rentType": "brutto",
+   "area": 100.0,
+   "moveIn": "",
+   "temporary": false,
+   "url": "https://www.homegate.ch/mieten/4003496254",
+   "note": "",
+   "lat": 47.407917,
+   "lng": 8.552514,
+   "firstSeen": "2026-10-12T19:25:57+02:00",
+   "lastSeen": "2026-10-12T19:25:57+02:00",
+   "status": "aktiv"
+  },
+  {
+   "id": "hegibachstrasse-105-8032-5",
+   "kind": "markt",
+   "coop": "",
+   "source": "alle-immobilien",
+   "address": "Hegibachstrasse 105",
+   "zip": 8032,
+   "quartier": "Zürich",
+   "rooms": 5.0,
+   "rent": 2350.0,
+   "rentType": "brutto",
+   "area": null,
+   "moveIn": "",
+   "temporary": false,
+   "url": "https://www.homegate.ch/mieten/4003483649",
+   "note": "",
+   "lat": 47.365089,
+   "lng": 8.566609,
+   "firstSeen": "2026-10-12T19:25:57+02:00",
+   "lastSeen": "2026-10-12T19:25:57+02:00",
+   "status": "aktiv"
+  },
+  {
+   "id": "schaffhauserstrasse-456-8052-4-5",
+   "kind": "markt",
+   "coop": "",
+   "source": "alle-immobilien",
+   "address": "Schaffhauserstrasse 456",
+   "zip": 8052,
+   "quartier": "Zürich",
+   "rooms": 4.5,
+   "rent": 3610.0,
+   "rentType": "brutto",
+   "area": null,
+   "moveIn": "",
+   "temporary": false,
+   "url": "https://www.homegate.ch/mieten/4003416395",
+   "note": "",
+   "lat": 47.418053,
+   "lng": 8.546833,
+   "firstSeen": "2026-10-12T19:25:57+02:00",
+   "lastSeen": "2026-10-12T19:25:57+02:00",
+   "status": "aktiv"
+  },
+  {
+   "id": "beckhammer-12-8057-5",
+   "kind": "markt",
+   "coop": "",
+   "source": "alle-immobilien",
+   "address": "Beckhammer 12",
+   "zip": 8057,
+   "quartier": "Zürich",
+   "rooms": 5.0,
+   "rent": 2580.0,
+   "rentType": "brutto",
+   "area": 112.0,
+   "moveIn": "",
+   "temporary": false,
+   "url": "https://www.homegate.ch/mieten/4003541885",
+   "note": "",
+   "lat": 47.40139,
+   "lng": 8.542037,
+   "firstSeen": "2026-10-12T19:25:57+02:00",
+   "lastSeen": "2026-10-12T19:25:57+02:00",
+   "status": "aktiv"
+  },
+  {
+   "id": "alle-immobilien-4003381937",
+   "kind": "markt",
+   "coop": "",
+   "source": "alle-immobilien",
+   "address": "",
+   "zip": 8038,
+   "quartier": "Zurich",
+   "rooms": 5.0,
+   "rent": 4000.0,
+   "rentType": "brutto",
+   "area": 150.0,
+   "moveIn": "",
+   "temporary": false,
+   "url": "https://www.homegate.ch/mieten/4003381937",
+   "note": "",
+   "lat": 47.340488,
+   "lng": 8.53752,
+   "approx": true,
+   "firstSeen": "2026-10-12T19:25:57+02:00",
+   "lastSeen": "2026-10-12T19:25:57+02:00",
+   "status": "aktiv"
+  },
+  {
+   "id": "alle-immobilien-4003511035",
+   "kind": "markt",
+   "coop": "",
+   "source": "alle-immobilien",
+   "address": "",
+   "zip": 8050,
+   "quartier": "Zürich",
+   "rooms": 4.5,
+   "rent": 3290.0,
+   "rentType": "brutto",
+   "area": 105.0,
+   "moveIn": "",
+   "temporary": false,
+   "url": "https://www.homegate.ch/mieten/4003511035",
+   "note": "",
+   "lat": 47.41193,
+   "lng": 8.5508,
+   "approx": true,
+   "firstSeen": "2026-10-12T19:25:57+02:00",
+   "lastSeen": "2026-10-12T19:25:57+02:00",
+   "status": "aktiv"
+  },
+  {
+   "id": "anwandstrasse-2-8004-4-5",
+   "kind": "markt",
+   "coop": "",
+   "source": "alle-immobilien",
+   "address": "Anwandstrasse 2",
+   "zip": 8004,
+   "quartier": "Zürich",
+   "rooms": 4.5,
+   "rent": 3700.0,
+   "rentType": "brutto",
+   "area": 101.0,
+   "moveIn": "",
+   "temporary": false,
+   "url": "https://www.homegate.ch/mieten/4003418202",
+   "note": "",
+   "lat": 47.376072,
+   "lng": 8.525123,
+   "firstSeen": "2026-10-12T19:25:57+02:00",
+   "lastSeen": "2026-10-12T19:25:57+02:00",
+   "status": "aktiv"
+  },
+  {
+   "id": "alle-immobilien-4003305062",
+   "kind": "markt",
+   "coop": "",
+   "source": "alle-immobilien",
+   "address": "",
+   "zip": 8041,
+   "quartier": "Zürich",
+   "rooms": 4.5,
+   "rent": 3000.0,
+   "rentType": "brutto",
+   "area": 90.0,
+   "moveIn": "",
+   "temporary": false,
+   "url": "https://www.homegate.ch/mieten/4003305062",
+   "note": "",
+   "lat": 47.336338,
+   "lng": 8.512796,
+   "approx": true,
+   "firstSeen": "2026-10-12T19:25:57+02:00",
+   "lastSeen": "2026-10-12T19:25:57+02:00",
+   "status": "aktiv"
+  },
+  {
+   "id": "realadvisor-de-mieten-wohnung-8052-zurich-wrg4-457o",
+   "kind": "markt",
+   "coop": "Swiss Residence Group AG",
+   "source": "RealAdvisor",
+   "address": "",
+   "zip": 8052,
+   "quartier": "Zürich",
+   "rooms": 4.5,
+   "rent": 3400.0,
+   "rentType": "brutto",
+   "area": 104.0,
+   "moveIn": "",
+   "temporary": false,
+   "url": "https://realadvisor.ch/de/mieten/wohnung/8052-zurich-WRG4-457O",
+   "note": "",
+   "lat": 47.424488,
+   "lng": 8.540656,
+   "approx": true,
+   "firstSeen": "2026-10-12T19:25:57+02:00",
+   "lastSeen": "2026-10-12T19:25:57+02:00",
+   "status": "aktiv"
+  },
+  {
+   "id": "am-glattbogen-169-8050-4-5",
+   "kind": "markt",
+   "coop": "Tauschwohnung.ch",
+   "source": "RealAdvisor",
+   "address": "Am Glattbogen 169",
+   "zip": 8050,
+   "quartier": "Zürich",
+   "rooms": 4.5,
+   "rent": 1995.0,
+   "rentType": "brutto",
+   "area": 83.0,
+   "moveIn": "",
+   "temporary": false,
+   "url": "https://realadvisor.ch/de/mieten/wohnung/169-am-glattbogen-8050-zurich-XEG4-4PZL",
+   "note": "",
+   "lat": 47.411598,
+   "lng": 8.56815,
+   "firstSeen": "2026-10-12T19:25:57+02:00",
+   "lastSeen": "2026-10-12T19:25:57+02:00",
+   "status": "aktiv"
+  },
+  {
+   "id": "realadvisor-de-mieten-wohnung-8004-zurich-b62r-5r66",
+   "kind": "markt",
+   "coop": "Tauschwohnung.ch",
+   "source": "RealAdvisor",
+   "address": "",
+   "zip": 8004,
+   "quartier": "Zürich",
+   "rooms": 4.5,
+   "rent": 3000.0,
+   "rentType": "brutto",
+   "area": 85.0,
+   "moveIn": "",
+   "temporary": false,
+   "url": "https://realadvisor.ch/de/mieten/wohnung/8004-zurich-B62R-5R66",
+   "note": "",
+   "lat": 47.378006,
+   "lng": 8.52337,
+   "approx": true,
+   "firstSeen": "2026-10-12T19:25:57+02:00",
+   "lastSeen": "2026-10-12T19:25:57+02:00",
+   "status": "aktiv"
+  },
+  {
+   "id": "wehntalerstrasse-381-8046-4-5",
+   "kind": "markt",
+   "coop": "Tauschwohnung.ch",
+   "source": "RealAdvisor",
+   "address": "Wehntalerstrasse 381",
+   "zip": 8046,
+   "quartier": "Zürich",
+   "rooms": 4.5,
+   "rent": 2718.0,
+   "rentType": "brutto",
+   "area": 80.0,
+   "moveIn": "",
+   "temporary": false,
+   "url": "https://realadvisor.ch/de/mieten/wohnung/381-wehntalerstrasse-8046-zurich-OOG4-4L75",
+   "note": "",
+   "lat": 47.414032,
+   "lng": 8.518545,
+   "firstSeen": "2026-10-12T19:25:57+02:00",
+   "lastSeen": "2026-10-12T19:25:57+02:00",
+   "status": "aktiv"
+  },
+  {
+   "id": "realadvisor-de-mieten-wohnung-8047-zurich-dnxb-bwe7",
+   "kind": "markt",
+   "coop": "Tauschwohnung.ch",
+   "source": "RealAdvisor",
+   "address": "",
+   "zip": 8047,
+   "quartier": "Zürich",
+   "rooms": 4.5,
+   "rent": 2300.0,
+   "rentType": "brutto",
+   "area": 85.0,
+   "moveIn": "",
+   "temporary": false,
+   "url": "https://realadvisor.ch/de/mieten/wohnung/8047-zurich-DNXB-BWE7",
+   "note": "",
+   "lat": 47.373898,
+   "lng": 8.487007,
+   "approx": true,
+   "firstSeen": "2026-10-12T19:25:57+02:00",
+   "lastSeen": "2026-10-12T19:25:57+02:00",
+   "status": "aktiv"
+  },
+  {
+   "id": "realadvisor-de-mieten-wohnung-8005-zurich-pmg2-2apz",
+   "kind": "markt",
+   "coop": "Tauschwohnung.ch",
+   "source": "RealAdvisor",
+   "address": "",
+   "zip": 8005,
+   "quartier": "Zürich",
+   "rooms": 4.5,
+   "rent": 3836.0,
+   "rentType": "brutto",
+   "area": 115.0,
+   "moveIn": "",
+   "temporary": false,
+   "url": "https://realadvisor.ch/de/mieten/wohnung/8005-zurich-PMG2-2APZ",
+   "note": "",
+   "lat": 47.386833,
+   "lng": 8.5205,
+   "approx": true,
+   "firstSeen": "2026-10-12T19:25:57+02:00",
+   "lastSeen": "2026-10-12T19:25:57+02:00",
+   "status": "aktiv"
+  },
+  {
+   "id": "realadvisor-de-mieten-wohnung-8049-zurich-95r9-96wb",
+   "kind": "markt",
+   "coop": "Tauschwohnung.ch",
+   "source": "RealAdvisor",
+   "address": "",
+   "zip": 8049,
+   "quartier": "Zürich",
+   "rooms": 4.5,
+   "rent": 2800.0,
+   "rentType": "brutto",
+   "area": 100.0,
+   "moveIn": "",
+   "temporary": false,
+   "url": "https://realadvisor.ch/de/mieten/wohnung/8049-zurich-95R9-96WB",
+   "note": "",
+   "lat": 47.408718,
+   "lng": 8.50045,
+   "approx": true,
+   "firstSeen": "2026-10-12T19:25:57+02:00",
+   "lastSeen": "2026-10-12T19:25:57+02:00",
+   "status": "aktiv"
+  },
+  {
+   "id": "realadvisor-de-mieten-wohnung-8004-zurich-elxj-jzam",
+   "kind": "markt",
+   "coop": "Tauschwohnung.ch",
+   "source": "RealAdvisor",
+   "address": "",
+   "zip": 8004,
+   "quartier": "Zürich",
+   "rooms": 4.5,
+   "rent": 2425.0,
+   "rentType": "brutto",
+   "area": 100.0,
+   "moveIn": "",
+   "temporary": false,
+   "url": "https://realadvisor.ch/de/mieten/wohnung/8004-zurich-ELXJ-JZAM",
+   "note": "",
+   "lat": 47.378006,
+   "lng": 8.52337,
+   "approx": true,
+   "firstSeen": "2026-10-12T19:25:57+02:00",
+   "lastSeen": "2026-10-12T19:25:57+02:00",
+   "status": "aktiv"
+  },
+  {
+   "id": "realadvisor-de-mieten-wohnung-8004-zurich-nag4-4lw2",
+   "kind": "markt",
+   "coop": "Tauschwohnung.ch",
+   "source": "RealAdvisor",
+   "address": "",
+   "zip": 8004,
+   "quartier": "Zürich",
+   "rooms": 5.5,
+   "rent": 3400.0,
+   "rentType": "brutto",
+   "area": 120.0,
+   "moveIn": "",
+   "temporary": false,
+   "url": "https://realadvisor.ch/de/mieten/wohnung/8004-zurich-NAG4-4LW2",
+   "note": "",
+   "lat": 47.378006,
+   "lng": 8.52337,
+   "approx": true,
+   "firstSeen": "2026-10-12T19:25:57+02:00",
+   "lastSeen": "2026-10-12T19:25:57+02:00",
+   "status": "aktiv"
+  },
+  {
+   "id": "realadvisor-de-mieten-wohnung-8038-zurich-6zmd-dqa2",
+   "kind": "markt",
+   "coop": "Tauschwohnung.ch",
+   "source": "RealAdvisor",
+   "address": "",
+   "zip": 8038,
+   "quartier": "Zürich",
+   "rooms": 5.5,
+   "rent": 3950.0,
+   "rentType": "brutto",
+   "area": 160.0,
+   "moveIn": "",
+   "temporary": false,
+   "url": "https://realadvisor.ch/de/mieten/wohnung/8038-zurich-6ZMD-DQA2",
+   "note": "",
+   "lat": 47.340488,
+   "lng": 8.53752,
+   "approx": true,
+   "firstSeen": "2026-10-12T19:25:57+02:00",
+   "lastSeen": "2026-10-12T19:25:57+02:00",
+   "status": "aktiv"
+  },
+  {
+   "id": "realadvisor-de-mieten-wohnung-8008-zurich-vbg4-4g59",
+   "kind": "markt",
+   "coop": "Tauschwohnung.ch",
+   "source": "RealAdvisor",
+   "address": "",
+   "zip": 8008,
+   "quartier": "Zürich",
+   "rooms": 5.0,
+   "rent": 3430.0,
+   "rentType": "brutto",
+   "area": 110.0,
+   "moveIn": "",
+   "temporary": false,
+   "url": "https://realadvisor.ch/de/mieten/wohnung/8008-zurich-VBG4-4G59",
+   "note": "",
+   "lat": 47.353649,
+   "lng": 8.561379,
+   "approx": true,
+   "firstSeen": "2026-10-12T19:25:57+02:00",
+   "lastSeen": "2026-10-12T19:25:57+02:00",
+   "status": "aktiv"
+  },
+  {
+   "id": "realadvisor-de-mieten-wohnung-8003-zurich-xeg4-45vx",
+   "kind": "markt",
+   "coop": "Tauschwohnung.ch",
+   "source": "RealAdvisor",
+   "address": "",
+   "zip": 8003,
+   "quartier": "Zürich",
+   "rooms": 5.0,
+   "rent": 3400.0,
+   "rentType": "brutto",
+   "area": 155.0,
+   "moveIn": "",
+   "temporary": false,
+   "url": "https://realadvisor.ch/de/mieten/wohnung/8003-zurich-XEG4-45VX",
+   "note": "",
+   "lat": 47.372574,
+   "lng": 8.516149,
+   "approx": true,
+   "firstSeen": "2026-10-12T19:25:57+02:00",
+   "lastSeen": "2026-10-12T19:25:57+02:00",
+   "status": "aktiv"
+  },
+  {
+   "id": "realadvisor-de-mieten-wohnung-8049-zurich-mxg4-4bra",
+   "kind": "markt",
+   "coop": "Tauschwohnung.ch",
+   "source": "RealAdvisor",
+   "address": "",
+   "zip": 8049,
+   "quartier": "Zürich",
+   "rooms": 5.5,
+   "rent": 3800.0,
+   "rentType": "brutto",
+   "area": 145.0,
+   "moveIn": "",
+   "temporary": false,
+   "url": "https://realadvisor.ch/de/mieten/wohnung/8049-zurich-MXG4-4BRA",
+   "note": "",
+   "lat": 47.408718,
+   "lng": 8.50045,
+   "approx": true,
+   "firstSeen": "2026-10-12T19:25:57+02:00",
+   "lastSeen": "2026-10-12T19:25:57+02:00",
+   "status": "aktiv"
+  },
+  {
+   "id": "realadvisor-de-mieten-wohnung-8055-zurich-qn34-2gqq",
+   "kind": "markt",
+   "coop": "Tauschwohnung.ch",
+   "source": "RealAdvisor",
+   "address": "",
+   "zip": 8055,
+   "quartier": "Zürich",
+   "rooms": 5.5,
+   "rent": 3738.0,
+   "rentType": "brutto",
+   "area": 175.0,
+   "moveIn": "",
+   "temporary": false,
+   "url": "https://realadvisor.ch/de/mieten/wohnung/8055-zurich-QN34-2GQQ",
+   "note": "",
+   "lat": 47.364178,
+   "lng": 8.490266,
+   "approx": true,
+   "firstSeen": "2026-10-12T19:25:57+02:00",
+   "lastSeen": "2026-10-12T19:25:57+02:00",
+   "status": "aktiv"
+  },
+  {
+   "id": "realadvisor-de-mieten-wohnung-8038-zurich-pmg2-v2dg",
+   "kind": "markt",
+   "coop": "Tauschwohnung.ch",
+   "source": "RealAdvisor",
+   "address": "",
+   "zip": 8038,
+   "quartier": "Zürich",
+   "rooms": 5.5,
+   "rent": 3145.0,
+   "rentType": "brutto",
+   "area": 115.0,
+   "moveIn": "",
+   "temporary": false,
+   "url": "https://realadvisor.ch/de/mieten/wohnung/8038-zurich-PMG2-V2DG",
+   "note": "",
+   "lat": 47.340488,
+   "lng": 8.53752,
+   "approx": true,
+   "firstSeen": "2026-10-12T19:25:57+02:00",
+   "lastSeen": "2026-10-12T19:25:57+02:00",
+   "status": "aktiv"
+  },
+  {
+   "id": "realadvisor-de-mieten-wohnung-8006-zurich-qn34-242g",
+   "kind": "markt",
+   "coop": "Tauschwohnung.ch",
+   "source": "RealAdvisor",
+   "address": "",
+   "zip": 8006,
+   "quartier": "Zürich",
+   "rooms": 5.0,
+   "rent": 2800.0,
+   "rentType": "brutto",
+   "area": 110.0,
+   "moveIn": "",
+   "temporary": false,
+   "url": "https://realadvisor.ch/de/mieten/wohnung/8006-zurich-QN34-242G",
+   "note": "",
+   "lat": 47.385784,
+   "lng": 8.543152,
+   "approx": true,
+   "firstSeen": "2026-10-12T19:25:57+02:00",
+   "lastSeen": "2026-10-12T19:25:57+02:00",
+   "status": "aktiv"
+  },
+  {
+   "id": "realadvisor-de-mieten-wohnung-8032-zurich-b62r-5r5z",
+   "kind": "markt",
+   "coop": "Tauschwohnung.ch",
+   "source": "RealAdvisor",
+   "address": "",
+   "zip": 8032,
+   "quartier": "Zürich",
+   "rooms": 5.0,
+   "rent": 3550.0,
+   "rentType": "brutto",
+   "area": 160.0,
+   "moveIn": "",
+   "temporary": false,
+   "url": "https://realadvisor.ch/de/mieten/wohnung/8032-zurich-B62R-5R5Z",
+   "note": "",
+   "lat": 47.366711,
+   "lng": 8.564458,
+   "approx": true,
+   "firstSeen": "2026-10-12T19:25:57+02:00",
+   "lastSeen": "2026-10-12T19:25:57+02:00",
+   "status": "aktiv"
+  },
+  {
+   "id": "realadvisor-de-mieten-wohnung-8050-zurich-zz74-b4lo",
+   "kind": "markt",
+   "coop": "Tauschwohnung.ch",
+   "source": "RealAdvisor",
+   "address": "",
+   "zip": 8050,
+   "quartier": "Zürich",
+   "rooms": 5.5,
+   "rent": 3240.0,
+   "rentType": "brutto",
+   "area": 160.0,
+   "moveIn": "",
+   "temporary": false,
+   "url": "https://realadvisor.ch/de/mieten/wohnung/8050-zurich-ZZ74-B4LO",
+   "note": "",
+   "lat": 47.41193,
+   "lng": 8.5508,
+   "approx": true,
+   "firstSeen": "2026-10-12T19:25:57+02:00",
+   "lastSeen": "2026-10-12T19:25:57+02:00",
+   "status": "aktiv"
+  },
+  {
+   "id": "realadvisor-de-mieten-wohnung-8047-zurich-dnxb-mbew",
+   "kind": "markt",
+   "coop": "Tauschwohnung.ch",
+   "source": "RealAdvisor",
+   "address": "",
+   "zip": 8047,
+   "quartier": "Zürich",
+   "rooms": 5.5,
+   "rent": 3500.0,
+   "rentType": "brutto",
+   "area": 157.0,
+   "moveIn": "",
+   "temporary": false,
+   "url": "https://realadvisor.ch/de/mieten/wohnung/8047-zurich-DNXB-MBEW",
+   "note": "",
+   "lat": 47.373898,
+   "lng": 8.487007,
+   "approx": true,
+   "firstSeen": "2026-10-12T19:25:57+02:00",
+   "lastSeen": "2026-10-12T19:25:57+02:00",
+   "status": "aktiv"
+  },
+  {
+   "id": "realadvisor-de-mieten-wohnung-8046-zurich-95r9-j9q7",
+   "kind": "markt",
+   "coop": "Tauschwohnung.ch",
+   "source": "RealAdvisor",
+   "address": "",
+   "zip": 8046,
+   "quartier": "Zürich",
+   "rooms": 5.5,
+   "rent": 3900.0,
+   "rentType": "brutto",
+   "area": 124.0,
+   "moveIn": "",
+   "temporary": false,
+   "url": "https://realadvisor.ch/de/mieten/wohnung/8046-zurich-95R9-J9Q7",
+   "note": "",
+   "lat": 47.419609,
+   "lng": 8.508303,
+   "approx": true,
+   "firstSeen": "2026-10-12T19:25:57+02:00",
+   "lastSeen": "2026-10-12T19:25:57+02:00",
+   "status": "aktiv"
+  },
+  {
+   "id": "realadvisor-de-mieten-wohnung-8001-zurich-nag4-d4a9",
+   "kind": "markt",
+   "coop": "Tauschwohnung.ch",
+   "source": "RealAdvisor",
+   "address": "",
+   "zip": 8001,
+   "quartier": "Zürich",
+   "rooms": 5.0,
+   "rent": 3420.0,
+   "rentType": "brutto",
+   "area": 93.0,
+   "moveIn": "",
+   "temporary": false,
+   "url": "https://realadvisor.ch/de/mieten/wohnung/8001-zurich-NAG4-D4A9",
+   "note": "",
+   "lat": 47.372948,
+   "lng": 8.541609,
+   "approx": true,
+   "firstSeen": "2026-10-12T19:25:57+02:00",
+   "lastSeen": "2026-10-12T19:25:57+02:00",
+   "status": "aktiv"
+  },
+  {
+   "id": "realadvisor-de-mieten-wohnung-8004-zurich-zz74-b4jb",
+   "kind": "markt",
+   "coop": "Tauschwohnung.ch",
+   "source": "RealAdvisor",
+   "address": "",
+   "zip": 8004,
+   "quartier": "Zürich",
+   "rooms": 5.0,
+   "rent": 3300.0,
+   "rentType": "brutto",
+   "area": 100.0,
+   "moveIn": "",
+   "temporary": false,
+   "url": "https://realadvisor.ch/de/mieten/wohnung/8004-zurich-ZZ74-B4JB",
+   "note": "",
+   "lat": 47.378006,
+   "lng": 8.52337,
+   "approx": true,
+   "firstSeen": "2026-10-12T19:25:57+02:00",
+   "lastSeen": "2026-10-12T19:25:57+02:00",
+   "status": "aktiv"
+  },
   {
    "id": "georg-kempf-strasse-20-8046-4-5",
    "kind": "markt",
@@ -27,14 +1261,16 @@
    "note": "",
    "extKey": "flatfox:86446148",
    "firstSeen": "2026-10-12T17:29:02+02:00",
-   "lastSeen": "2026-10-12T19:00:49+02:00",
-   "status": "aktiv"
+   "lastSeen": "2026-10-12T19:25:57+02:00",
+   "status": "aktiv",
+   "lat": 47.422108,
+   "lng": 8.497203
   },
   {
    "id": "zwischenbachen-12-8048-4-5",
    "kind": "markt",
    "coop": "PRIVERA AG",
-   "source": "Flatfox",
+   "source": "Flatfox, alle-immobilien",
    "address": "Zwischenbächen 12",
    "zip": 8048,
    "quartier": "Zürich",
@@ -48,14 +1284,16 @@
    "note": "",
    "extKey": "flatfox:86444824",
    "firstSeen": "2026-10-12T17:29:02+02:00",
-   "lastSeen": "2026-10-12T19:00:49+02:00",
-   "status": "aktiv"
+   "lastSeen": "2026-10-12T19:25:57+02:00",
+   "status": "aktiv",
+   "lat": 47.385174,
+   "lng": 8.480964
   },
   {
    "id": "margrit-rainer-str-12-8050-4-5",
    "kind": "markt",
    "coop": "Schaeppi Grundstücke AG",
-   "source": "Flatfox",
+   "source": "Flatfox, alle-immobilien",
    "address": "Margrit Rainer-Str. 12",
    "zip": 8050,
    "quartier": "Zürich",
@@ -69,8 +1307,10 @@
    "note": "",
    "extKey": "flatfox:86423289",
    "firstSeen": "2026-10-12T17:29:02+02:00",
-   "lastSeen": "2026-10-12T19:00:49+02:00",
-   "status": "aktiv"
+   "lastSeen": "2026-10-12T19:25:57+02:00",
+   "status": "aktiv",
+   "lat": 47.416046,
+   "lng": 8.538839
   },
   {
    "id": "beckhammer-12-8057-5-0",
@@ -90,8 +1330,10 @@
    "note": "",
    "extKey": "flatfox:86391534",
    "firstSeen": "2026-10-12T17:29:02+02:00",
-   "lastSeen": "2026-10-12T19:00:49+02:00",
-   "status": "aktiv"
+   "lastSeen": "2026-10-12T19:25:57+02:00",
+   "status": "aktiv",
+   "lat": 47.40139,
+   "lng": 8.542037
   },
   {
    "id": "ettenfeldstrasse-2-8052-4-5",
@@ -111,8 +1353,10 @@
    "note": "",
    "extKey": "flatfox:86438884",
    "firstSeen": "2026-10-12T17:29:02+02:00",
-   "lastSeen": "2026-10-12T19:00:49+02:00",
-   "status": "aktiv"
+   "lastSeen": "2026-10-12T19:25:57+02:00",
+   "status": "aktiv",
+   "lat": 47.42223,
+   "lng": 8.551446
   },
   {
    "id": "grossackerstrasse-73-8041-4-5",
@@ -132,8 +1376,10 @@
    "note": "",
    "extKey": "flatfox:86433843",
    "firstSeen": "2026-10-12T17:29:02+02:00",
-   "lastSeen": "2026-10-12T19:00:49+02:00",
-   "status": "aktiv"
+   "lastSeen": "2026-10-12T19:25:57+02:00",
+   "status": "aktiv",
+   "lat": 47.323986,
+   "lng": 8.510226
   },
   {
    "id": "sperletweg-59-8052-4-5",
@@ -153,8 +1399,10 @@
    "note": "",
    "extKey": "flatfox:86432007",
    "firstSeen": "2026-10-12T17:29:02+02:00",
-   "lastSeen": "2026-10-12T19:00:49+02:00",
-   "status": "aktiv"
+   "lastSeen": "2026-10-12T19:25:57+02:00",
+   "status": "aktiv",
+   "lat": 47.425308,
+   "lng": 8.550439
   },
   {
    "id": "schontalstrasse-30-8004-4-5",
@@ -174,8 +1422,10 @@
    "note": "",
    "extKey": "flatfox:86429045",
    "firstSeen": "2026-10-12T17:29:02+02:00",
-   "lastSeen": "2026-10-12T19:00:49+02:00",
-   "status": "aktiv"
+   "lastSeen": "2026-10-12T19:25:57+02:00",
+   "status": "aktiv",
+   "lat": 47.371254,
+   "lng": 8.525913
   },
   {
    "id": "8049-zurich-8049-4-5",
@@ -195,8 +1445,10 @@
    "note": "",
    "extKey": "flatfox:86428831",
    "firstSeen": "2026-10-12T17:29:02+02:00",
-   "lastSeen": "2026-10-12T19:00:49+02:00",
-   "status": "aktiv"
+   "lastSeen": "2026-10-12T19:25:57+02:00",
+   "status": "aktiv",
+   "lat": 47.400131,
+   "lng": 8.506275
   },
   {
    "id": "8008-zurich-8008-4-5",
@@ -209,15 +1461,17 @@
    "rooms": 4.5,
    "rent": 2245.0,
    "rentType": "brutto",
-   "area": null,
+   "area": 94.0,
    "moveIn": "sofort",
    "temporary": false,
    "url": "https://flatfox.ch/de/wohnung/8008-zurich/86428801/",
    "note": "",
    "extKey": "flatfox:86428801",
    "firstSeen": "2026-10-12T17:29:02+02:00",
-   "lastSeen": "2026-10-12T19:00:49+02:00",
-   "status": "aktiv"
+   "lastSeen": "2026-10-12T19:25:57+02:00",
+   "status": "aktiv",
+   "lat": 47.363441,
+   "lng": 8.554247
   },
   {
    "id": "8004-zurich-8004-4-5",
@@ -237,14 +1491,16 @@
    "note": "",
    "extKey": "flatfox:86422329",
    "firstSeen": "2026-10-12T17:29:02+02:00",
-   "lastSeen": "2026-10-12T19:00:49+02:00",
-   "status": "aktiv"
+   "lastSeen": "2026-10-12T19:25:57+02:00",
+   "status": "aktiv",
+   "lat": 47.371502,
+   "lng": 8.529782
   },
   {
    "id": "ellen-widmann-weg-2-8050-4-5",
    "kind": "markt",
-   "coop": "",
-   "source": "Flatfox",
+   "coop": "wincasa siege",
+   "source": "Flatfox, alle-immobilien, immobilier.ch",
    "address": "Ellen - Widmann - Weg 2",
    "zip": 8050,
    "quartier": "Zürich",
@@ -258,8 +1514,10 @@
    "note": "",
    "extKey": "flatfox:86421795",
    "firstSeen": "2026-10-12T17:29:02+02:00",
-   "lastSeen": "2026-10-12T19:00:49+02:00",
-   "status": "aktiv"
+   "lastSeen": "2026-10-12T19:25:57+02:00",
+   "status": "aktiv",
+   "lat": 47.414444,
+   "lng": 8.539448
   },
   {
    "id": "8032-zurich-8032-4-5",
@@ -279,14 +1537,16 @@
    "note": "",
    "extKey": "flatfox:86419938",
    "firstSeen": "2026-10-12T17:29:02+02:00",
-   "lastSeen": "2026-10-12T19:00:49+02:00",
-   "status": "aktiv"
+   "lastSeen": "2026-10-12T19:25:57+02:00",
+   "status": "aktiv",
+   "lat": 47.372757,
+   "lng": 8.551041
   },
   {
    "id": "wehntalerstrasse-592b-8046-4-5",
    "kind": "markt",
    "coop": "Privera AG",
-   "source": "Flatfox",
+   "source": "Flatfox, alle-immobilien",
    "address": "Wehntalerstrasse 592b",
    "zip": 8046,
    "quartier": "Zürich",
@@ -300,8 +1560,10 @@
    "note": "",
    "extKey": "flatfox:86412259",
    "firstSeen": "2026-10-12T17:29:02+02:00",
-   "lastSeen": "2026-10-12T19:00:49+02:00",
-   "status": "aktiv"
+   "lastSeen": "2026-10-12T19:25:57+02:00",
+   "status": "aktiv",
+   "lat": 47.421185,
+   "lng": 8.503569
   },
   {
    "id": "mutschellenstrasse-17-8002-4-5",
@@ -321,14 +1583,16 @@
    "note": "",
    "extKey": "flatfox:86409922",
    "firstSeen": "2026-10-12T17:29:02+02:00",
-   "lastSeen": "2026-10-12T19:00:49+02:00",
-   "status": "aktiv"
+   "lastSeen": "2026-10-12T19:25:57+02:00",
+   "status": "aktiv",
+   "lat": 47.353771,
+   "lng": 8.527191
   },
   {
    "id": "hardgutstrasse-28-8048-4-5",
    "kind": "markt",
    "coop": "Privera AG",
-   "source": "Flatfox",
+   "source": "Flatfox, alle-immobilien",
    "address": "Hardgutstrasse 28",
    "zip": 8048,
    "quartier": "Zürich",
@@ -342,8 +1606,10 @@
    "note": "",
    "extKey": "flatfox:86406914",
    "firstSeen": "2026-10-12T17:29:02+02:00",
-   "lastSeen": "2026-10-12T19:00:49+02:00",
-   "status": "aktiv"
+   "lastSeen": "2026-10-12T19:25:57+02:00",
+   "status": "aktiv",
+   "lat": 47.383266,
+   "lng": 8.501004
   },
   {
    "id": "8003-zurich-8003-5-0",
@@ -363,14 +1629,16 @@
    "note": "",
    "extKey": "flatfox:86408618",
    "firstSeen": "2026-10-12T17:29:02+02:00",
-   "lastSeen": "2026-10-12T19:00:49+02:00",
-   "status": "aktiv"
+   "lastSeen": "2026-10-12T19:25:57+02:00",
+   "status": "aktiv",
+   "lat": 47.369499,
+   "lng": 8.518587
   },
   {
    "id": "turnerstrasse-37-8006-4-5",
    "kind": "markt",
    "coop": "Cosmopolitan Apartments AG",
-   "source": "Flatfox",
+   "source": "Flatfox, alle-immobilien",
    "address": "Turnerstrasse 37",
    "zip": 8006,
    "quartier": "Zürich",
@@ -384,8 +1652,10 @@
    "note": "",
    "extKey": "flatfox:86403447",
    "firstSeen": "2026-10-12T17:29:02+02:00",
-   "lastSeen": "2026-10-12T19:00:49+02:00",
-   "status": "aktiv"
+   "lastSeen": "2026-10-12T19:25:57+02:00",
+   "status": "aktiv",
+   "lat": 47.38644,
+   "lng": 8.542815
   },
   {
    "id": "8050-zurich-8050-4-5",
@@ -405,14 +1675,16 @@
    "note": "",
    "extKey": "flatfox:86400235",
    "firstSeen": "2026-10-12T17:29:02+02:00",
-   "lastSeen": "2026-10-12T19:00:49+02:00",
-   "status": "aktiv"
+   "lastSeen": "2026-10-12T19:25:57+02:00",
+   "status": "aktiv",
+   "lat": 47.414478,
+   "lng": 8.540557
   },
   {
    "id": "carl-spitteler-strasse-59-63-8053-4-5",
    "kind": "markt",
    "coop": "Intercity Immobilien AG",
-   "source": "Flatfox",
+   "source": "Flatfox, alle-immobilien",
    "address": "Carl-Spitteler-Strasse 59-63",
    "zip": 8053,
    "quartier": "Zürich",
@@ -426,14 +1698,16 @@
    "note": "",
    "extKey": "flatfox:86394134",
    "firstSeen": "2026-10-12T17:29:02+02:00",
-   "lastSeen": "2026-10-12T19:00:49+02:00",
-   "status": "aktiv"
+   "lastSeen": "2026-10-12T19:25:57+02:00",
+   "status": "aktiv",
+   "lat": 47.356602,
+   "lng": 8.592287
   },
   {
    "id": "luegislandstrasse-103-109-8050-4-5",
    "kind": "markt",
    "coop": "Yuna Real Estate AG",
-   "source": "Flatfox",
+   "source": "Flatfox, alle-immobilien",
    "address": "Luegislandstrasse 103-109",
    "zip": 8050,
    "quartier": "Zürich",
@@ -447,8 +1721,10 @@
    "note": "",
    "extKey": "flatfox:86382613",
    "firstSeen": "2026-10-12T17:29:02+02:00",
-   "lastSeen": "2026-10-12T19:00:49+02:00",
-   "status": "aktiv"
+   "lastSeen": "2026-10-12T19:25:57+02:00",
+   "status": "aktiv",
+   "lat": 47.407799,
+   "lng": 8.567907
   },
   {
    "id": "8041-zurich-8041-4-5",
@@ -468,8 +1744,10 @@
    "note": "",
    "extKey": "flatfox:86380665",
    "firstSeen": "2026-10-12T17:29:02+02:00",
-   "lastSeen": "2026-10-12T19:00:49+02:00",
-   "status": "aktiv"
+   "lastSeen": "2026-10-12T19:25:57+02:00",
+   "status": "aktiv",
+   "lat": 47.334057,
+   "lng": 8.515005
   },
   {
    "id": "luegislandstrasse-109-8051-4-5",
@@ -489,8 +1767,10 @@
    "note": "",
    "extKey": "flatfox:86377572",
    "firstSeen": "2026-10-12T17:29:02+02:00",
-   "lastSeen": "2026-10-12T19:00:49+02:00",
-   "status": "aktiv"
+   "lastSeen": "2026-10-12T19:25:57+02:00",
+   "status": "aktiv",
+   "lat": 47.408298,
+   "lng": 8.568529
   },
   {
    "id": "8052-zurich-8052-4-5",
@@ -510,14 +1790,16 @@
    "note": "",
    "extKey": "flatfox:86377257",
    "firstSeen": "2026-10-12T17:29:02+02:00",
-   "lastSeen": "2026-10-12T19:00:49+02:00",
-   "status": "aktiv"
+   "lastSeen": "2026-10-12T19:25:57+02:00",
+   "status": "aktiv",
+   "lat": 47.433006,
+   "lng": 8.545095
   },
   {
    "id": "schwandenholzstr-270-8046-4-5",
    "kind": "markt",
    "coop": "Regimo Zürich",
-   "source": "Flatfox",
+   "source": "Flatfox, alle-immobilien",
    "address": "Schwandenholzstr. 270",
    "zip": 8046,
    "quartier": "Zürich",
@@ -531,8 +1813,10 @@
    "note": "",
    "extKey": "flatfox:86370852",
    "firstSeen": "2026-10-12T17:29:02+02:00",
-   "lastSeen": "2026-10-12T19:00:49+02:00",
-   "status": "aktiv"
+   "lastSeen": "2026-10-12T19:25:57+02:00",
+   "status": "aktiv",
+   "lat": 47.424793,
+   "lng": 8.520548
   },
   {
    "id": "turnerstrasse-27-8006-5-5",
@@ -552,14 +1836,16 @@
    "note": "",
    "extKey": "flatfox:86365605",
    "firstSeen": "2026-10-12T17:29:02+02:00",
-   "lastSeen": "2026-10-12T19:00:49+02:00",
-   "status": "aktiv"
+   "lastSeen": "2026-10-12T19:25:57+02:00",
+   "status": "aktiv",
+   "lat": 47.385822,
+   "lng": 8.543337
   },
   {
    "id": "luegislandstrasse-103-109-8051-4-5",
    "kind": "markt",
    "coop": "Yuna Real Estate AG",
-   "source": "Flatfox",
+   "source": "Flatfox, alle-immobilien",
    "address": "Luegislandstrasse 103-109",
    "zip": 8051,
    "quartier": "Zürich",
@@ -573,8 +1859,10 @@
    "note": "",
    "extKey": "flatfox:86361601",
    "firstSeen": "2026-10-12T17:29:02+02:00",
-   "lastSeen": "2026-10-12T19:00:49+02:00",
-   "status": "aktiv"
+   "lastSeen": "2026-10-12T19:25:57+02:00",
+   "status": "aktiv",
+   "lat": 47.408298,
+   "lng": 8.568529
   },
   {
    "id": "haldeliweg-18-8044-4-5",
@@ -594,14 +1882,16 @@
    "note": "",
    "extKey": "flatfox:86361656",
    "firstSeen": "2026-10-12T17:29:02+02:00",
-   "lastSeen": "2026-10-12T19:00:49+02:00",
-   "status": "aktiv"
+   "lastSeen": "2026-10-12T19:25:57+02:00",
+   "status": "aktiv",
+   "lat": 47.377151,
+   "lng": 8.555061
   },
   {
    "id": "grosswiesenstrasse-8-8051-4-5",
    "kind": "markt",
    "coop": "Tend AG",
-   "source": "Flatfox",
+   "source": "Flatfox, alle-immobilien",
    "address": "Grosswiesenstrasse 8",
    "zip": 8051,
    "quartier": "Zürich",
@@ -615,14 +1905,16 @@
    "note": "",
    "extKey": "flatfox:86357917",
    "firstSeen": "2026-10-12T17:29:02+02:00",
-   "lastSeen": "2026-10-12T19:00:49+02:00",
-   "status": "aktiv"
+   "lastSeen": "2026-10-12T19:25:57+02:00",
+   "status": "aktiv",
+   "lat": 47.403324,
+   "lng": 8.583068
   },
   {
    "id": "rautihalde-28-8048-5-5",
    "kind": "markt",
    "coop": "H&B Real Estate AG",
-   "source": "Flatfox",
+   "source": "Flatfox, alle-immobilien",
    "address": "Rautihalde 28",
    "zip": 8048,
    "quartier": "Zürich",
@@ -636,14 +1928,16 @@
    "note": "",
    "extKey": "flatfox:86348292",
    "firstSeen": "2026-10-12T17:29:02+02:00",
-   "lastSeen": "2026-10-12T19:00:49+02:00",
-   "status": "aktiv"
+   "lastSeen": "2026-10-12T19:25:57+02:00",
+   "status": "aktiv",
+   "lat": 47.386993,
+   "lng": 8.473866
   },
   {
    "id": "albulastr-54-8048-4-5",
    "kind": "markt",
    "coop": "CSL Immobilien AG",
-   "source": "Flatfox",
+   "source": "Flatfox, alle-immobilien",
    "address": "Albulastr. 54",
    "zip": 8048,
    "quartier": "Zürich",
@@ -657,8 +1951,10 @@
    "note": "",
    "extKey": "flatfox:86345457",
    "firstSeen": "2026-10-12T17:29:02+02:00",
-   "lastSeen": "2026-10-12T19:00:49+02:00",
-   "status": "aktiv"
+   "lastSeen": "2026-10-12T19:25:57+02:00",
+   "status": "aktiv",
+   "lat": 47.38863,
+   "lng": 8.492938
   },
   {
    "id": "katzenseestrasse-19-8046-4-5",
@@ -678,14 +1974,16 @@
    "note": "",
    "extKey": "flatfox:86311503",
    "firstSeen": "2026-10-12T17:29:02+02:00",
-   "lastSeen": "2026-10-12T19:00:49+02:00",
-   "status": "aktiv"
+   "lastSeen": "2026-10-12T19:25:57+02:00",
+   "status": "aktiv",
+   "lat": 47.426109,
+   "lng": 8.504694
   },
   {
    "id": "hagenholzstr-94-8050-4-5",
    "kind": "markt",
    "coop": "CSL Immobilien AG",
-   "source": "Flatfox",
+   "source": "Flatfox, alle-immobilien",
    "address": "Hagenholzstr. 94",
    "zip": 8050,
    "quartier": "Zürich",
@@ -699,14 +1997,16 @@
    "note": "",
    "extKey": "flatfox:86168041",
    "firstSeen": "2026-10-12T17:29:02+02:00",
-   "lastSeen": "2026-10-12T19:00:49+02:00",
-   "status": "aktiv"
+   "lastSeen": "2026-10-12T19:25:57+02:00",
+   "status": "aktiv",
+   "lat": 47.413567,
+   "lng": 8.558337
   },
   {
    "id": "brauerstr-4-8004-4-5",
    "kind": "markt",
    "coop": "CSL Immobilien AG",
-   "source": "Flatfox",
+   "source": "Flatfox, alle-immobilien",
    "address": "Brauerstr. 4",
    "zip": 8004,
    "quartier": "Zürich",
@@ -720,8 +2020,10 @@
    "note": "",
    "extKey": "flatfox:86190964",
    "firstSeen": "2026-10-12T17:29:02+02:00",
-   "lastSeen": "2026-10-12T19:00:49+02:00",
-   "status": "aktiv"
+   "lastSeen": "2026-10-12T19:25:57+02:00",
+   "status": "aktiv",
+   "lat": 47.377098,
+   "lng": 8.528666
   },
   {
    "id": "weidmannstrasse-15-8046-4-5",
@@ -741,8 +2043,10 @@
    "note": "",
    "extKey": "flatfox:86289716",
    "firstSeen": "2026-10-12T17:29:02+02:00",
-   "lastSeen": "2026-10-12T19:00:49+02:00",
-   "status": "aktiv"
+   "lastSeen": "2026-10-12T19:25:57+02:00",
+   "status": "aktiv",
+   "lat": 47.422947,
+   "lng": 8.502422
   },
   {
    "id": "doldertal-17-8032-5-0",
@@ -762,8 +2066,10 @@
    "note": "",
    "extKey": "flatfox:86181606",
    "firstSeen": "2026-10-12T17:29:02+02:00",
-   "lastSeen": "2026-10-12T19:00:49+02:00",
-   "status": "aktiv"
+   "lastSeen": "2026-10-12T19:25:57+02:00",
+   "status": "aktiv",
+   "lat": 47.373066,
+   "lng": 8.5648
   },
   {
    "id": "8038-zurich-8038-5-0",
@@ -783,8 +2089,10 @@
    "note": "",
    "extKey": "flatfox:86270576",
    "firstSeen": "2026-10-12T17:29:02+02:00",
-   "lastSeen": "2026-10-12T19:00:49+02:00",
-   "status": "aktiv"
+   "lastSeen": "2026-10-12T19:25:57+02:00",
+   "status": "aktiv",
+   "lat": 47.331783,
+   "lng": 8.532474
   },
   {
    "id": "riedgrabenweg-49-8050-4-5",
@@ -804,8 +2112,10 @@
    "note": "",
    "extKey": "flatfox:86226618",
    "firstSeen": "2026-10-12T17:29:02+02:00",
-   "lastSeen": "2026-10-12T19:00:49+02:00",
-   "status": "aktiv"
+   "lastSeen": "2026-10-12T19:25:57+02:00",
+   "status": "aktiv",
+   "lat": 47.408424,
+   "lng": 8.558416
   },
   {
    "id": "spirackerstrasse-22-8044-4-5",
@@ -825,14 +2135,16 @@
    "note": "",
    "extKey": "flatfox:86032598",
    "firstSeen": "2026-10-12T17:29:02+02:00",
-   "lastSeen": "2026-10-12T19:00:49+02:00",
-   "status": "aktiv"
+   "lastSeen": "2026-10-12T19:25:57+02:00",
+   "status": "aktiv",
+   "lat": 47.382721,
+   "lng": 8.598539
   },
   {
    "id": "grosswiesenstrasse-8-8051-5-5",
    "kind": "markt",
    "coop": "Tend AG",
-   "source": "Flatfox",
+   "source": "Flatfox, alle-immobilien",
    "address": "Grosswiesenstrasse 8",
    "zip": 8051,
    "quartier": "Zürich",
@@ -846,8 +2158,10 @@
    "note": "",
    "extKey": "flatfox:85871796",
    "firstSeen": "2026-10-12T17:29:02+02:00",
-   "lastSeen": "2026-10-12T19:00:49+02:00",
-   "status": "aktiv"
+   "lastSeen": "2026-10-12T19:25:57+02:00",
+   "status": "aktiv",
+   "lat": 47.403324,
+   "lng": 8.583068
   },
   {
    "id": "coop-abz-163482c67d",
@@ -867,7 +2181,7 @@
    "note": "Seite erwähnt 4,5 Zimmer, 4,5-Zimmer, 5,5 Zimmer. Bitte prüfen. Auszug: et sich nach der Wohnungsgrösse: 1,5-Zimmer-Wohnung: 3500 CHF 2,5-Zimmer-Wohnung: 4500 CHF 3,5-Zimmer-Wohnung: 5500 CHF 4,5-Zimmer-Wohnung: 6500 CHF 5,5-Zimmer-Wohnung: 7500 CHF 6,5-Zimmer-Wohnung: 8500 CHF Das Anteilkapital wird auf die Vertragsparteien aufgeteilt. Der Mindestanteil pro M",
    "isHint": true,
    "firstSeen": "2026-10-12T17:29:02+02:00",
-   "lastSeen": "2026-10-12T19:00:49+02:00",
+   "lastSeen": "2026-10-12T19:25:57+02:00",
    "status": "aktiv"
   },
   {
@@ -888,7 +2202,7 @@
    "note": "Seite erwähnt 4.5 Zimmer. Bitte prüfen. Auszug: legte Siedlung mit insgesamt 102 Wohnungen, einer Unterniveaugarage, Aussenparklätzen und Bastelräumen. Es stehen 2.0 – 4.5 Zimmerwohnungen mit attraktiven Balkonflächen zur Verfügung. Die grosszügigen und schön gestalteten Grün- und Spielflächen laden zum Verweilen ein. Die in den Baujahr",
    "isHint": true,
    "firstSeen": "2026-10-12T17:29:02+02:00",
-   "lastSeen": "2026-10-12T19:00:49+02:00",
+   "lastSeen": "2026-10-12T19:25:57+02:00",
    "status": "aktiv"
   },
   {
@@ -909,7 +2223,7 @@
    "note": "Seite erwähnt 4.5-Zi, 4.5-Zimmer. Bitte prüfen. Auszug: 4.5-Zi-Whg Neubau Freie 4.5-Zimmer-Wohnungen im Neubau WhgNr Adresse Lage Bezug m2 Miete +NK Plan - - - - - - - -",
    "isHint": true,
    "firstSeen": "2026-10-12T17:29:02+02:00",
-   "lastSeen": "2026-10-12T19:00:49+02:00",
+   "lastSeen": "2026-10-12T19:25:57+02:00",
    "status": "aktiv"
   },
   {
@@ -930,7 +2244,7 @@
    "note": "Seite erwähnt 5.5-Zi, 5.5-Zimmer. Bitte prüfen. Auszug: 5.5-Zi-Whg Neubau Freie 5.5-Zimmer-Wohnungen im Neubau WhgNr Adresse Lage Bezug m2 Miete +NK Plan - - - - - - - -",
    "isHint": true,
    "firstSeen": "2026-10-12T17:29:02+02:00",
-   "lastSeen": "2026-10-12T19:00:49+02:00",
+   "lastSeen": "2026-10-12T19:25:57+02:00",
    "status": "aktiv"
   },
   {
@@ -951,7 +2265,7 @@
    "note": "Seite erwähnt 4½-Zimmer. Bitte prüfen. Auszug: eilsscheinen von gegenwärtig CHF 2‘000.– bis CHF 2‘500.– pro Zimmer, wobei halbe Zimmer aufgerundet werden. Wer in eine 4½-Zimmer-Wohnung einzieht, muss demzufolge Anteilsscheine im Gesamtbetrag von CHF 10'000.– bis CHF 12‘500.– zeichnen. Die Genossenschaft ist bestrebt, das Anteilsschein",
    "isHint": true,
    "firstSeen": "2026-10-12T17:29:02+02:00",
-   "lastSeen": "2026-10-12T19:00:49+02:00",
+   "lastSeen": "2026-10-12T19:25:57+02:00",
    "status": "aktiv"
   },
   {
@@ -972,7 +2286,7 @@
    "note": "Seite erwähnt 4.5 Zimmer. Bitte prüfen. Auszug: Mindestbelegung Die Anzahl der Zimmer minus 1 ergibt die Mindestanzahl der Bewohnenden. So müssen zum Beispiel in einer 4.5 Zimmer-Wohnung mindestens 3 Personen leben. Halbe Zimmer werden nicht mitgerechnet. Wirtschaftliche Verhältnisse Der Mietzins und die wirtschaftlichen Verhältnisse de",
    "isHint": true,
    "firstSeen": "2026-10-12T17:29:02+02:00",
-   "lastSeen": "2026-10-12T19:00:49+02:00",
+   "lastSeen": "2026-10-12T19:25:57+02:00",
    "status": "aktiv"
   },
   {
@@ -993,7 +2307,7 @@
    "note": "Seite erwähnt 4.5-Zimmer, 5 Zimmer, 6.5-Zimmer. Bitte prüfen. Auszug: ichtanteilschein-Kapitals: für 1- bis 2.5-Zimmer-Wohnung: CHF 5'500 für 3- bis 3.5-Zimmer-Wohnung: CHF 7'500 für 4- bis 4.5-Zimmer-Wohnung: CHF 8'500 für 5- bis 6.5-Zimmer-Wohnung: CHF 9'500 Wie lauten die Belegungsvorschriften? Bei der Vermietung sollen die Wohnungen nicht unterbelegt wer",
    "isHint": true,
    "firstSeen": "2026-10-12T17:29:02+02:00",
-   "lastSeen": "2026-10-12T19:00:49+02:00",
+   "lastSeen": "2026-10-12T19:25:57+02:00",
    "status": "aktiv"
   }
  ],
@@ -1004,7 +2318,7 @@
    "status": "mögliche Treffer",
    "hash": "163482c67d10343fbc1bfba2cfdf6a258025d66674127ddf471d48bbc441dc2c",
    "lastChange": null,
-   "checked": "2026-10-12T18:57:47+02:00",
+   "checked": "2026-10-12T19:22:15+02:00",
    "sizes": [
     "4,5 Zimmer",
     "4,5-Zimmer",
@@ -1019,7 +2333,7 @@
    "status": "mögliche Treffer",
    "hash": "a1f86016056058576171a67543f05e31b057e65d9fa5b3b5f448be892ebb7c90",
    "lastChange": null,
-   "checked": "2026-10-12T18:57:50+02:00",
+   "checked": "2026-10-12T19:22:18+02:00",
    "sizes": [
     "4.5 Zimmer"
    ]
@@ -1030,7 +2344,7 @@
    "status": "keine freien Wohnungen",
    "hash": "7a16c5c57df53603995e08d3d4793c2a73ae7c86adc871e7001b326a4371018b",
    "lastChange": null,
-   "checked": "2026-10-12T18:57:52+02:00",
+   "checked": "2026-10-12T19:22:20+02:00",
    "sizes": []
   },
   "https://baufreunde.ch/vermietung/": {
@@ -1039,7 +2353,7 @@
    "status": "keine freien Wohnungen",
    "hash": "b566d3dcc51dcca4ac868c62013dd5e03b1841fa324e4938c8cd72c82d4006af",
    "lastChange": null,
-   "checked": "2026-10-12T18:57:54+02:00",
+   "checked": "2026-10-12T19:22:22+02:00",
    "sizes": []
   },
   "https://www.bep-zuerich.ch/vermietung/freie-objekte/": {
@@ -1048,7 +2362,7 @@
    "status": "keine freien Wohnungen",
    "hash": "af26dc8c5abe16f52fde0db68d0df1612c00932489ac86d008ab1f8d23187b18",
    "lastChange": null,
-   "checked": "2026-10-12T18:57:57+02:00",
+   "checked": "2026-10-12T19:22:26+02:00",
    "sizes": []
   },
   "https://www.bonlieu.ch/der-bonlieuwohnbereich.html": {
@@ -1057,7 +2371,7 @@
    "status": "keine passende Grösse erkannt",
    "hash": "ff5f454638a6beae62ad3e27f0b25f5220a3ecbd89fee7140e1a9b87976d2432",
    "lastChange": null,
-   "checked": "2026-10-12T18:57:59+02:00",
+   "checked": "2026-10-12T19:22:28+02:00",
    "sizes": []
   },
   "https://www.bgbrunnenhof.ch/dienstleistungen/vermietung/": {
@@ -1066,7 +2380,7 @@
    "status": "keine passende Grösse erkannt",
    "hash": "52be75f12914696bb879a6a5a09797d01290f68a2313cb24e3589985206ae453",
    "lastChange": null,
-   "checked": "2026-10-12T18:58:01+02:00",
+   "checked": "2026-10-12T19:22:30+02:00",
    "sizes": []
   },
   "https://www.bsz-schoenau.ch/vermietung": {
@@ -1075,7 +2389,7 @@
    "status": "keine passende Grösse erkannt",
    "hash": "66ba1de4b8dd126735c31b57cd88f64a0f78378eeb8cfee9aa90f20871f6568e",
    "lastChange": null,
-   "checked": "2026-10-12T18:58:03+02:00",
+   "checked": "2026-10-12T19:22:33+02:00",
    "sizes": []
   },
   "https://burgmatte.ch": {
@@ -1084,7 +2398,7 @@
    "status": "keine freien Wohnungen",
    "hash": "8ad6a57e86a7e8517609d5d4a2c6c7721ecfcefc48fc174795b8e3640edb8c62",
    "lastChange": null,
-   "checked": "2026-10-12T18:58:05+02:00",
+   "checked": "2026-10-12T19:22:35+02:00",
    "sizes": []
   },
   "https://www.eba-zuerich.ch/neu4.5zi.php": {
@@ -1093,7 +2407,7 @@
    "status": "mögliche Treffer",
    "hash": "3448de892c2be3d3ba32ea7037d6109b5f34c952c0b48edff3a4f8d8f306322d",
    "lastChange": null,
-   "checked": "2026-10-12T18:58:08+02:00",
+   "checked": "2026-10-12T19:22:38+02:00",
    "sizes": [
     "4.5-Zi",
     "4.5-Zimmer"
@@ -1105,7 +2419,7 @@
    "status": "mögliche Treffer",
    "hash": "87195a0b62a9d6ebfb35f4b55fdd882a4c1b70f931b58f4955b0b4992d02347e",
    "lastChange": null,
-   "checked": "2026-10-12T18:58:10+02:00",
+   "checked": "2026-10-12T19:22:40+02:00",
    "sizes": [
     "5.5-Zi",
     "5.5-Zimmer"
@@ -1117,7 +2431,7 @@
    "status": "keine freien Wohnungen",
    "hash": "59e08add18da0333d0754fd9cd461cd52f828885e9b2b925afeea8dac8913501",
    "lastChange": null,
-   "checked": "2026-10-12T18:58:11+02:00",
+   "checked": "2026-10-12T19:22:41+02:00",
    "sizes": []
   },
   "https://fgzzh.ch/freie-objekte/": {
@@ -1126,7 +2440,7 @@
    "status": "keine passende Grösse erkannt",
    "hash": "1e7ece2f4b47135452a6bd358c06ffe7c21f33f5163a57d3afaa458524720889",
    "lastChange": null,
-   "checked": "2026-10-12T18:58:13+02:00",
+   "checked": "2026-10-12T19:22:43+02:00",
    "sizes": []
   },
   "https://www.freiblick.ch/de/portrait/vermietung": {
@@ -1135,7 +2449,7 @@
    "status": "mögliche Treffer",
    "hash": "9f3412fb3bb6ee6cdad519aa380fece0a1c768e205466906bca11f9da49a09c6",
    "lastChange": null,
-   "checked": "2026-10-12T18:58:14+02:00",
+   "checked": "2026-10-12T19:22:45+02:00",
    "sizes": [
     "4½-Zimmer"
    ]
@@ -1146,7 +2460,7 @@
    "status": "gesperrt",
    "hash": null,
    "lastChange": null,
-   "checked": "2026-10-12T18:58:16+02:00",
+   "checked": "2026-10-12T19:22:48+02:00",
    "error": "Website blockiert (HTTP 403)"
   },
   "https://www.bg-gisa.ch/wohnungen": {
@@ -1155,7 +2469,7 @@
    "status": "keine passende Grösse erkannt",
    "hash": "998bb78d4eeb96aef1b33430ecc61535100a972b991352d63e6af94038742a88",
    "lastChange": null,
-   "checked": "2026-10-12T18:58:17+02:00",
+   "checked": "2026-10-12T19:22:49+02:00",
    "sizes": []
   },
   "https://www.bg-glattal.ch/vermietung": {
@@ -1164,17 +2478,17 @@
    "status": "keine passende Grösse erkannt",
    "hash": "1aa46ec317775fa6d2d5b5821148ebfa29c0d1c2ab4ad04598ede5a47009eef9",
    "lastChange": null,
-   "checked": "2026-10-12T18:58:19+02:00",
+   "checked": "2026-10-12T19:22:51+02:00",
    "sizes": []
   },
-  "https://www.habitat8000.ch/freie-objekte/": {
+  "https://www.habitat8000.ch/": {
    "name": "Habitat 8000",
-   "url": "https://www.habitat8000.ch/freie-objekte/",
-   "status": "Fehler",
-   "hash": null,
+   "url": "https://www.habitat8000.ch/",
+   "status": "keine passende Grösse erkannt",
+   "hash": "f87020caf36831b8596d1e1cf3c04f40a3e58bf84ece37dba63368b4f14c9299",
    "lastChange": null,
-   "checked": "2026-10-12T18:58:21+02:00",
-   "error": "HTTPError"
+   "checked": "2026-10-12T19:22:53+02:00",
+   "sizes": []
   },
   "https://www.bg-heimelig.ch": {
    "name": "Heimelig",
@@ -1182,7 +2496,7 @@
    "status": "keine passende Grösse erkannt",
    "hash": "d2b15664c0b9e4f527e5f1174eb0d348e3743bc6c3f894154de470063e5933a5",
    "lastChange": null,
-   "checked": "2026-10-12T18:58:27+02:00",
+   "checked": "2026-10-12T19:22:57+02:00",
    "sizes": []
   },
   "https://www.bgim.ch/": {
@@ -1191,7 +2505,7 @@
    "status": "keine freien Wohnungen",
    "hash": "40ffddc271ccffe9dc02ee5bc639aade56e7ab104c66878648db8eb135bfb8e4",
    "lastChange": null,
-   "checked": "2026-10-12T18:58:29+02:00",
+   "checked": "2026-10-12T19:23:00+02:00",
    "sizes": []
   },
   "https://www.invia-zuerich.ch": {
@@ -1200,7 +2514,7 @@
    "status": "keine passende Grösse erkannt",
    "hash": "aabb5cb69cf5c9f79959c4011290171ce7dc98fdb121bbd2cb5d1499e93a210c",
    "lastChange": null,
-   "checked": "2026-10-12T18:58:32+02:00",
+   "checked": "2026-10-12T19:23:03+02:00",
    "sizes": []
   },
   "https://www.kalkbreite.net": {
@@ -1209,7 +2523,7 @@
    "status": "keine passende Grösse erkannt",
    "hash": "469304dab4caa7c3fe42c303029a1c131f29d5a7cf9ae9186c8469e977c013e5",
    "lastChange": null,
-   "checked": "2026-10-12T18:58:34+02:00",
+   "checked": "2026-10-12T19:23:04+02:00",
    "sizes": []
   },
   "https://kraftwerk1.ch/freie-objekte": {
@@ -1218,7 +2532,7 @@
    "status": "keine passende Grösse erkannt",
    "hash": "a07f20ed9e0084c27cefb65e76c6a274c41d4d4fb01bdfd767b9e58bded33e9c",
    "lastChange": null,
-   "checked": "2026-10-12T18:58:35+02:00",
+   "checked": "2026-10-12T19:23:07+02:00",
    "sizes": []
   },
   "https://www.bgl-zuerich.ch/vermietungen": {
@@ -1227,7 +2541,7 @@
    "status": "keine passende Grösse erkannt",
    "hash": "b79d586ee16ec23a9a63eb5276d94fed607b76684f901c0dca70b72e2aa8eabd",
    "lastChange": null,
-   "checked": "2026-10-12T18:58:37+02:00",
+   "checked": "2026-10-12T19:23:09+02:00",
    "sizes": []
   },
   "https://www.gbl.ch/freie-objekte.php": {
@@ -1236,7 +2550,7 @@
    "status": "keine passende Grösse erkannt",
    "hash": "6c72409ed15b9b007157f389755a2dbedfbfc81b77552f8d883d14a881f6bbd5",
    "lastChange": null,
-   "checked": "2026-10-12T18:58:39+02:00",
+   "checked": "2026-10-12T19:23:10+02:00",
    "sizes": []
   },
   "https://www.linthescher.ch/vermietung/wohnungen": {
@@ -1245,7 +2559,7 @@
    "status": "keine passende Grösse erkannt",
    "hash": "b1458a303539089aa928db2fb7b42602fd43febf99bdad43f3a365f4afbfbf58",
    "lastChange": null,
-   "checked": "2026-10-12T18:58:41+02:00",
+   "checked": "2026-10-12T19:23:12+02:00",
    "sizes": []
   },
   "https://www.logis.ch/de/Immobilien/Zuerich": {
@@ -1254,7 +2568,7 @@
    "status": "keine passende Grösse erkannt",
    "hash": "eeb92074518f60af148d70030f72495622d37cf6d552d97eb3b0716523392e8a",
    "lastChange": null,
-   "checked": "2026-10-12T18:58:43+02:00",
+   "checked": "2026-10-12T19:23:14+02:00",
    "sizes": []
   },
   "https://bg-luegisland.ch": {
@@ -1263,7 +2577,7 @@
    "status": "keine passende Grösse erkannt",
    "hash": "8819d1242d8cdc0a01191c330cb39c63cf4db0afdab13ab63612d20b148b1648",
    "lastChange": null,
-   "checked": "2026-10-12T18:58:45+02:00",
+   "checked": "2026-10-12T19:23:18+02:00",
    "sizes": []
   },
   "https://www.mbgz.ch/vermietung/": {
@@ -1272,7 +2586,7 @@
    "status": "keine passende Grösse erkannt",
    "hash": "432b36289f6f9c07fb6c53b10f32129ad3b57708d229961a8bfd8a69564e984b",
    "lastChange": null,
-   "checked": "2026-10-12T18:58:47+02:00",
+   "checked": "2026-10-12T19:23:20+02:00",
    "sizes": []
   },
   "https://www.mehralswohnen.ch/freie-objekte": {
@@ -1281,7 +2595,7 @@
    "status": "keine passende Grösse erkannt",
    "hash": "616c7a1b211f3c02955355605e07f8062274f9550693f7f9b54585fba757d846",
    "lastChange": null,
-   "checked": "2026-10-12T18:58:49+02:00",
+   "checked": "2026-10-12T19:23:22+02:00",
    "sizes": []
   },
   "https://www.milchbuck.ch/freie-wohnungen/": {
@@ -1290,7 +2604,7 @@
    "status": "keine freien Wohnungen",
    "hash": "d714a9bba7b2660a2f77df826a02c7c118de3a376ee94815c0bb3fc4194cdbad",
    "lastChange": null,
-   "checked": "2026-10-12T18:58:51+02:00",
+   "checked": "2026-10-12T19:23:24+02:00",
    "sizes": []
   },
   "https://www.bgoberstrass.ch/vermietung": {
@@ -1299,7 +2613,7 @@
    "status": "keine freien Wohnungen",
    "hash": "447bac3ebd25e347b0a666f2d9969f571ba6579bdc0f565ad002e7492d7f291b",
    "lastChange": null,
-   "checked": "2026-10-12T18:58:54+02:00",
+   "checked": "2026-10-12T19:23:29+02:00",
    "sizes": []
   },
   "https://www.pwg.ch/liegenschaften/zu-vermieten": {
@@ -1308,7 +2622,7 @@
    "status": "mögliche Treffer",
    "hash": "29f4a9f3377a14e710b9aa9e616dcd888e6c48864bd574245c9fc5fead356a92",
    "lastChange": null,
-   "checked": "2026-10-12T18:58:57+02:00",
+   "checked": "2026-10-12T19:23:32+02:00",
    "sizes": [
     "4.5 Zimmer"
    ]
@@ -1319,7 +2633,7 @@
    "status": "keine passende Grösse erkannt",
    "hash": "58458f961dda56a7f1f257616d6267ae91e52476e59d9ab4d6cb62e17461faa6",
    "lastChange": null,
-   "checked": "2026-10-12T18:58:59+02:00",
+   "checked": "2026-10-12T19:23:34+02:00",
    "sizes": []
   },
   "https://schoenheim.ch/freie-wohnungen/": {
@@ -1328,7 +2642,7 @@
    "status": "keine passende Grösse erkannt",
    "hash": "3d1cd1eb41cc8985af12e63121c3f950eba9e92dfcb8937ad21c7598810dcba4",
    "lastChange": null,
-   "checked": "2026-10-12T18:59:01+02:00",
+   "checked": "2026-10-12T19:23:36+02:00",
    "sizes": []
   },
   "https://gb-selbsthilfe.ch/siedlungen/mietobjekte/": {
@@ -1337,7 +2651,7 @@
    "status": "keine freien Wohnungen",
    "hash": "d7270cfa3b028a43e41210af650b8d89059d1ac7c93b4ace487fa0d9588432d8",
    "lastChange": null,
-   "checked": "2026-10-12T18:59:06+02:00",
+   "checked": "2026-10-12T19:23:44+02:00",
    "sizes": []
   },
   "https://bg-sonnengarten.ch/freie-wohnungen": {
@@ -1346,7 +2660,7 @@
    "status": "keine freien Wohnungen",
    "hash": "3713d086275e91947888fa77ead400cacb013ceec1f388b4d77245a74cfadcae",
    "lastChange": null,
-   "checked": "2026-10-12T18:59:08+02:00",
+   "checked": "2026-10-12T19:23:48+02:00",
    "sizes": []
   },
   "https://www.stadt-zuerich.ch/de/lebenslagen/wohnen/freie-wohnungen.html": {
@@ -1355,7 +2669,7 @@
    "status": "keine passende Grösse erkannt",
    "hash": "50315313f1db2a32e483ef128c1216ac0e5293774ca4ab5924a42837046ec8dc",
    "lastChange": null,
-   "checked": "2026-10-12T18:59:11+02:00",
+   "checked": "2026-10-12T19:23:50+02:00",
    "sizes": []
   },
   "https://aporta-stiftung.ch/liegenschaften/wohnungsbewerbung": {
@@ -1364,7 +2678,7 @@
    "status": "keine passende Grösse erkannt",
    "hash": "39bf10d96d304c09f44d7899e38a0d1a28ab625ca625caaaf23c608269417db2",
    "lastChange": null,
-   "checked": "2026-10-12T18:59:13+02:00",
+   "checked": "2026-10-12T19:23:53+02:00",
    "sizes": []
   },
   "https://bgsj.ch": {
@@ -1373,7 +2687,7 @@
    "status": "keine passende Grösse erkannt",
    "hash": "a1e2d58457a651096f7b3834ca9d4ab40dc0a12897d8097854a649d2a3d0d2f9",
    "lastChange": null,
-   "checked": "2026-10-12T18:59:15+02:00",
+   "checked": "2026-10-12T19:23:55+02:00",
    "sizes": []
   },
   "https://www.sued-ost.ch/siedlungen/freie-wohnungen": {
@@ -1382,7 +2696,7 @@
    "status": "keine passende Grösse erkannt",
    "hash": "8779f88319d6ff9306daa67328f2a15bd7c6e5cb0d0a2fd02d0d5a76eae7cba4",
    "lastChange": null,
-   "checked": "2026-10-12T18:59:17+02:00",
+   "checked": "2026-10-12T19:23:57+02:00",
    "sizes": []
   },
   "https://www.bgturicum.ch/": {
@@ -1391,7 +2705,7 @@
    "status": "keine passende Grösse erkannt",
    "hash": "522fc368e0bc6d70483168bbb31019652b4ec6b79d3d01ac075f0f7c4a1df6c1",
    "lastChange": null,
-   "checked": "2026-10-12T18:59:19+02:00",
+   "checked": "2026-10-12T19:24:00+02:00",
    "sizes": []
   },
   "https://vrenelisgaertli.ch/freie-wohnungen/": {
@@ -1400,7 +2714,7 @@
    "status": "keine freien Wohnungen",
    "hash": "bd0ce26fd5f247b9593571c1174b016a71addaa1a3c0fb334be05710b476698c",
    "lastChange": null,
-   "checked": "2026-10-12T18:59:22+02:00",
+   "checked": "2026-10-12T19:24:03+02:00",
    "sizes": []
   },
   "https://bg-waidberg.ch/wohnen-und-leben/freie-wohnungen/": {
@@ -1409,7 +2723,7 @@
    "status": "keine freien Wohnungen",
    "hash": "f0790317fa36a8733783af4451330826964ffdcfaab693af1da0ca9284ee5636",
    "lastChange": null,
-   "checked": "2026-10-12T18:59:25+02:00",
+   "checked": "2026-10-12T19:24:06+02:00",
    "sizes": []
   },
   "https://www.waidmatt.ch/siedlungen/freie-wohnungen/": {
@@ -1418,7 +2732,7 @@
    "status": "keine passende Grösse erkannt",
    "hash": "f494023838769d06da0938721c8dc5c3f6b7984d7416f62770b7cc52b9124d1c",
    "lastChange": null,
-   "checked": "2026-10-12T18:59:27+02:00",
+   "checked": "2026-10-12T19:24:08+02:00",
    "sizes": []
   },
   "https://bg-werdmuehle.ch/liegenschaften/": {
@@ -1427,7 +2741,7 @@
    "status": "keine passende Grösse erkannt",
    "hash": "dc72afc5f04385da9926730c529f863e982e4c529ec3bf8415b3abaaa34a1adc",
    "lastChange": null,
-   "checked": "2026-10-12T18:59:30+02:00",
+   "checked": "2026-10-12T19:24:12+02:00",
    "sizes": []
   },
   "https://www.bg-zentral.ch/index.php?id=6": {
@@ -1436,7 +2750,7 @@
    "status": "keine passende Grösse erkannt",
    "hash": "35fe56f27f50b4a2ae516c7cf2751cbde516c4cb657aed074d735cd452632049",
    "lastChange": null,
-   "checked": "2026-10-12T18:59:33+02:00",
+   "checked": "2026-10-12T19:24:15+02:00",
    "sizes": []
   },
   "https://www.zumkorn.ch/freie-objekte": {
@@ -1445,7 +2759,7 @@
    "status": "keine passende Grösse erkannt",
    "hash": "a6a5db6ddbc66a09b1c58c14948a7aa90ecc0acb7f1567be9fda45cf7923d9de",
    "lastChange": null,
-   "checked": "2026-10-12T18:59:35+02:00",
+   "checked": "2026-10-12T19:24:17+02:00",
    "sizes": []
   },
   "https://zbwg.ch/": {
@@ -1454,7 +2768,7 @@
    "status": "keine freien Wohnungen",
    "hash": "31e2ce946cbcc3bb77b8c8594a2c74f98a9d2d378aae0920d6b2bc6ecede7d4a",
    "lastChange": null,
-   "checked": "2026-10-12T18:59:38+02:00",
+   "checked": "2026-10-12T19:24:20+02:00",
    "sizes": []
   },
   "https://www.gbz7.ch/": {
@@ -1463,7 +2777,7 @@
    "status": "keine passende Grösse erkannt",
    "hash": "c5307ff426a77eea6915e4b44868df30acd293dd1a5f08a5a6268dd69844b3a9",
    "lastChange": null,
-   "checked": "2026-10-12T18:59:41+02:00",
+   "checked": "2026-10-12T19:24:23+02:00",
    "sizes": []
   },
   "https://gbmz.ch/siedlungen": {
@@ -1472,7 +2786,7 @@
    "status": "keine passende Grösse erkannt",
    "hash": "e1da0ba3eb5cffc34ff64300ed4ba70389919cd9c8b95ed7482042a883221e61",
    "lastChange": null,
-   "checked": "2026-10-12T18:59:45+02:00",
+   "checked": "2026-10-12T19:24:27+02:00",
    "sizes": []
   },
   "https://www.wogeno-zuerich.ch/genossenschaft/freie-wohnungen-und-objekte/": {
@@ -1481,7 +2795,7 @@
    "status": "keine passende Grösse erkannt",
    "hash": "3d2ab65a6487f20fc0115ae75dd0166bfa8228b1345ba1d34e4c39440e09b8dd",
    "lastChange": null,
-   "checked": "2026-10-12T18:59:47+02:00",
+   "checked": "2026-10-12T19:24:29+02:00",
    "sizes": []
   },
   "https://www.rotach.ch/portfolio/vermietung": {
@@ -1490,7 +2804,7 @@
    "status": "mögliche Treffer",
    "hash": "bf71310b23e11b8089e22c476ab5ea4273616a0ed61be31cec05cb967ca18268",
    "lastChange": null,
-   "checked": "2026-10-12T18:59:49+02:00",
+   "checked": "2026-10-12T19:24:32+02:00",
    "sizes": [
     "4.5-Zimmer",
     "5 Zimmer",
@@ -1503,17 +2817,17 @@
    "status": "keine passende Grösse erkannt",
    "hash": "2d898a4b0714ab131a0aec0125da82dd5464ea968ade6be2b73561fdc4170cef",
    "lastChange": null,
-   "checked": "2026-10-12T18:59:51+02:00",
+   "checked": "2026-10-12T19:24:34+02:00",
    "sizes": []
   },
-  "https://www.homegate.ch/mieten-oder-kaufen/alle-inserate/trefferliste?a=gew&l=neutral": {
+  "https://www.gewobag.ch/": {
    "name": "Gewobag",
-   "url": "https://www.homegate.ch/mieten-oder-kaufen/alle-inserate/trefferliste?a=gew&l=neutral",
-   "status": "gesperrt",
-   "hash": null,
+   "url": "https://www.gewobag.ch/",
+   "status": "keine passende Grösse erkannt",
+   "hash": "2361e3308d5a5f9d3e6f7d2e9031eb244ac658819a49fe3a8f92fd9a8f98487f",
    "lastChange": null,
-   "checked": "2026-10-12T18:59:53+02:00",
-   "error": "Website blockiert (HTTP 403)"
+   "checked": "2026-10-12T19:24:36+02:00",
+   "sizes": []
   },
   "https://www.asig.ch": {
    "name": "ASIG",
@@ -1521,7 +2835,7 @@
    "status": "keine passende Grösse erkannt",
    "hash": "d2eb8844ea962dbbf063b8cb35d8c75e0d1e38627f00bcafdeff4cf2e69e2ab1",
    "lastChange": null,
-   "checked": "2026-10-12T18:59:53+02:00",
+   "checked": "2026-10-12T19:24:38+02:00",
    "sizes": []
   },
   "https://bahoge.ch": {
@@ -1530,7 +2844,7 @@
    "status": "keine passende Grösse erkannt",
    "hash": "bb56adefb29201d5443f7d3c023c0f2739f27fbc724d63ac6777bb0de318caea",
    "lastChange": null,
-   "checked": "2026-10-12T18:59:59+02:00",
+   "checked": "2026-10-12T19:24:43+02:00",
    "sizes": []
   },
   "https://bdz.ch/vermietung/": {
@@ -1539,7 +2853,7 @@
    "status": "keine freien Wohnungen",
    "hash": "63a60cd919cfb0467a75d8d6d52b88eac769fee773c7b7d5ba3e0f04f7b1bf9f",
    "lastChange": null,
-   "checked": "2026-10-12T19:00:03+02:00",
+   "checked": "2026-10-12T19:24:47+02:00",
    "sizes": []
   },
   "https://hagenbruenneli.ch": {
@@ -1548,7 +2862,7 @@
    "status": "keine passende Grösse erkannt",
    "hash": "05b0f1ac5051fb4d1a49a3a9457b266294085cd506e97fa51eb53960f3d92a4e",
    "lastChange": null,
-   "checked": "2026-10-12T19:00:05+02:00",
+   "checked": "2026-10-12T19:24:49+02:00",
    "sizes": []
   },
   "http://genossenschaft-gasi.ch/": {
@@ -1557,7 +2871,7 @@
    "status": "keine passende Grösse erkannt",
    "hash": "0656a3139baed03a66fad8d4b05842968edb2658b9a5d2295b53b13508d26852",
    "lastChange": null,
-   "checked": "2026-10-12T19:00:15+02:00",
+   "checked": "2026-10-12T19:24:56+02:00",
    "sizes": []
   },
   "https://bgsilu.ch": {
@@ -1566,7 +2880,7 @@
    "status": "keine passende Grösse erkannt",
    "hash": "af7995dc59b789626482f1e6e087b66db6f45528dd51d3c66e721ae9761ab96d",
    "lastChange": null,
-   "checked": "2026-10-12T19:00:17+02:00",
+   "checked": "2026-10-12T19:24:58+02:00",
    "sizes": []
   },
   "https://einfach-wohnen.ch": {
@@ -1575,7 +2889,7 @@
    "status": "keine passende Grösse erkannt",
    "hash": "a253656950a67088945b57ec61f1748f96ff9681e0d929a07431857a77506736",
    "lastChange": null,
-   "checked": "2026-10-12T19:00:20+02:00",
+   "checked": "2026-10-12T19:25:00+02:00",
    "sizes": []
   },
   "https://sunnigehof.ch": {
@@ -1584,7 +2898,7 @@
    "status": "keine passende Grösse erkannt",
    "hash": "d4686f2b7c6736935b2bfaead46d71ec4feecb122f68c6b16bbd8955af7e66af",
    "lastChange": null,
-   "checked": "2026-10-12T19:00:23+02:00",
+   "checked": "2026-10-12T19:25:04+02:00",
    "sizes": []
   },
   "https://bgsvea.ch": {
@@ -1593,7 +2907,7 @@
    "status": "keine passende Grösse erkannt",
    "hash": "e4e476305dbf72c821ed0d7bf2f82f053b58a0753a7214885ed25b6f01806508",
    "lastChange": null,
-   "checked": "2026-10-12T19:00:26+02:00",
+   "checked": "2026-10-12T19:25:07+02:00",
    "sizes": []
   },
   "https://www.bgz2.ch": {
@@ -1602,7 +2916,7 @@
    "status": "gesperrt",
    "hash": null,
    "lastChange": null,
-   "checked": "2026-10-12T19:00:28+02:00",
+   "checked": "2026-10-12T19:25:09+02:00",
    "error": "robots.txt erlaubt keinen automatischen Abruf"
   },
   "https://wsgz.ch/de/": {
@@ -1611,35 +2925,35 @@
    "status": "keine passende Grösse erkannt",
    "hash": "9ff8f61b6122d5828a06a34cfcea3d85c846045a17707e27e385a32d74445313",
    "lastChange": null,
-   "checked": "2026-10-12T19:00:28+02:00",
+   "checked": "2026-10-12T19:25:10+02:00",
    "sizes": []
   },
-  "https://www.zurlinden.ch": {
+  "https://www.bgzurlinden.ch/freie-mietobjekte": {
    "name": "Zurlinden",
-   "url": "https://www.zurlinden.ch",
-   "status": "Fehler",
-   "hash": null,
+   "url": "https://www.bgzurlinden.ch/freie-mietobjekte",
+   "status": "keine passende Grösse erkannt",
+   "hash": "23ce68d08716b22702eee21e085ff6c26f0374c7d6cf3b12a4a7beb382ccefd7",
    "lastChange": null,
-   "checked": "2026-10-12T19:00:30+02:00",
-   "error": "ConnectionError"
+   "checked": "2026-10-12T19:25:12+02:00",
+   "sizes": []
   },
-  "https://www.bghalde.ch": {
+  "https://www.bg-halde.ch/externe-mietinteressenten/anmeldung-fuer-eine-wohnung-/-wartelisten": {
    "name": "Halde",
-   "url": "https://www.bghalde.ch",
-   "status": "Fehler",
-   "hash": null,
+   "url": "https://www.bg-halde.ch/externe-mietinteressenten/anmeldung-fuer-eine-wohnung-/-wartelisten",
+   "status": "keine passende Grösse erkannt",
+   "hash": "7601ea6886a7e95fdf229290a8174f59ad20268f1d445a32c6f195375b556aea",
    "lastChange": null,
-   "checked": "2026-10-12T19:00:43+02:00",
-   "error": "ConnectionError"
+   "checked": "2026-10-12T19:25:14+02:00",
+   "sizes": []
   },
-  "https://www.bghofgarten.ch": {
-   "name": "Hofgarten",
-   "url": "https://www.bghofgarten.ch",
-   "status": "Fehler",
-   "hash": null,
+  "https://www.geho.ch/vermietung/": {
+   "name": "Hofgarten (geho)",
+   "url": "https://www.geho.ch/vermietung/",
+   "status": "keine passende Grösse erkannt",
+   "hash": "fe89b717594eaf6e3caab4970780b1d2bea2c4f5a0a924ed56a2c87ce2ba0eee",
    "lastChange": null,
-   "checked": "2026-10-12T19:00:46+02:00",
-   "error": "ConnectionError"
+   "checked": "2026-10-12T19:25:16+02:00",
+   "sizes": []
   }
  },
  "runs": [
@@ -1668,6 +2982,22 @@
     "Genossenschaften nicht lesbar: Frohheim, Habitat 8000, Gewobag, Zürich 2 (BGZ2), Zurlinden, Halde, Hofgarten"
    ],
    "new": 0
+  },
+  {
+   "at": "2026-10-12T19:25:57+02:00",
+   "ok": [
+    "Flatfox",
+    "alle-immobilien",
+    "RealAdvisor",
+    "immobilier.ch",
+    "Ron Orp",
+    "Genossenschaften"
+   ],
+   "failed": [
+    "ImmoStreet: 404 Client Error: Not Found for url: https://www.immostreet.ch/de/mieten/wohnung/in-zuerich/preis--4000.0/zimmer-4.5-?sort=cd&pageNum=5",
+    "Genossenschaften nicht lesbar: Frohheim, Zürich 2 (BGZ2)"
+   ],
+   "new": 55
   }
  ],
  "flatfoxSkip": [
@@ -1727,5 +3057,452 @@
   86439057,
   86439586,
   86440421
- ]
+ ],
+ "geocache": {
+  "address:Georg-Kempf-Strasse 20 8046 Zürich": [
+   47.422108,
+   8.497203,
+   8046
+  ],
+  "address:Zwischenbächen 12 8048 Zürich": [
+   47.385174,
+   8.480964,
+   8048
+  ],
+  "address:Margrit Rainer-Str. 12 8050 Zürich": [
+   47.416046,
+   8.538839,
+   8050
+  ],
+  "address:Beckhammer 12 8057 Zürich": [
+   47.40139,
+   8.542037,
+   8057
+  ],
+  "address:Ettenfeldstrasse 2 8052 Zürich": [
+   47.42223,
+   8.551446,
+   8052
+  ],
+  "address:Grossackerstrasse 73 8041 Zürich": [
+   47.323986,
+   8.510226,
+   8041
+  ],
+  "address:Sperletweg 59 8052 Zürich": [
+   47.425308,
+   8.550439,
+   8052
+  ],
+  "address:Schöntalstrasse 30 8004 Zürich": [
+   47.371254,
+   8.525913,
+   8004
+  ],
+  "address:8049 Zürich 8049 Zürich": [
+   47.400131,
+   8.506275,
+   8049
+  ],
+  "address:8008 Zurich 8008 Zürich": [
+   47.363441,
+   8.554247,
+   8008
+  ],
+  "address:8004 Zürich 8004 Zürich": [
+   47.371502,
+   8.529782,
+   8004
+  ],
+  "address:Ellen - Widmann - Weg 2 8050 Zürich": [
+   47.414444,
+   8.539448,
+   8050
+  ],
+  "address:8032 Zürich 8032 Zürich": [
+   47.372757,
+   8.551041,
+   8032
+  ],
+  "address:Wehntalerstrasse 592b 8046 Zürich": [
+   47.421185,
+   8.503569,
+   8046
+  ],
+  "address:Mutschellenstrasse 17 8002 Zürich": [
+   47.353771,
+   8.527191,
+   8002
+  ],
+  "address:Hardgutstrasse 28 8048 Zürich": [
+   47.383266,
+   8.501004,
+   8048
+  ],
+  "address:8003 Zurich 8003 Zürich": [
+   47.369499,
+   8.518587,
+   8003
+  ],
+  "address:Turnerstrasse 37 8006 Zürich": [
+   47.38644,
+   8.542815,
+   8006
+  ],
+  "address:8050 Zurich 8050 Zürich": [
+   47.414478,
+   8.540557,
+   8050
+  ],
+  "address:Carl-Spitteler-Strasse 59-63 8053 Zürich": [
+   47.356602,
+   8.592287,
+   8053
+  ],
+  "address:Luegislandstrasse 103-109 8050 Zürich": [
+   47.407799,
+   8.567907,
+   8051
+  ],
+  "address:8041 Zürich 8041 Zürich": [
+   47.334057,
+   8.515005,
+   8041
+  ],
+  "address:Luegislandstrasse 109 8051 Zürich": [
+   47.408298,
+   8.568529,
+   8051
+  ],
+  "address:8052 Zürich 8052 Zürich": [
+   47.433006,
+   8.545095,
+   8052
+  ],
+  "address:Schwandenholzstr. 270 8046 Zürich": [
+   47.424793,
+   8.520548,
+   8046
+  ],
+  "address:Turnerstrasse 27 8006 Zürich": [
+   47.385822,
+   8.543337,
+   8006
+  ],
+  "address:Luegislandstrasse 103-109 8051 Zürich": [
+   47.408298,
+   8.568529,
+   8051
+  ],
+  "address:Häldeliweg 18 8044 Zürich": [
+   47.377151,
+   8.555061,
+   8044
+  ],
+  "address:Grosswiesenstrasse 8 8051 Zürich": [
+   47.403324,
+   8.583068,
+   8051
+  ],
+  "address:Rautihalde 28 8048 Zürich": [
+   47.386993,
+   8.473866,
+   8048
+  ],
+  "address:Albulastr. 54 8048 Zürich": [
+   47.38863,
+   8.492938,
+   8048
+  ],
+  "address:Katzenseestrasse 19 8046 Zürich": [
+   47.426109,
+   8.504694,
+   8046
+  ],
+  "address:Hagenholzstr. 94 8050 Zürich": [
+   47.413567,
+   8.558337,
+   8050
+  ],
+  "address:Brauerstr. 4 8004 Zürich": [
+   47.377098,
+   8.528666,
+   8004
+  ],
+  "address:Weidmannstrasse 15 8046 Zürich": [
+   47.422947,
+   8.502422,
+   8046
+  ],
+  "address:Doldertal 17 8032 Zürich": [
+   47.373066,
+   8.5648,
+   8032
+  ],
+  "address:8038 Zurich 8038 Zürich": [
+   47.331783,
+   8.532474,
+   8038
+  ],
+  "address:Riedgrabenweg 49 8050 Zürich": [
+   47.408424,
+   8.558416,
+   8050
+  ],
+  "address:Spirackerstrasse 22 8044 Zürich": [
+   47.382721,
+   8.598539,
+   8044
+  ],
+  "address:Grünhaldenstrasse 42 8052 Zürich": [
+   47.418007,
+   8.549093,
+   8052
+  ],
+  "address:Käshaldenstrasse 11 8052 Zürich": [
+   47.429371,
+   8.540723,
+   8052
+  ],
+  "address:Klebestrasse 17 8041 Zürich": [
+   47.325466,
+   8.513895,
+   8041
+  ],
+  "address:Wallisellenstrasse 3 8050 Zürich": [
+   47.410412,
+   8.547116,
+   8050
+  ],
+  "address:Im Sträler 30 8047 Zürich": [
+   47.371403,
+   8.498925,
+   8047
+  ],
+  "address:Giblenstrasse 55 8049 Zürich": [
+   47.412224,
+   8.480392,
+   8049
+  ],
+  "address:Kehlhofstrasse 4 8003 Zürich": [
+   47.369846,
+   8.518454,
+   8003
+  ],
+  "address:Saumackerstrasse 62 8048 Zürich": [
+   47.386406,
+   8.487759,
+   8048
+  ],
+  "address:Riedhofstrasse 299 8049 Zürich": [
+   47.407658,
+   8.485052,
+   8049
+  ],
+  "address:Katzenbachstrasse 239 8052 Zürich": [
+   47.424324,
+   8.540757,
+   8052
+  ],
+  "address:Grossackerstrasse 75 8041 Zürich": [
+   47.323971,
+   8.509839,
+   8041
+  ],
+  "address:Renggerstrasse 19 8038 Zürich": [
+   47.34618,
+   8.53238,
+   8038
+  ],
+  "address:Im Glockenacker 53 8053 Zürich": [
+   47.360546,
+   8.60064,
+   8053
+  ],
+  "address:Niederhofenrain 28 8008 Zürich": [
+   47.348568,
+   8.576233,
+   8008
+  ],
+  "address:Grossackerstrasse 81 8041 Zürich": [
+   47.3241,
+   8.509503,
+   8041
+  ],
+  "address:Tuchmacherstrasse 36 8041 Zürich": [
+   47.340191,
+   8.521377,
+   8041
+  ],
+  "address:Sihlweidstrasse 64 8041 Zürich": [
+   47.327507,
+   8.51837,
+   8041
+  ],
+  "address:Weingartenweg 2 8049 Zürich": [
+   47.401184,
+   8.499769,
+   8049
+  ],
+  "address:Turbinenstrasse 33 8005 Zürich": [
+   47.387066,
+   8.515038,
+   8005
+  ],
+  "zipcode:8052": [
+   47.424488,
+   8.540656,
+   8052
+  ],
+  "address:Seebacherstrasse 32 8052 Zürich": [
+   47.421974,
+   8.545639,
+   8052
+  ],
+  "address:Luegislandstrasse 86 8051 Zürich": [
+   47.407135,
+   8.56858,
+   8051
+  ],
+  "address:Glatttalstrasse 24 8052 Zürich": [
+   47.424084,
+   8.549389,
+   8052
+  ],
+  "address:Käferholzstrasse 246 8046 Zürich": [
+   47.410206,
+   8.524693,
+   8046
+  ],
+  "address:Lavendelweg 3 8050 Zürich": [
+   47.407917,
+   8.552514,
+   8050
+  ],
+  "address:Hegibachstrasse 105 8032 Zürich": [
+   47.365089,
+   8.566609,
+   8032
+  ],
+  "address:Schaffhauserstrasse 456 8052 Zürich": [
+   47.418053,
+   8.546833,
+   8052
+  ],
+  "zipcode:8038": [
+   47.340488,
+   8.53752,
+   8038
+  ],
+  "zipcode:8050": [
+   47.41193,
+   8.5508,
+   8050
+  ],
+  "address:Anwandstrasse 2 8004 Zürich": [
+   47.376072,
+   8.525123,
+   8004
+  ],
+  "zipcode:8041": [
+   47.336338,
+   8.512796,
+   8041
+  ],
+  "address:Am Glattbogen 169 8050 Zürich": [
+   47.411598,
+   8.56815,
+   8050
+  ],
+  "zipcode:8004": [
+   47.378006,
+   8.52337,
+   8004
+  ],
+  "address:Wehntalerstrasse 381 8046 Zürich": [
+   47.414032,
+   8.518545,
+   8046
+  ],
+  "zipcode:8047": [
+   47.373898,
+   8.487007,
+   8047
+  ],
+  "zipcode:8005": [
+   47.386833,
+   8.5205,
+   8005
+  ],
+  "zipcode:8049": [
+   47.408718,
+   8.50045,
+   8049
+  ],
+  "zipcode:8008": [
+   47.353649,
+   8.561379,
+   8008
+  ],
+  "zipcode:8003": [
+   47.372574,
+   8.516149,
+   8003
+  ],
+  "zipcode:8055": [
+   47.364178,
+   8.490266,
+   8055
+  ],
+  "zipcode:8006": [
+   47.385784,
+   8.543152,
+   8006
+  ],
+  "zipcode:8032": [
+   47.366711,
+   8.564458,
+   8032
+  ],
+  "zipcode:8046": [
+   47.419609,
+   8.508303,
+   8046
+  ],
+  "zipcode:8001": [
+   47.372948,
+   8.541609,
+   8001
+  ],
+  "address:Niederhofenrain 28  Zürich": [
+   47.348568,
+   8.576233,
+   8008
+  ],
+  "address:Im Glockenacker 53  Zürich": [
+   47.360546,
+   8.60064,
+   8053
+  ],
+  "address:Turbinenstrasse 33  Zürich": [
+   47.387066,
+   8.515038,
+   8005
+  ],
+  "address:Ellen - Widmann - Weg 2  Zürich": [
+   47.414444,
+   8.539448,
+   8050
+  ],
+  "address:Tuchmacherstrasse 36  Zürich": [
+   47.340191,
+   8.521377,
+   8041
+  ],
+  "address:Grossackerstrasse 81  Zürich": [
+   47.3241,
+   8.509503,
+   8041
+  ]
+ }
 }

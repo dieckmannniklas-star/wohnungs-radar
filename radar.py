@@ -114,6 +114,47 @@ def fetch(url: str, *, as_json: bool = False):
             time.sleep(3)
 
 
+# Befristung erkennen: Formulierungen in Titel und Beschreibung
+TEMP_V = 2  # erhöhen, wenn sich die Erkennung ändert -> bekannte Inserate werden neu geprüft
+_NUM = r"(?:\d{1,2}|zwei|drei|vier|fünf|sechs|sieben|acht|neun|zehn|elf|zwölf)"
+TEMP_PATTERNS = [
+    r"befrist\w*",
+    r"\bauf\s+zeit\b",
+    r"zwischen\s*-?\s*miete\w*|zwischenvermiet\w*",
+    r"unter\s*-?\s*miete\w*|untervermiet\w*|untermieter\w*",
+    r"\btempor[äa]r\w*|\btemporary\b|\btemporaire\b|\bfixed[- ]term\b|\blimited\s+(?:period|time|duration)\b",
+    rf"\b(?:für|for|während)\s+(?:ca\.\s*|rund\s+|circa\s+)?{_NUM}\s*(?:monate|months|wochen|weeks)\b",
+    r"\b(?:max(?:imal)?\.?|höchstens)\s+\d{1,2}\s*(?:monate|jahre)\b",
+    r"\b(?:mietdauer|mietzeit|mietende|vertragsdauer|vermietungsdauer)\b[^.\n]{0,40}?(?:\d{1,2}\s*monate|\bbis\b)",
+    r"\b(?:vom|ab|von)\s+\d{1,2}\.\s*\d{1,2}\.(?:\s*\d{2,4})?\s*(?:bis|-|–)\s*\d{1,2}\.\s*\d{1,2}\.\s*\d{2,4}",
+    r"\b(?:vermietet|verfügbar|frei|mietbar)\s+bis\s+(?:ende\s+)?(?:\d{1,2}\.\s*\d{1,2}\.|\w+\s+\d{4})",
+    r"\bsabbatical\w*|\bausland(?:s)?aufenthalt\w*",
+]
+TEMP_RE = re.compile("|".join(f"(?:{p})" for p in TEMP_PATTERNS), re.I)
+# «unbefristet», «nicht befristet», «keine Untermiete»
+NEGATION_RE = re.compile(r"(?:un|\bnicht\s+|\bkeine?\s+|\bohne\s+|\bnot\s+|\bno\s+)$", re.I)
+# «Untermiete nicht gestattet», «Kaution für 3 Monate»
+FORBIDDEN_AFTER_RE = re.compile(r"^\W{0,3}\s*(?:ist\s+|sind\s+)?(?:nicht|nur\s+mit|not)\s+(?:gestattet|erlaubt|möglich|zulässig|allowed)", re.I)
+DEPOSIT_BEFORE_RE = re.compile(r"(?:kaution|depot|sicherheit|garantie|mietzinsdepot|deposit)\w*\W+(?:\w+\W+){0,3}$", re.I)
+
+
+def temp_reason(text: str) -> str:
+    """Gibt einen kurzen Textausschnitt zurück, falls das Inserat befristet wirkt, sonst ''."""
+    text = text or ""
+    if "<" in text:
+        text = BeautifulSoup(text, "html.parser").get_text(" ")
+    text = re.sub(r"\s+", " ", text)
+    for m in TEMP_RE.finditer(text):
+        if NEGATION_RE.search(text[max(0, m.start() - 8):m.start()]):
+            continue
+        if FORBIDDEN_AFTER_RE.search(text[m.end():m.end() + 40]):
+            continue
+        if DEPOSIT_BEFORE_RE.search(text[max(0, m.start() - 40):m.start()]):
+            continue
+        return "…" + text[max(0, m.start() - 50):m.end() + 50].strip() + "…"
+    return ""
+
+
 def listing_key(address: str, zipcode, rooms) -> str:
     r = to_float(rooms)
     return f"{address}-{zipcode or ''}-{f'{r:g}' if r is not None else ''}"
@@ -126,6 +167,9 @@ def make_listing(*, source, address, zipcode, rooms, rent, rent_type="brutto",
     addr = (address or "").strip()
     key_base = listing_key(addr, zip_int, rooms) if addr else f"{source}-{ext_id}"
     text = f"{landlord} {description}".lower()
+    reason = temp_reason(description)
+    if temporary and not reason:
+        reason = "laut Portal befristet"
     is_coop = bool(re.search(r"genossenschaft|anteilschein|gemeinn[uü]tzig|wogeno|kraftwerk1|\babz\b|\basig\b", text))
     return {
         "id": slug(key_base),
@@ -140,7 +184,9 @@ def make_listing(*, source, address, zipcode, rooms, rent, rent_type="brutto",
         "rentType": rent_type,
         "area": to_float(area),
         "moveIn": move_in or "",
-        "temporary": bool(temporary),
+        "temporary": bool(temporary or reason),
+        "tempHint": reason,
+        "tempV": TEMP_V,
         "url": url,
         "note": "",
         "lat": to_float(lat),
@@ -241,7 +287,7 @@ def source_flatfox(flt: dict, known_ids: dict) -> list[dict]:
         if pk is None or pk in FLATFOX_SKIP:
             continue
         cached = known_ids.get(f"flatfox:{pk}")
-        if cached:  # Details schon bekannt -> nicht erneut abrufen
+        if cached and cached.get("tempV") == TEMP_V:  # Details schon bekannt -> nicht erneut abrufen
             results.append(cached)
             continue
         try:
@@ -263,9 +309,9 @@ def source_flatfox(flt: dict, known_ids: dict) -> list[dict]:
             landlord=(d.get("agency") or {}).get("name") or "",
             quartier=d.get("city") or "",
             move_in=d.get("moving_date") or ("sofort" if d.get("moving_date_type") == "imm" else ""),
-            temporary=bool(d.get("is_temporary")) or "befristet" in (d.get("description_title") or "").lower(),
+            temporary=bool(d.get("is_temporary")),
             ext_id=str(pk),
-            description=(d.get("description_title") or "") + " " + (d.get("description") or "")[:1500],
+            description=(d.get("description_title") or "") + " " + (d.get("description") or ""),
             lat=d.get("latitude"),
             lng=d.get("longitude"),
         )
@@ -339,9 +385,8 @@ def parse_smg_page(html: str, source: str, base_url: str) -> list[dict]:
             landlord=(lister.get("name") if isinstance(lister, dict) else "") or "",
             quartier=addr.get("locality") or "",
             move_in=str((lst.get("availableFrom") or "")),
-            temporary="befristet" in (title + " " + text).lower(),
             ext_id=lid,
-            description=title + " " + text[:1500],
+            description=title + " " + text,
         )
         out.append(listing)
     return out
@@ -467,6 +512,43 @@ def source_paged(name: str, url_tpl: str, parser, pages: int = 5) -> list[dict]:
 # robots.txt verbietet Such-Parameter -> nur die erste Seite je Zimmer-Kategorie
 # --------------------------------------------------------------------------
 
+DETAIL_CACHE: dict[str, str] = {}  # Detailseite -> Befristungs-Hinweis ('' = unbefristet)
+_UESC = re.compile(r"\\u([0-9a-fA-F]{4})")
+
+
+def realadvisor_temp(url: str) -> str:
+    """Prüft die volle Beschreibung auf der Detailseite (steht im eingebetteten Next.js-Datenteil)."""
+    if url in DETAIL_CACHE:
+        return DETAIL_CACHE[url]
+    try:
+        raw = fetch(url)
+    except Exception:  # noqa: BLE001
+        return ""  # beim nächsten Lauf erneut versuchen
+    time.sleep(1)
+    soup = BeautifulSoup(raw, "html.parser")
+    more = soup.find(string=re.compile(r"Mehr lesen"))
+    para = more.find_parent().find_previous("p") if more else None
+    text = para.get_text(" ", strip=True).rstrip(".… ") if para else ""
+    tail = text[-40:]
+    if len(tail) >= 20:
+        # sichtbar ist nur der Anfang; die Fortsetzung steht als JSON-String im Datenteil
+        flat = _UESC.sub(lambda m: chr(int(m.group(1), 16)), raw)
+        rest = ""
+        for m in re.finditer(re.escape(tail), flat):
+            end = flat.find('"', m.end())
+            seg = flat[m.end():end if end > 0 else m.end() + 8000]
+            if seg.startswith("..."):  # das ist die gekürzte, sichtbare Fassung
+                continue
+            seg = re.sub(r"<[^>]+>", " ", seg.replace("\\n", " ").replace("\\", ""))
+            if len(seg) > len(rest):
+                rest = seg
+        text += rest
+    h1 = soup.find("h1")
+    hint = temp_reason((h1.get_text(" ", strip=True) if h1 else "") + " " + text)
+    DETAIL_CACHE[url] = hint
+    return hint
+
+
 def source_realadvisor(flt: dict) -> list[dict]:
     min_whole = max(1, int(float(flt["min_rooms"])))
     cats = [f"{w}-zimmer" for w in range(min_whole, 6)] + ["uber-6-zimmer"]
@@ -500,12 +582,19 @@ def source_realadvisor(flt: dict) -> list[dict]:
                 elif rent is None and re.match(r"^CHF\s*[\d']+$", p):
                     rent = p
             street, zipcode, city = split_address(addr)
-            results.append(make_listing(
+            listing = make_listing(
                 source="RealAdvisor", address=street, zipcode=zipcode, quartier=city,
                 rooms=rooms, area=area, rent=rent, landlord=landlord,
                 url="https://realadvisor.ch" + href, ext_id=href,
                 description=" ".join(parts[:12]),
-            ))
+            )
+            # Detailseite nur für Inserate abrufen, die sonst passen würden
+            rough = dict(listing, zip=listing.get("zip") or int(flt["zip_from"]))
+            if not listing["temporary"] and matches(rough, flt):
+                hint = realadvisor_temp(listing["url"])
+                if hint:
+                    listing["temporary"], listing["tempHint"] = True, hint
+            results.append(listing)
         time.sleep(2)
     if not results:
         raise RuntimeError("keine Inserate lesbar (Seitenaufbau geändert oder Abruf gesperrt)")
@@ -579,8 +668,8 @@ def source_ronorp() -> list[dict]:
             source="Ron Orp", address=street, zipcode=zipcode or p.get("zip_code"), quartier=city or "Zürich",
             rooms=hd.get("num_of_rooms"), rent=p.get("price"), rent_type="",
             area=hd.get("floor_size"), url=f"https://ronorp.net/market/posts/{p.get('seo_slug') or p['id']}",
-            temporary=(hd.get("contract") not in (None, "permanent")) or "befristet" in (p.get("title") or "").lower(),
-            ext_id=str(p["id"]), description=(p.get("title") or "") + " " + desc[:1500],
+            temporary=hd.get("contract") not in (None, "permanent"),
+            ext_id=str(p["id"]), description=(p.get("title") or "") + " " + desc,
             lat=loc.get("latitude"), lng=loc.get("longitude"),
         )
         listing["coop"] = listing["coop"] or "privat"
@@ -756,6 +845,7 @@ def main() -> int:
         FLATFOX_SKIP.update(data.get("flatfoxSkip", []))
     known_ext = {l["extKey"]: l for l in stored.values() if l.get("extKey")}
     GEOCACHE.update(data.get("geocache", {}))
+    DETAIL_CACHE.update(data.get("detailcache", {}))
 
     found: list[dict] = []
     ok_sources, failed = [], []
@@ -829,6 +919,8 @@ def main() -> int:
                     cur["source"] += ", " + l["source"]
                 if cur["kind"] == "markt" and l["kind"] == "genossenschaft":
                     cur["kind"], cur["coop"] = "genossenschaft", l["coop"]
+                if l.get("temporary") and not cur.get("temporary"):
+                    cur["temporary"], cur["tempHint"] = True, l.get("tempHint", "")
                 for k in ("lat", "lng", "area", "moveIn", "coop"):
                     if not cur.get(k) and l.get(k):
                         cur[k] = l[k]
@@ -887,6 +979,7 @@ def main() -> int:
         "runs": runs,
         "flatfoxSkip": sorted(FLATFOX_SKIP)[-3000:],
         "geocache": dict(list(GEOCACHE.items())[-3000:]),
+        "detailcache": dict(list(DETAIL_CACHE.items())[-3000:]),
     }
     DATA_PATH.parent.mkdir(parents=True, exist_ok=True)
     DATA_PATH.write_text(json.dumps(out, ensure_ascii=False, indent=1), encoding="utf-8")

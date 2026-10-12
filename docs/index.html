@@ -52,6 +52,8 @@ input,select{font:inherit;font-size:.92rem;padding:6px 8px;border-radius:6px;bor
 .pill.gen{background:var(--accent-soft);color:var(--accent)}
 .pill.neu{background:var(--new-soft);color:var(--new)}
 .pill.weg{background:var(--gone-soft);color:var(--gone)}
+.pill.tmp{background:var(--gone-soft);color:var(--gone)}
+.tmp-hint{font-style:italic}
 a{color:var(--accent)}
 .empty{background:var(--surface);border:1px dashed var(--line);border-radius:10px;padding:18px;color:var(--muted)}
 details{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:12px 16px}
@@ -98,6 +100,7 @@ details[open] summary{margin-bottom:12px}
     <label for="f-source">Quelle<select id="f-source"><option value="">Alle</option><option>Website</option><option>Flatfox</option><option>ImmoStreet</option><option>alle-immobilien</option><option>RealAdvisor</option><option>immobilier.ch</option><option>Ron Orp</option><option>Homegate</option><option>ImmoScout24</option></select></label>
     <label class="check"><input id="f-coop" type="checkbox"> Nur Genossenschaften</label>
     <label class="check"><input id="f-gone" type="checkbox" checked> Vergebene ausblenden</label>
+    <label class="check"><input id="f-temp" type="checkbox" checked> Befristete ausblenden</label>
   </section>
 
   <section aria-label="Karte">
@@ -209,7 +212,7 @@ const fmtDate=iso=>{try{return new Date(iso).toLocaleString("de-CH",{weekday:"sh
 const chf=v=>typeof v==="number"?"CHF "+Math.round(v).toLocaleString("de-CH"):null;
 
 // ---------- Anzeige-Filter ----------
-const FKEYS=["f-rooms","f-rent","f-zip","f-source","f-coop","f-gone"];
+const FKEYS=["f-rooms","f-rent","f-zip","f-source","f-coop","f-gone","f-temp"];
 function loadView(){const v=store.get("radar-view",{});for(const k of FKEYS){if(!(k in v))continue;const el=$(k);if(el.type==="checkbox")el.checked=v[k];else el.value=v[k]}}
 function saveView(){const v={};for(const k of FKEYS){const el=$(k);v[k]=el.type==="checkbox"?el.checked:el.value}store.set("radar-view",v)}
 for(const k of FKEYS){$(k).addEventListener("input",()=>{saveView();render()})}
@@ -221,6 +224,7 @@ function render(){
   const minR=parseFloat($("f-rooms").value), maxR=parseFloat($("f-rent").value), q=$("f-zip").value.trim().toLowerCase(), src=$("f-source").value;
   const shown=rows.filter(r=>{
     if($("f-gone").checked&&r.status==="weg") return false;
+    if($("f-temp").checked&&r.temporary) return false;
     if($("f-coop").checked&&r.kind!=="genossenschaft") return false;
     if(!isNaN(minR)&&r.rooms!=null&&r.rooms<minR) return false;
     if(!isNaN(maxR)&&r.rent!=null&&r.rent>maxR) return false;
@@ -243,9 +247,10 @@ function render(){
     if(r.kind==="genossenschaft") pill("gen","Genossenschaft");
     if(r.status==="weg") pill("weg","vergeben");
     else if(new Date(r.firstSeen).getTime()>dayAgo) pill("neu","neu");
+    if(r.temporary) pill("tmp","befristet");
     top.append(h,ps);
     const f=document.createElement("div"); f.className="facts";
-    [r.rooms?r.rooms+" Zi.":null, chf(r.rent)?(chf(r.rent)+(r.rentType==="netto"?" netto":"")):null, r.area?r.area+" m²":null, r.moveIn?"Bezug "+r.moveIn:null, r.temporary?"befristet":null]
+    [r.rooms?r.rooms+" Zi.":null, chf(r.rent)?(chf(r.rent)+(r.rentType==="netto"?" netto":"")):null, r.area?r.area+" m²":null, r.moveIn?"Bezug "+r.moveIn:null]
       .filter(Boolean).forEach(x=>{const s=document.createElement("span");s.textContent=x;f.appendChild(s)});
     const m=document.createElement("div"); m.className="meta";
     m.textContent=[r.isHint?null:(r.coop||"Vermieter unbekannt"),"via "+r.source,"gefunden "+fmtDate(r.firstSeen)].filter(Boolean).join(" · ");
@@ -253,6 +258,7 @@ function render(){
     if(f.childNodes.length) el.append(f);
     el.append(m);
     if(r.note){const n=document.createElement("div");n.className="meta";n.textContent=r.note;el.append(n)}
+    if(r.temporary&&r.tempHint){const n=document.createElement("div");n.className="meta tmp-hint";n.textContent="Befristet erkannt: "+r.tempHint;el.append(n)}
     const links=document.createElement("div"); links.className="item-links";
     if(r.url){const a=document.createElement("a");a.href=r.url;a.target="_blank";a.rel="noopener";a.textContent=r.isHint?"Seite öffnen":"Zum Inserat";links.append(a)}
     if(hasPos(r)){
@@ -297,7 +303,7 @@ function initMap(){
 function popupFor(r){
   const d=document.createElement("div");
   const b=document.createElement("b");b.textContent=title(r);d.append(b);
-  const f=[r.rooms?r.rooms+" Zi.":null, chf(r.rent)?(chf(r.rent)+(r.rentType==="netto"?" netto":"")):null, r.area?r.area+" m²":null].filter(Boolean).join(" · ");
+  const f=[r.rooms?r.rooms+" Zi.":null, chf(r.rent)?(chf(r.rent)+(r.rentType==="netto"?" netto":"")):null, r.area?r.area+" m²":null, r.temporary?"befristet":null].filter(Boolean).join(" · ");
   if(f){const s=document.createElement("div");s.textContent=f;d.append(s)}
   const m=document.createElement("div");m.style.color="var(--muted)";m.textContent=[r.kind==="genossenschaft"?"Genossenschaft":null,r.coop&&r.kind!=="genossenschaft"?r.coop:null,"via "+r.source,r.approx?"Lage ungefähr (PLZ)":null].filter(Boolean).join(" · ");d.append(m);
   const l=document.createElement("div");l.className="pop-links";

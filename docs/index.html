@@ -6,6 +6,8 @@
 <title>Wohnungs-Radar Zürich</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;800&family=JetBrains+Mono:wght@400;600&display=swap">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
 <style>
 /* Layout: eine schmale Spalte – Kopf mit Aktionen, Filterleiste, Trefferliste, Einstellungen zum Aufklappen */
 :root{
@@ -63,6 +65,16 @@ details[open] summary{margin-bottom:12px}
 .register li span{min-width:0;overflow-wrap:anywhere}
 .tag{font-family:var(--mono);font-size:.7rem;color:var(--muted);text-align:right}
 .tag.off{color:var(--gone)} .tag.hit{color:var(--new);font-weight:600}
+.mapbox{background:var(--surface);border:1px solid var(--line);border-radius:10px;overflow:hidden}
+#map{height:min(60vh,460px);width:100%;background:var(--bg)}
+.mapnote{font-size:.8rem;color:var(--muted);padding:8px 12px;border-top:1px solid var(--line);display:flex;flex-wrap:wrap;gap:6px 16px}
+.dot{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:5px;vertical-align:-1px}
+.leaflet-popup-content{font-family:var(--display);font-size:.85rem;line-height:1.4;margin:10px 12px}
+.leaflet-popup-content b{display:block;font-size:.92rem;margin-bottom:2px}
+.pop-links{display:flex;gap:10px;margin-top:6px;flex-wrap:wrap}
+.item-links{display:flex;gap:14px;flex-wrap:wrap;font-size:.88rem}
+.linkbtn{background:none;border:0;padding:0;color:var(--accent);text-decoration:underline;cursor:pointer;font:inherit;font-size:.88rem}
+@media (prefers-color-scheme: dark){.leaflet-tile-pane{filter:brightness(.75) contrast(1.1) saturate(.8)}}
 @media (prefers-reduced-motion: reduce){*{transition:none!important}}
 </style>
 </head>
@@ -83,9 +95,17 @@ details[open] summary{margin-bottom:12px}
     <label for="f-rooms">Zimmer ab<input id="f-rooms" type="number" step="0.5" min="1"></label>
     <label for="f-rent">Miete bis CHF<input id="f-rent" type="number" step="100" min="0"></label>
     <label for="f-zip">PLZ / Quartier<input id="f-zip" type="text" placeholder="z. B. 8037 oder Wipkingen"></label>
-    <label for="f-source">Quelle<select id="f-source"><option value="">Alle</option><option>Website</option><option>Flatfox</option><option>Homegate</option><option>ImmoScout24</option></select></label>
+    <label for="f-source">Quelle<select id="f-source"><option value="">Alle</option><option>Website</option><option>Flatfox</option><option>ImmoStreet</option><option>alle-immobilien</option><option>RealAdvisor</option><option>immobilier.ch</option><option>Ron Orp</option><option>Homegate</option><option>ImmoScout24</option></select></label>
     <label class="check"><input id="f-coop" type="checkbox"> Nur Genossenschaften</label>
     <label class="check"><input id="f-gone" type="checkbox" checked> Vergebene ausblenden</label>
+  </section>
+
+  <section aria-label="Karte">
+    <div class="head" style="margin-bottom:10px"><h2>Karte</h2><span class="count" id="mapcount"></span></div>
+    <div class="mapbox">
+      <div id="map"></div>
+      <div class="mapnote"><span><span class="dot" style="background:var(--new)"></span>Genossenschaft</span><span><span class="dot" style="background:var(--accent)"></span>Markt</span><span><span class="dot" style="border:2px dashed var(--muted)"></span>nur PLZ bekannt (ungefähr)</span><span>Kartendaten © OpenStreetMap</span></div>
+    </div>
   </section>
 
   <section>
@@ -112,8 +132,13 @@ details[open] summary{margin-bottom:12px}
       <div class="grid2">
         <label class="check"><input id="s-genossenschaften" type="checkbox"> Genossenschafts-Websites</label>
         <label class="check"><input id="s-flatfox" type="checkbox"> Flatfox</label>
-        <label class="check"><input id="s-homegate" type="checkbox"> Homegate</label>
-        <label class="check"><input id="s-immoscout24" type="checkbox"> ImmoScout24</label>
+        <label class="check"><input id="s-immostreet" type="checkbox"> ImmoStreet</label>
+        <label class="check"><input id="s-alleimmobilien" type="checkbox"> alle-immobilien</label>
+        <label class="check"><input id="s-realadvisor" type="checkbox"> RealAdvisor</label>
+        <label class="check"><input id="s-immobilier" type="checkbox"> immobilier.ch</label>
+        <label class="check"><input id="s-ronorp" type="checkbox"> Ron Orp</label>
+        <label class="check"><input id="s-homegate" type="checkbox"> Homegate (gesperrt)</label>
+        <label class="check"><input id="s-immoscout24" type="checkbox"> ImmoScout24 (gesperrt)</label>
       </div>
       <div class="actions"><button type="button" id="btn-save">Filter speichern und suchen</button></div>
     </div>
@@ -144,6 +169,7 @@ details[open] summary{margin-bottom:12px}
 const $=id=>document.getElementById(id);
 const store={get(k,d){try{const v=localStorage.getItem(k);return v===null?d:JSON.parse(v)}catch(e){return d}},set(k,v){try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}}};
 let DATA=null;
+const SOURCES=["genossenschaften","flatfox","immostreet","alleimmobilien","realadvisor","immobilier","ronorp","homegate","immoscout24"];
 
 // ---------- Verbindung ----------
 function guessRepo(){
@@ -202,6 +228,7 @@ function render(){
     if(q&&!(`${r.zip||""} ${r.quartier||""} ${r.address||""} ${r.coop||""}`.toLowerCase().includes(q))) return false;
     return true;
   }).sort((a,b)=>(a.kind!=="genossenschaft")-(b.kind!=="genossenschaft")||String(b.firstSeen).localeCompare(String(a.firstSeen)));
+  drawMap(shown);
   empty.hidden=shown.length>0;
   if(!shown.length&&rows.length) empty.textContent="Keine Treffer mit diesen Filtern. Lockere die Filter oben, um mehr zu sehen.";
   $("count").textContent=shown.length+" von "+rows.filter(r=>r.status!=="weg").length+" aktiven";
@@ -210,7 +237,7 @@ function render(){
     const el=document.createElement("article"); el.className="item"+(r.status==="weg"?" weg":"");
     const top=document.createElement("div"); top.className="item-top";
     const h=document.createElement("h3");
-    h.textContent=r.isHint?(r.coop+": neue Ausschreibung möglich"):([r.address,[r.zip,r.quartier].filter(Boolean).join(" ")].filter(Boolean).join(", ")||"Adresse unbekannt");
+    h.textContent=title(r);
     const ps=document.createElement("div"); ps.className="pills";
     const pill=(c,t)=>{const s=document.createElement("span");s.className="pill "+c;s.textContent=t;ps.appendChild(s)};
     if(r.kind==="genossenschaft") pill("gen","Genossenschaft");
@@ -226,7 +253,14 @@ function render(){
     if(f.childNodes.length) el.append(f);
     el.append(m);
     if(r.note){const n=document.createElement("div");n.className="meta";n.textContent=r.note;el.append(n)}
-    if(r.url){const a=document.createElement("a");a.href=r.url;a.target="_blank";a.rel="noopener";a.textContent=r.isHint?"Seite öffnen":"Zum Inserat";el.append(a)}
+    const links=document.createElement("div"); links.className="item-links";
+    if(r.url){const a=document.createElement("a");a.href=r.url;a.target="_blank";a.rel="noopener";a.textContent=r.isHint?"Seite öffnen":"Zum Inserat";links.append(a)}
+    if(hasPos(r)){
+      const b=document.createElement("button");b.type="button";b.className="linkbtn";b.textContent="Auf Karte zeigen";
+      b.addEventListener("click",()=>focusMarker(r.id));links.append(b);
+    }
+    const g=gmapsUrl(r); if(g){const a=document.createElement("a");a.href=g;a.target="_blank";a.rel="noopener";a.textContent="Google Maps";links.append(a)}
+    if(links.childNodes.length) el.append(links);
     list.appendChild(el);
   }
 }
@@ -240,6 +274,56 @@ function renderRegister(){
     const t=document.createElement("span"); t.className="tag"+(c.status==="gesperrt"||c.status==="Fehler"?" off":c.status==="mögliche Treffer"?" hit":""); t.textContent=c.status;
     li.append(s,t); reg.append(li);
   }
+}
+
+// ---------- Karte ----------
+let MAP=null, LAYER=null; const MARKERS={};
+const hasPos=r=>typeof r.lat==="number"&&typeof r.lng==="number";
+function title(r){return r.isHint?(r.coop+": neue Ausschreibung möglich"):([r.address,[r.zip,r.quartier].filter(Boolean).join(" ")].filter(Boolean).join(", ")||"Adresse unbekannt")}
+function gmapsUrl(r){
+  let q="";
+  if(r.address) q=[r.address,[r.zip,"Zürich"].filter(Boolean).join(" ")].join(", ");
+  else if(hasPos(r)) q=r.lat+","+r.lng;
+  else if(r.zip) q=r.zip+" Zürich";
+  return q?"https://www.google.com/maps/search/?api=1&query="+encodeURIComponent(q):null;
+}
+function initMap(){
+  if(MAP||typeof L==="undefined") return;
+  MAP=L.map("map",{scrollWheelZoom:false}).setView([47.3769,8.5417],12);
+  L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",{maxZoom:19,attribution:'&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'}).addTo(MAP);
+  LAYER=L.layerGroup().addTo(MAP);
+  MAP.on("focus",()=>MAP.scrollWheelZoom.enable()); MAP.on("blur",()=>MAP.scrollWheelZoom.disable());
+}
+function popupFor(r){
+  const d=document.createElement("div");
+  const b=document.createElement("b");b.textContent=title(r);d.append(b);
+  const f=[r.rooms?r.rooms+" Zi.":null, chf(r.rent)?(chf(r.rent)+(r.rentType==="netto"?" netto":"")):null, r.area?r.area+" m²":null].filter(Boolean).join(" · ");
+  if(f){const s=document.createElement("div");s.textContent=f;d.append(s)}
+  const m=document.createElement("div");m.style.color="var(--muted)";m.textContent=[r.kind==="genossenschaft"?"Genossenschaft":null,r.coop&&r.kind!=="genossenschaft"?r.coop:null,"via "+r.source,r.approx?"Lage ungefähr (PLZ)":null].filter(Boolean).join(" · ");d.append(m);
+  const l=document.createElement("div");l.className="pop-links";
+  if(r.url){const a=document.createElement("a");a.href=r.url;a.target="_blank";a.rel="noopener";a.textContent="Zum Inserat";l.append(a)}
+  const g=gmapsUrl(r); if(g){const a=document.createElement("a");a.href=g;a.target="_blank";a.rel="noopener";a.textContent="In Google Maps öffnen";l.append(a)}
+  d.append(l); return d;
+}
+function drawMap(rows){
+  initMap(); if(!MAP) {$("mapcount").textContent="Karte nicht verfügbar";return}
+  LAYER.clearLayers(); for(const k in MARKERS) delete MARKERS[k];
+  const css=getComputedStyle(document.documentElement);
+  const cGen=css.getPropertyValue("--new").trim(), cMkt=css.getPropertyValue("--accent").trim();
+  const pts=[];
+  for(const r of rows){
+    if(!hasPos(r)) continue;
+    const col=r.kind==="genossenschaft"?cGen:cMkt;
+    const mk=L.circleMarker([r.lat,r.lng],{radius:r.kind==="genossenschaft"?9:7,color:col,weight:2,fillColor:col,fillOpacity:r.approx?0.15:0.65,dashArray:r.approx?"3 3":null,opacity:r.status==="weg"?0.5:1});
+    mk.bindPopup(()=>popupFor(r),{maxWidth:260}); mk.addTo(LAYER); MARKERS[r.id]=mk; pts.push([r.lat,r.lng]);
+  }
+  $("mapcount").textContent=pts.length+" von "+rows.length+" mit Standort";
+  if(pts.length) MAP.fitBounds(pts,{padding:[30,30],maxZoom:15});
+}
+function focusMarker(id){
+  const mk=MARKERS[id]; if(!mk||!MAP) return;
+  document.getElementById("map").scrollIntoView({behavior:"smooth",block:"center"});
+  MAP.setView(mk.getLatLng(),16); mk.openPopup();
 }
 
 // ---------- Aktualisieren ----------
@@ -289,7 +373,7 @@ async function loadConfigIntoForm(){
     const cfg=JSON.parse(decodeURIComponent(escape(atob(file.content.replace(/\n/g,"")))));
     fillAlarm(cfg.filter);
     $("a-mail").checked=!!(cfg.email&&cfg.email.enabled);$("a-mailcoop").checked=!!(cfg.email&&cfg.email.only_coops);
-    for(const s of ["genossenschaften","flatfox","homegate","immoscout24"]) $("s-"+s).checked=!!cfg.sources[s];
+    for(const s of SOURCES) $("s-"+s).checked=!!(cfg.sources||{})[s];
     return {cfg,sha:file.sha};
   }catch(e){ return null }
 }
@@ -303,7 +387,7 @@ $("btn-save").addEventListener("click",async()=>{
     const num=(id,d)=>{const v=parseFloat($(id).value);return isNaN(v)?d:v};
     cfg.filter={min_rooms:num("a-rooms",4.5),max_rent:num("a-rent",4000),zip_from:num("a-zipfrom",8000),zip_to:num("a-zipto",8099),only_coops:$("a-coop").checked,include_temporary:$("a-temp").checked};
     cfg.email={enabled:$("a-mail").checked,only_coops:$("a-mailcoop").checked};
-    for(const s of ["genossenschaften","flatfox","homegate","immoscout24"]) cfg.sources[s]=$("s-"+s).checked;
+    for(const s of SOURCES) cfg.sources[s]=$("s-"+s).checked;
     const content=btoa(unescape(encodeURIComponent(JSON.stringify(cfg,null,2)+"\n")));
     await gh("/contents/config.json",{method:"PUT",body:JSON.stringify({message:"Suchfilter angepasst",content,sha:cur.sha,branch:"main"})});
     say("Filter gespeichert. Die nächste Suche verwendet sie – klicke «Aktualisieren», um sofort zu suchen.");

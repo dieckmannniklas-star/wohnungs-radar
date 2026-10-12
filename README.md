@@ -4,12 +4,12 @@ Sucht alle 4 Stunden nach Mietwohnungen in der Stadt Zürich und meldet neue Tre
 
 **Was es durchsucht**
 
-- **Flatfox, Homegate und ImmoScout24**: alle Inserate, die deinen Filtern entsprechen (Standard: ab 4,5 Zimmer, bis CHF 4'000 brutto, PLZ 8000–8099). Inserate von Genossenschaften werden markiert.
+- **Flatfox, ImmoStreet, alle-immobilien, RealAdvisor, immobilier.ch und Ron Orp**: alle Inserate, die deinen Filtern entsprechen (Standard: ab 4,5 Zimmer, bis CHF 4'000 brutto, PLZ 8000–8099). Inserate von Genossenschaften werden markiert. ImmoStreet und alle-immobilien zeigen die Inserate von Homegate und ImmoScout24, die selbst automatische Abrufe sperren.
 - **Rund 70 Genossenschafts-Websites**: Das Programm erkennt, wenn eine Seite eine passende Zimmerzahl erwähnt, und schickt dir einen Hinweis mit Link. Genaue Miete und Adresse siehst du dann auf der Seite der Genossenschaft.
 
 **Was du bekommst**
 
-- eine Webseite mit allen Treffern, Filtern und einem Button «Aktualisieren»
+- eine Webseite mit allen Treffern, einer Karte, Filtern und einem Button «Aktualisieren»
 - eine E-Mail bei jedem neuen Treffer
 
 ---
@@ -73,6 +73,9 @@ Der Schlüssel bleibt nur in deinem Browser. Ohne Schlüssel lädt «Aktualisier
 ## Gut zu wissen
 
 - Das Programm respektiert die `robots.txt` der Websites. Seiten, die automatische Abrufe verbieten, erscheinen in der Liste als «gesperrt» und werden übersprungen. Newhome ist aus diesem Grund nicht dabei.
-- Homegate und ImmoScout24 ändern gelegentlich ihren Seitenaufbau. Liefert eine Quelle plötzlich nichts mehr, steht das bei «Letzte Suche … teilweise nicht erreichbar».
+- Homegate, ImmoScout24, Comparis, Newhome, Tutti und Anibis sperren Abrufe von GitHub-Servern (HTTP 403) und sind deshalb aus.
+- RealAdvisor erlaubt nur die erste Ergebnisseite je Zimmer-Kategorie, Ron Orp liefert ohne JavaScript nur die rund 10 neuesten Wohn-Inserate. Inserate dieser beiden Quellen gelten erst nach 14 Tagen ohne Sichtung als vergeben.
+- Die Karte nutzt OpenStreetMap; jeder Treffer hat zusätzlich einen Link «Google Maps». Standorte ohne genaue Adresse werden über das amtliche Adressverzeichnis (geo.admin.ch) ermittelt oder ungefähr am PLZ-Mittelpunkt gezeigt.
+- Portale ändern gelegentlich ihren Seitenaufbau. Liefert eine Quelle plötzlich nichts mehr, steht das bei «Letzte Suche … teilweise nicht erreichbar».
 - GitHub pausiert geplante Abläufe in Repositories ohne Aktivität nach 60 Tagen. Da jede Suche Ergebnisse speichert, passiert das hier normalerweise nicht; falls doch, unter Actions wieder aktivieren.
 - Zeiten der automatischen Suche: alle 4 Stunden um :43 (UTC), also z. B. 02:43, 06:43, 10:43, 14:43, 18:43, 22:43 Uhr Schweizer Sommerzeit.

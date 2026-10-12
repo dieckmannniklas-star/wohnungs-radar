@@ -9,8 +9,13 @@
   },
   "sources": {
     "flatfox": true,
-    "homegate": true,
-    "immoscout24": true,
+    "homegate": false,
+    "immoscout24": false,
+    "immostreet": true,
+    "alleimmobilien": true,
+    "realadvisor": true,
+    "immobilier": true,
+    "ronorp": true,
     "genossenschaften": true
   },
   "email": {
@@ -35,7 +40,7 @@
     ["Frohheim", "https://bgf.zuerich/freiemietobjekte/"],
     ["GISA", "https://www.bg-gisa.ch/wohnungen"],
     ["Glattal", "https://www.bg-glattal.ch/vermietung"],
-    ["Habitat 8000", "https://www.habitat8000.ch/freie-objekte/"],
+    ["Habitat 8000", "https://www.habitat8000.ch/"],
     ["Heimelig", "https://www.bg-heimelig.ch"],
     ["Im Michel", "https://www.bgim.ch/"],
     ["Invia", "https://www.invia-zuerich.ch"],
@@ -72,7 +77,7 @@
     ["Wogeno", "https://www.wogeno-zuerich.ch/genossenschaft/freie-wohnungen-und-objekte/"],
     ["Rotach", "https://www.rotach.ch/portfolio/vermietung"],
     ["NENA1", "https://www.nena1.ch/index.html"],
-    ["Gewobag", "https://www.homegate.ch/mieten-oder-kaufen/alle-inserate/trefferliste?a=gew&l=neutral"],
+    ["Gewobag", "https://www.gewobag.ch/"],
     ["ASIG", "https://www.asig.ch"],
     ["Bahoge", "https://bahoge.ch"],
     ["Denzlerstrasse", "https://bdz.ch/vermietung/"],
@@ -84,8 +89,8 @@
     ["SVEA", "https://bgsvea.ch"],
     ["Zürich 2 (BGZ2)", "https://www.bgz2.ch"],
     ["WSGZ", "https://wsgz.ch/de/"],
-    ["Zurlinden", "https://www.zurlinden.ch"],
-    ["Halde", "https://www.bghalde.ch"],
-    ["Hofgarten", "https://www.bghofgarten.ch"]
+    ["Zurlinden", "https://www.bgzurlinden.ch/freie-mietobjekte", "https://backend.bgzurlinden.ch/api/freie-mietobjekte?populate[Modul][on][modules.freie-objekte][populate][freie_objektes]=true"],
+    ["Halde", "https://www.bg-halde.ch/externe-mietinteressenten/anmeldung-fuer-eine-wohnung-/-wartelisten"],
+    ["Hofgarten (geho)", "https://www.geho.ch/vermietung/"]
   ]
 }

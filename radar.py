@@ -114,12 +114,17 @@ def fetch(url: str, *, as_json: bool = False):
             time.sleep(3)
 
 
+def listing_key(address: str, zipcode, rooms) -> str:
+    r = to_float(rooms)
+    return f"{address}-{zipcode or ''}-{f'{r:g}' if r is not None else ''}"
+
+
 def make_listing(*, source, address, zipcode, rooms, rent, rent_type="brutto",
                  area=None, url="", landlord="", quartier="", move_in="",
-                 temporary=False, ext_id="", description="") -> dict:
+                 temporary=False, ext_id="", description="", lat=None, lng=None) -> dict:
     zip_int = int(zipcode) if str(zipcode or "").isdigit() else None
     addr = (address or "").strip()
-    key_base = f"{addr}-{zip_int or ''}-{rooms or ''}" if addr else f"{source}-{ext_id}"
+    key_base = listing_key(addr, zip_int, rooms) if addr else f"{source}-{ext_id}"
     text = f"{landlord} {description}".lower()
     is_coop = bool(re.search(r"genossenschaft|anteilschein|gemeinn[uü]tzig|wogeno|kraftwerk1|\babz\b|\basig\b", text))
     return {
@@ -138,6 +143,8 @@ def make_listing(*, source, address, zipcode, rooms, rent, rent_type="brutto",
         "temporary": bool(temporary),
         "url": url,
         "note": "",
+        "lat": to_float(lat),
+        "lng": to_float(lng),
     }
 
 
@@ -147,13 +154,71 @@ def matches(listing: dict, flt: dict) -> bool:
         return False
     if rent is None or rent > float(flt["max_rent"]):
         return False
-    if zip_ is None or not (int(flt["zip_from"]) <= zip_ <= int(flt["zip_to"])):
+    if zip_ is None:
+        # z. B. Ron Orp: Inserat ist der Stadt Zürich zugeordnet, nennt aber keine Adresse
+        if not listing.get("zipOptional"):
+            return False
+    elif not (int(flt["zip_from"]) <= zip_ <= int(flt["zip_to"])):
         return False
     if flt.get("only_coops") and listing.get("kind") != "genossenschaft":
         return False
     if not flt.get("include_temporary", True) and listing.get("temporary"):
         return False
     return True
+
+
+# --------------------------------------------------------------------------
+# Koordinaten für die Karte (amtliches Gebäudeadressverzeichnis via geo.admin.ch)
+# --------------------------------------------------------------------------
+
+GEO_URL = "https://api3.geo.admin.ch/rest/services/api/SearchServer"
+GEOCACHE: dict[str, list | None] = {}
+
+
+def _geo_query(text: str, origins: str):
+    key = f"{origins}:{text}"
+    if key in GEOCACHE:
+        return GEOCACHE[key]
+    result = None
+    try:
+        r = session.get(GEO_URL, params={"searchText": text, "type": "locations", "origins": origins,
+                                         "limit": 1, "sr": 4326}, timeout=TIMEOUT)
+        r.raise_for_status()
+        hits = r.json().get("results") or []
+        if hits:
+            a = hits[0]["attrs"]
+            m = re.search(r"\b(\d{4})\b", re.sub(r"<[^>]+>", "", a.get("label", "")))
+            result = [round(a["lat"], 6), round(a["lon"], 6), int(m.group(1)) if m else None]
+        time.sleep(0.2)
+    except (requests.RequestException, KeyError, ValueError):
+        return None  # nicht zwischenspeichern, beim nächsten Lauf erneut versuchen
+    GEOCACHE[key] = result
+    return result
+
+
+def locate(listing: dict) -> None:
+    """Ergänzt fehlende Koordinaten (und PLZ) anhand der Adresse; sonst Mittelpunkt der PLZ."""
+    addr, zip_ = listing.get("address") or "", listing.get("zip")
+    has_number = bool(re.search(r"\d", addr))
+    if listing.get("lat") and listing.get("lng") and zip_:
+        return
+    if addr and has_number:
+        hit = _geo_query(f"{addr} {zip_ or ''} Zürich".strip(), "address")
+        if hit:
+            if not (listing.get("lat") and listing.get("lng")):
+                listing["lat"], listing["lng"] = hit[0], hit[1]
+            if not zip_ and hit[2]:
+                listing["zip"] = hit[2]
+            return
+    if listing.get("zip") and not (listing.get("lat") and listing.get("lng")):
+        hit = _geo_query(str(listing["zip"]), "zipcode")
+        if hit:
+            listing["lat"], listing["lng"] = hit[0], hit[1]
+            listing["approx"] = True
+
+
+def clean_url(url: str) -> str:
+    return url.split("?utm_")[0].split("&utm_")[0]
 
 
 # --------------------------------------------------------------------------
@@ -201,6 +266,8 @@ def source_flatfox(flt: dict, known_ids: dict) -> list[dict]:
             temporary=bool(d.get("is_temporary")) or "befristet" in (d.get("description_title") or "").lower(),
             ext_id=str(pk),
             description=(d.get("description_title") or "") + " " + (d.get("description") or "")[:1500],
+            lat=d.get("latitude"),
+            lng=d.get("longitude"),
         )
         listing["extKey"] = f"flatfox:{pk}"
         if not matches(listing, flt):
@@ -295,6 +362,229 @@ def source_smg(name: str, url_tpl: str, base_url: str, pages: int = 4) -> list[d
 
 
 # --------------------------------------------------------------------------
+# Quellen: ImmoStreet und alle-immobilien (Ableger von Homegate, Seiten als HTML)
+# --------------------------------------------------------------------------
+
+ADDR_RE = re.compile(r"^(?P<street>.*?)[,\s]+(?P<zip>\d{4})\s+(?P<city>.+)$")
+
+
+def split_address(text: str) -> tuple[str, str, str]:
+    """'Weingartenweg 2, 8049 Zürich' -> (Strasse, PLZ, Ort)."""
+    text = re.sub(r"\s+", " ", text or "").strip()
+    m = ADDR_RE.match(text)
+    if m:
+        return m.group("street").strip(" ,"), m.group("zip"), m.group("city").strip()
+    m = re.match(r"^(\d{4})\s+(.+)$", text)
+    if m:
+        return "", m.group(1), m.group(2)
+    return text, "", ""
+
+
+def smg_satellite_url(host: str, flt: dict, sort: bool = True) -> str:
+    rooms = f"{float(flt['min_rooms']):g}"
+    # alle-immobilien liefert mit Sortier-Parameter eine Fehlerseite
+    return (f"https://{host}/de/mieten/wohnung/in-zuerich/preis--{float(flt['max_rent']):.1f}"
+            f"/zimmer-{rooms}-?{'sort=cd&' if sort else ''}pageNum={{page}}")
+
+
+def parse_immostreet(html: str) -> list[dict]:
+    soup = BeautifulSoup(html, "html.parser")
+    out = []
+    for art in soup.select("article.results-item"):
+        link = art.select_one("a.link[href]")
+        loc = art.select_one(".location")
+        if not link or not loc:
+            continue
+        street, zipcode, city = split_address(loc.get_text(" ", strip=True))
+        attrs = {}
+        for li in art.select(".results-attributes li"):
+            k, v = li.select_one(".key"), li.select_one(".value")
+            if k and v:
+                attrs[k.get_text(strip=True)] = v.get_text(" ", strip=True)
+        price = art.select_one(".results-price .amount")
+        try:
+            coords = json.loads(art.get("data-map-location") or "{}")
+        except json.JSONDecodeError:
+            coords = {}
+        title = art.select_one(".title")
+        out.append(make_listing(
+            source="ImmoStreet", address=street, zipcode=zipcode, quartier=city,
+            rooms=attrs.get("Zimmer"), area=attrs.get("Wohnfläche"),
+            rent=price.get_text(strip=True) if price else None,
+            url=clean_url(link["href"]), ext_id=link.get("data-ad-id", ""),
+            description=title.get_text(" ", strip=True) if title else "",
+            lat=coords.get("lat"), lng=coords.get("lng"),
+        ))
+    return out
+
+
+def parse_alleimmo(html: str) -> list[dict]:
+    soup = BeautifulSoup(html, "html.parser")
+    out = []
+    for a in soup.select("a.search-results__list__item[href]"):
+        tags = {}
+        for holder in a.select(".tag-holder"):
+            label = holder.select_one(".tags__tag")
+            if label:
+                name = label.get_text(strip=True)
+                label.extract()
+                tags[name] = holder.get_text(" ", strip=True)
+        street, zipcode, city = split_address(tags.get("Adresse", ""))
+        title = a.select_one(".search-results__list__item__meta__title")
+        desc = a.select_one(".search-results__list__item__meta__description")
+        out.append(make_listing(
+            source="alle-immobilien", address=street, zipcode=zipcode, quartier=city,
+            rooms=tags.get("Zimmer"), area=tags.get("Fläche"), rent=tags.get("Preis"),
+            url=clean_url(a["href"]), ext_id=a.get("data-ad-id", ""),
+            description=(title.get_text(" ", strip=True) if title else "") + " "
+                        + (desc.get_text(" ", strip=True) if desc else ""),
+        ))
+    return out
+
+
+def source_paged(name: str, url_tpl: str, parser, pages: int = 5) -> list[dict]:
+    results, seen = [], set()
+    for page in range(1, pages + 1):
+        found = [l for l in parser(fetch(url_tpl.format(page=page))) if l["url"] not in seen]
+        if not found:
+            if page == 1:
+                raise RuntimeError("keine Inserate lesbar (Seitenaufbau geändert oder Abruf gesperrt)")
+            break
+        seen.update(l["url"] for l in found)
+        results.extend(found)
+        time.sleep(2)
+    return results
+
+
+# --------------------------------------------------------------------------
+# Quelle: RealAdvisor (sammelt Inserate vieler Portale)
+# robots.txt verbietet Such-Parameter -> nur die erste Seite je Zimmer-Kategorie
+# --------------------------------------------------------------------------
+
+def source_realadvisor(flt: dict) -> list[dict]:
+    min_whole = max(1, int(float(flt["min_rooms"])))
+    cats = [f"{w}-zimmer" for w in range(min_whole, 6)] + ["uber-6-zimmer"]
+    results, seen = [], set()
+    for slug_ in cats:
+        html = fetch(f"https://realadvisor.ch/de/mieten/stadt-zurich/wohnung/{slug_}")
+        soup = BeautifulSoup(html, "html.parser")
+        for a in soup.select('a[href^="/de/mieten/wohnung/"]'):
+            href = a["href"]
+            if href in seen:
+                continue
+            card = a
+            for _ in range(8):
+                txt = card.get_text(" | ", strip=True)
+                if "Zimmer" in txt and "CHF" in txt:
+                    break
+                card = card.parent
+            else:
+                continue
+            seen.add(href)
+            parts = [p.strip() for p in card.get_text(" | ", strip=True).split(" | ")]
+            rooms = area = rent = None
+            addr, landlord = "", ""
+            for i, p in enumerate(parts):
+                m = re.match(r"^([\d.,]+)\s*Zimmer\b(?:\s*•\s*([\d.,]+)\s*m²)?", p)
+                if m and rooms is None:
+                    rooms, area = m.group(1), m.group(2)
+                    landlord = parts[i - 1] if i and parts[i - 1] not in ("Top", "Neu") else ""
+                    if i + 1 < len(parts):
+                        addr = parts[i + 1]
+                elif rent is None and re.match(r"^CHF\s*[\d']+$", p):
+                    rent = p
+            street, zipcode, city = split_address(addr)
+            results.append(make_listing(
+                source="RealAdvisor", address=street, zipcode=zipcode, quartier=city,
+                rooms=rooms, area=area, rent=rent, landlord=landlord,
+                url="https://realadvisor.ch" + href, ext_id=href,
+                description=" ".join(parts[:12]),
+            ))
+        time.sleep(2)
+    if not results:
+        raise RuntimeError("keine Inserate lesbar (Seitenaufbau geändert oder Abruf gesperrt)")
+    return results
+
+
+# --------------------------------------------------------------------------
+# Quelle: immobilier.ch (alle Inserate der Stadt Zürich, Filter lokal)
+# --------------------------------------------------------------------------
+
+def parse_immobilier(html: str) -> list[dict]:
+    soup = BeautifulSoup(html, "html.parser")
+    out = []
+    for item in soup.select("div.filter-item[data-id]"):
+        link = next((a for a in item.select("a[href]")
+                     if re.search(r"-\d{6,}$", a["href"])), None)
+        if not link:
+            continue
+        txt = item.get_text(" | ", strip=True)
+        m_rent = re.search(r"CHF\s*([\d']+)(?:\.-)?\s*/\s*Monat(?:\s*\(\+\s*([\d']+))?", txt)
+        rent, rent_type = None, "brutto"
+        if m_rent:
+            rent = to_float(m_rent.group(1))
+            if m_rent.group(2):
+                rent += to_float(m_rent.group(2)) or 0
+            else:
+                rent_type = "netto"
+        m_rooms = re.search(r"(\d+(?:[.,]\d)?|ein)\s+Zimmer", txt)
+        rooms = None
+        if m_rooms:
+            rooms = 1 if m_rooms.group(1) == "ein" else m_rooms.group(1)
+        m_addr = re.search(r"\|\s*Zürich,\s*([^|]+?)\s*\|", txt)
+        m_area = re.search(r"\|\s*(\d+)\s*m\s*\|", txt)
+        lat = lng = None
+        if item.get("data-latlng"):
+            try:
+                lat, lng = (float(x) for x in item["data-latlng"].split(","))
+            except ValueError:
+                pass
+        out.append(make_listing(
+            source="immobilier.ch", address=m_addr.group(1) if m_addr else "", zipcode=None,
+            quartier="Zürich", rooms=rooms, rent=rent, rent_type=rent_type,
+            area=m_area.group(1) if m_area else None,
+            url=urljoin("https://www.immobilier.ch", link["href"]), ext_id=item["data-id"],
+            landlord=link["href"].split("/")[-2].rsplit("-", 1)[0].replace("-", " "),
+            description=link.get_text(" ", strip=True), lat=lat, lng=lng,
+        ))
+    return out
+
+
+# --------------------------------------------------------------------------
+# Quelle: Ron Orp (Kleinanzeigen; ohne JavaScript nur die ~10 neuesten Wohn-Inserate)
+# --------------------------------------------------------------------------
+
+def source_ronorp() -> list[dict]:
+    html = fetch("https://ronorp.net/zurich/market/housing")
+    soup = BeautifulSoup(html, "html.parser")
+    tag = soup.find("script", id="__NEXT_DATA__")
+    if not tag:
+        raise RuntimeError("keine Inserate lesbar (Seitenaufbau geändert)")
+    posts = (json.loads(tag.string)["props"]["pageProps"].get("ssrPostTypeListPosts") or {}).get("posts") or []
+    results = []
+    for p in posts:
+        hd = p.get("housing_detail") or {}
+        if not p.get("id") or (p.get("sub_category") or {}).get("name") != "Wohnung" or hd.get("looking_to") != "rent":
+            continue
+        loc = p.get("location") or {}
+        street, zipcode, city = split_address(re.sub(r",\s*Schweiz$", "", loc.get("address") or ""))
+        desc = BeautifulSoup(p.get("description") or "", "html.parser").get_text(" ", strip=True)
+        listing = make_listing(
+            source="Ron Orp", address=street, zipcode=zipcode or p.get("zip_code"), quartier=city or "Zürich",
+            rooms=hd.get("num_of_rooms"), rent=p.get("price"), rent_type="",
+            area=hd.get("floor_size"), url=f"https://ronorp.net/market/posts/{p.get('seo_slug') or p['id']}",
+            temporary=(hd.get("contract") not in (None, "permanent")) or "befristet" in (p.get("title") or "").lower(),
+            ext_id=str(p["id"]), description=(p.get("title") or "") + " " + desc[:1500],
+            lat=loc.get("latitude"), lng=loc.get("longitude"),
+        )
+        listing["coop"] = listing["coop"] or "privat"
+        listing["zipOptional"] = hd.get("city_or_agglo") == "city"
+        listing["note"] = (p.get("title") or "")[:200]
+        results.append(listing)
+    return results
+
+
+# --------------------------------------------------------------------------
 # Quelle: Genossenschafts-Websites (Änderungen erkennen)
 # --------------------------------------------------------------------------
 
@@ -331,11 +621,13 @@ def page_text(html: str) -> str:
 def source_coops(coops: list, flt: dict, prev_state: dict) -> tuple[list[dict], dict, list[str]]:
     rx = rooms_pattern(float(flt["min_rooms"]))
     hits, state, failed = [], {}, []
-    for name, url in coops:
+    for name, url, *rest in coops:
+        # optional dritter Eintrag: Adresse, unter der die Daten tatsächlich stehen (z. B. Schnittstelle)
+        fetch_url = rest[0] if rest else url
         entry = {"name": name, "url": url, "status": "unbekannt", "hash": None,
                  "lastChange": prev_state.get(url, {}).get("lastChange"), "checked": now_iso()}
         try:
-            text = page_text(fetch(url))
+            text = page_text(fetch(fetch_url))
         except Blocked as e:
             entry["status"] = "gesperrt"
             entry["error"] = str(e)
@@ -441,6 +733,9 @@ def send_mail(subject: str, body: str) -> None:
 # Hauptablauf
 # --------------------------------------------------------------------------
 
+PARTIAL_SOURCES = {"RealAdvisor", "Ron Orp"}
+
+
 def main() -> int:
     cfg = json.loads(CONFIG_PATH.read_text(encoding="utf-8"))
     flt, src = cfg["filter"], cfg["sources"]
@@ -454,6 +749,7 @@ def main() -> int:
     if data.get("filter") == flt:  # bei geänderten Filtern alles neu prüfen
         FLATFOX_SKIP.update(data.get("flatfoxSkip", []))
     known_ext = {l["extKey"]: l for l in stored.values() if l.get("extKey")}
+    GEOCACHE.update(data.get("geocache", {}))
 
     found: list[dict] = []
     ok_sources, failed = [], []
@@ -482,6 +778,20 @@ def main() -> int:
             "https://www.immoscout24.ch/de/wohnung/mieten/ort-zuerich?nrf="
             f"{flt['min_rooms']}&pt={int(flt['max_rent'])}&pn={{page}}",
             "https://www.immoscout24.ch"))
+    if src.get("immostreet"):
+        run_source("ImmoStreet", lambda: source_paged(
+            "ImmoStreet", smg_satellite_url("www.immostreet.ch", flt), parse_immostreet))
+    if src.get("alleimmobilien"):
+        run_source("alle-immobilien", lambda: source_paged(
+            "alle-immobilien", smg_satellite_url("www.alle-immobilien.ch", flt, sort=False), parse_alleimmo))
+    if src.get("realadvisor"):
+        run_source("RealAdvisor", lambda: source_realadvisor(flt))
+    if src.get("immobilier"):
+        run_source("immobilier.ch", lambda: source_paged(
+            "immobilier.ch", "https://www.immobilier.ch/de/mieten/wohnung/zurich/zurich/seite-{page}",
+            parse_immobilier, pages=15))
+    if src.get("ronorp"):
+        run_source("Ron Orp", source_ronorp)
 
     coop_state = data.get("coops", {})
     if src.get("genossenschaften"):
@@ -497,6 +807,15 @@ def main() -> int:
     # Treffer filtern (Hinweise von Genossenschafts-Seiten haben keine Miete/PLZ und gehen direkt durch)
     current: dict[str, dict] = {}
     for l in found:
+        if not l.get("isHint"):
+            # Koordinaten/PLZ nur für Inserate nachschlagen, die bei Zimmern und Miete passen
+            rough = dict(l, zip=l.get("zip") or int(flt["zip_from"]))
+            if not matches(rough, flt):
+                continue
+            had_zip = bool(l.get("zip"))
+            locate(l)
+            if l["address"] and not had_zip and l.get("zip"):  # PLZ erst durch Nachschlagen bekannt
+                l["id"] = slug(listing_key(l["address"], l["zip"], l["rooms"]))
         if l.get("isHint") or matches(l, flt):
             if l["id"] in current:  # dieselbe Wohnung auf mehreren Portalen
                 cur = current[l["id"]]
@@ -504,6 +823,11 @@ def main() -> int:
                     cur["source"] += ", " + l["source"]
                 if cur["kind"] == "markt" and l["kind"] == "genossenschaft":
                     cur["kind"], cur["coop"] = "genossenschaft", l["coop"]
+                for k in ("lat", "lng", "area", "moveIn", "coop"):
+                    if not cur.get(k) and l.get(k):
+                        cur[k] = l[k]
+                if cur.get("approx") and l.get("lat") and not l.get("approx"):
+                    cur["lat"], cur["lng"], cur["approx"] = l["lat"], l["lng"], False
                 continue
             current[l["id"]] = l
 
@@ -528,7 +852,14 @@ def main() -> int:
             continue
         sources = {s.strip() for s in l.get("source", "").split(",")}
         relevant = {"Website": "Genossenschaften"}.get
-        if all((relevant(s) or s) in ok_sources for s in sources):
+        complete = sources - PARTIAL_SOURCES
+        if complete:
+            gone = all((relevant(s) or s) in ok_sources for s in complete)
+        else:
+            # Quellen, von denen nur die neuesten Inserate gelesen werden: erst nach 14 Tagen als weg werten
+            last = l.get("lastSeen") or l.get("firstSeen")
+            gone = bool(last) and datetime.fromisoformat(last).timestamp() < time.time() - 14 * 86400
+        if gone:
             l["status"] = "weg"
             l["goneSince"] = ts
 
@@ -549,6 +880,7 @@ def main() -> int:
         "coops": coop_state,
         "runs": runs,
         "flatfoxSkip": sorted(FLATFOX_SKIP)[-3000:],
+        "geocache": dict(list(GEOCACHE.items())[-3000:]),
     }
     DATA_PATH.parent.mkdir(parents=True, exist_ok=True)
     DATA_PATH.write_text(json.dumps(out, ensure_ascii=False, indent=1), encoding="utf-8")

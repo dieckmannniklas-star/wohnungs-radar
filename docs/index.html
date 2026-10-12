@@ -1,0 +1,326 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Wohnungs-Radar Zürich</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;800&family=JetBrains+Mono:wght@400;600&display=swap">
+<style>
+/* Layout: eine schmale Spalte – Kopf mit Aktionen, Filterleiste, Trefferliste, Einstellungen zum Aufklappen */
+:root{
+  --bg:#f3f5f8; --surface:#ffffff; --fg:#152030; --muted:#5b6778; --line:#d8dee7;
+  --accent:#0b5fa5; --accent-fg:#ffffff; --accent-soft:#e3eef8; --new:#1d7a46; --new-soft:#e2f3e9; --gone:#8a5a12; --gone-soft:#f6ecdb; --err:#b3261e;
+  --display:"Archivo",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --mono:"JetBrains Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
+  color-scheme:light;
+}
+@media (prefers-color-scheme: dark){:root{
+  --bg:#0f1621; --surface:#172131; --fg:#e4e9f1; --muted:#97a3b5; --line:#2a374b;
+  --accent:#6fb1ec; --accent-fg:#0f1621; --accent-soft:#1a2f47; --new:#6fcf97; --new-soft:#173528; --gone:#e0b46a; --gone-soft:#3a2e18; --err:#f2b8b5; color-scheme:dark}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:var(--display);font-size:15px;line-height:1.5}
+.wrap{max-width:820px;margin:0 auto;padding-inline:16px;padding-block:24px 56px;display:grid;gap:22px}
+h1{font-weight:800;font-size:1.8rem;letter-spacing:-.02em;margin:0;text-wrap:balance}
+h2{font-size:1.05rem;font-weight:600;margin:0}
+.head{display:flex;flex-wrap:wrap;gap:12px;align-items:flex-end;justify-content:space-between}
+.sub{color:var(--muted);margin:4px 0 0;font-size:.9rem}
+.actions{display:flex;gap:8px;flex-wrap:wrap}
+button,.btn{font:inherit;font-size:.9rem;padding:8px 14px;border-radius:8px;border:1px solid var(--line);background:var(--surface);color:var(--fg);cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;gap:6px}
+button.primary{background:var(--accent);color:var(--accent-fg);border-color:var(--accent)}
+button:disabled{opacity:.6;cursor:progress}
+button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.msg{font-size:.88rem;color:var(--muted);min-height:1.3em}
+.msg.err{color:var(--err)}
+.filters{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:10px;background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:14px}
+label{display:grid;gap:3px;font-size:.78rem;color:var(--muted);text-transform:uppercase;letter-spacing:.05em}
+input,select{font:inherit;font-size:.92rem;padding:6px 8px;border-radius:6px;border:1px solid var(--line);background:var(--bg);color:var(--fg);width:100%;min-width:0;text-transform:none;letter-spacing:0}
+.check{display:flex;align-items:center;gap:8px;text-transform:none;letter-spacing:0;font-size:.9rem;color:var(--fg)}
+.check input{width:auto}
+.count{font-family:var(--mono);font-size:.85rem;color:var(--muted)}
+.list{display:grid;gap:10px}
+.item{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:14px 16px;display:grid;gap:6px;min-width:0}
+.item.weg{opacity:.65}
+.item-top{display:flex;flex-wrap:wrap;gap:8px;align-items:baseline;justify-content:space-between}
+.item h3{margin:0;font-size:1rem;font-weight:600;min-width:0;overflow-wrap:anywhere}
+.facts{display:flex;flex-wrap:wrap;gap:6px 16px;font-family:var(--mono);font-size:.85rem;font-variant-numeric:tabular-nums}
+.meta{color:var(--muted);font-size:.85rem;overflow-wrap:anywhere}
+.pills{display:flex;gap:6px;flex-wrap:wrap}
+.pill{font-size:.7rem;font-weight:600;padding:2px 8px;border-radius:999px;text-transform:uppercase;letter-spacing:.05em}
+.pill.gen{background:var(--accent-soft);color:var(--accent)}
+.pill.neu{background:var(--new-soft);color:var(--new)}
+.pill.weg{background:var(--gone-soft);color:var(--gone)}
+a{color:var(--accent)}
+.empty{background:var(--surface);border:1px dashed var(--line);border-radius:10px;padding:18px;color:var(--muted)}
+details{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:12px 16px}
+details summary{cursor:pointer;font-weight:600}
+details[open] summary{margin-bottom:12px}
+.panel{display:grid;gap:12px}
+.grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px}
+.note{font-size:.84rem;color:var(--muted);max-width:65ch;margin:0}
+.register{columns:2 240px;column-gap:24px;margin:0;padding:0;list-style:none}
+.register li{break-inside:avoid;padding:5px 0;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;gap:10px;font-size:.86rem}
+.register li span{min-width:0;overflow-wrap:anywhere}
+.tag{font-family:var(--mono);font-size:.7rem;color:var(--muted);text-align:right}
+.tag.off{color:var(--gone)} .tag.hit{color:var(--new);font-weight:600}
+@media (prefers-reduced-motion: reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="head">
+    <div>
+      <h1>Wohnungs-Radar Zürich</h1>
+      <p class="sub" id="updated">Lade Daten …</p>
+    </div>
+    <div class="actions">
+      <button type="button" class="primary" id="btn-refresh">Aktualisieren</button>
+    </div>
+  </header>
+  <div class="msg" id="msg" role="status" aria-live="polite"></div>
+
+  <section class="filters" aria-label="Anzeige filtern">
+    <label for="f-rooms">Zimmer ab<input id="f-rooms" type="number" step="0.5" min="1"></label>
+    <label for="f-rent">Miete bis CHF<input id="f-rent" type="number" step="100" min="0"></label>
+    <label for="f-zip">PLZ / Quartier<input id="f-zip" type="text" placeholder="z. B. 8037 oder Wipkingen"></label>
+    <label for="f-source">Quelle<select id="f-source"><option value="">Alle</option><option>Website</option><option>Flatfox</option><option>Homegate</option><option>ImmoScout24</option></select></label>
+    <label class="check"><input id="f-coop" type="checkbox"> Nur Genossenschaften</label>
+    <label class="check"><input id="f-gone" type="checkbox" checked> Vergebene ausblenden</label>
+  </section>
+
+  <section>
+    <div class="head" style="margin-bottom:10px"><h2>Treffer</h2><span class="count" id="count"></span></div>
+    <div class="list" id="list"><div class="empty" id="empty">Noch keine Daten. Die erste Suche läuft nach der Einrichtung automatisch.</div></div>
+  </section>
+
+  <details id="alarm">
+    <summary>Suchfilter für E-Mail-Alarm</summary>
+    <div class="panel">
+      <p class="note">Diese Filter bestimmen, wonach die automatische Suche alle 4 Stunden sucht und was per E-Mail kommt. Speichern braucht den Zugangsschlüssel unter «Verbindung zu GitHub».</p>
+      <div class="grid2">
+        <label for="a-rooms">Zimmer ab<input id="a-rooms" type="number" step="0.5" min="1"></label>
+        <label for="a-rent">Miete bis CHF (brutto)<input id="a-rent" type="number" step="100" min="0"></label>
+        <label for="a-zipfrom">PLZ von<input id="a-zipfrom" type="number"></label>
+        <label for="a-zipto">PLZ bis<input id="a-zipto" type="number"></label>
+      </div>
+      <div class="grid2">
+        <label class="check"><input id="a-coop" type="checkbox"> Nur Genossenschaften suchen</label>
+        <label class="check"><input id="a-temp" type="checkbox"> Befristete Wohnungen zeigen</label>
+        <label class="check"><input id="a-mail" type="checkbox"> E-Mails senden</label>
+        <label class="check"><input id="a-mailcoop" type="checkbox"> E-Mail nur für Genossenschaften</label>
+      </div>
+      <div class="grid2">
+        <label class="check"><input id="s-genossenschaften" type="checkbox"> Genossenschafts-Websites</label>
+        <label class="check"><input id="s-flatfox" type="checkbox"> Flatfox</label>
+        <label class="check"><input id="s-homegate" type="checkbox"> Homegate</label>
+        <label class="check"><input id="s-immoscout24" type="checkbox"> ImmoScout24</label>
+      </div>
+      <div class="actions"><button type="button" id="btn-save">Filter speichern und suchen</button></div>
+    </div>
+  </details>
+
+  <details id="conn">
+    <summary>Verbindung zu GitHub</summary>
+    <div class="panel">
+      <p class="note">Mit einem persönlichen Zugangsschlüssel kann diese Seite die Suche sofort starten und die Filter speichern. Der Schlüssel bleibt nur in diesem Browser gespeichert. Wie du ihn erstellst, steht in der Anleitung (README).</p>
+      <div class="grid2">
+        <label for="c-owner">GitHub-Benutzer<input id="c-owner" type="text" autocomplete="off"></label>
+        <label for="c-repo">Repository<input id="c-repo" type="text" autocomplete="off"></label>
+      </div>
+      <label for="c-token">Zugangsschlüssel (Token)<input id="c-token" type="password" autocomplete="off" placeholder="github_pat_…"></label>
+      <div class="actions"><button type="button" id="btn-conn">Speichern</button><button type="button" id="btn-forget">Schlüssel entfernen</button></div>
+    </div>
+  </details>
+
+  <details>
+    <summary>Überwachte Genossenschaften</summary>
+    <ul class="register" id="register"></ul>
+  </details>
+</div>
+
+<script>
+(function(){
+"use strict";
+const $=id=>document.getElementById(id);
+const store={get(k,d){try{const v=localStorage.getItem(k);return v===null?d:JSON.parse(v)}catch(e){return d}},set(k,v){try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}}};
+let DATA=null;
+
+// ---------- Verbindung ----------
+function guessRepo(){
+  const h=location.hostname, p=location.pathname.split("/").filter(Boolean);
+  if(h.endsWith(".github.io")) return {owner:h.split(".")[0], repo:p[0]||h};
+  return {owner:"",repo:""};
+}
+function conn(){const g=guessRepo();return Object.assign({owner:g.owner,repo:g.repo,token:""},store.get("radar-conn",{}))}
+function fillConn(){const c=conn();$("c-owner").value=c.owner;$("c-repo").value=c.repo;$("c-token").value=c.token?"••••••••":""}
+$("btn-conn").addEventListener("click",()=>{
+  const c=conn(); const t=$("c-token").value.trim();
+  store.set("radar-conn",{owner:$("c-owner").value.trim(),repo:$("c-repo").value.trim(),token:t&&!t.startsWith("•")?t:c.token});
+  fillConn(); say("Verbindung gespeichert.");
+});
+$("btn-forget").addEventListener("click",()=>{const c=conn();c.token="";store.set("radar-conn",c);fillConn();say("Schlüssel entfernt.")});
+
+async function gh(path,opts={}){
+  const c=conn();
+  if(!c.token||!c.owner||!c.repo) throw new Error("no_token");
+  const r=await fetch(`https://api.github.com/repos/${c.owner}/${c.repo}${path}`,{...opts,headers:{"Accept":"application/vnd.github+json","Authorization":"Bearer "+c.token,"X-GitHub-Api-Version":"2022-11-28",...(opts.headers||{})}});
+  if(!r.ok){const t=await r.text();throw new Error(r.status+" "+t.slice(0,160))}
+  return r.status===204?null:r.json();
+}
+
+// ---------- Meldungen ----------
+function say(t,err){const m=$("msg");m.textContent=t;m.className="msg"+(err?" err":"")}
+
+// ---------- Daten ----------
+async function loadData(){
+  const r=await fetch("data.json?ts="+Date.now(),{cache:"no-store"});
+  if(!r.ok) throw new Error("Keine Daten gefunden");
+  DATA=await r.json(); render(); renderRegister(); fillAlarm(DATA.filter);
+  const last=(DATA.runs||[]).slice(-1)[0];
+  $("updated").textContent="Letzte Suche: "+fmtDate(DATA.updated)+(last&&last.failed&&last.failed.length?" · teilweise nicht erreichbar":"");
+}
+const fmtDate=iso=>{try{return new Date(iso).toLocaleString("de-CH",{weekday:"short",day:"2-digit",month:"2-digit",hour:"2-digit",minute:"2-digit"})}catch(e){return iso||"–"}};
+const chf=v=>typeof v==="number"?"CHF "+Math.round(v).toLocaleString("de-CH"):null;
+
+// ---------- Anzeige-Filter ----------
+const FKEYS=["f-rooms","f-rent","f-zip","f-source","f-coop","f-gone"];
+function loadView(){const v=store.get("radar-view",{});for(const k of FKEYS){if(!(k in v))continue;const el=$(k);if(el.type==="checkbox")el.checked=v[k];else el.value=v[k]}}
+function saveView(){const v={};for(const k of FKEYS){const el=$(k);v[k]=el.type==="checkbox"?el.checked:el.value}store.set("radar-view",v)}
+for(const k of FKEYS){$(k).addEventListener("input",()=>{saveView();render()})}
+
+function render(){
+  const list=$("list"),empty=$("empty");
+  list.querySelectorAll(".item").forEach(e=>e.remove());
+  const rows=(DATA&&DATA.listings)||[];
+  const minR=parseFloat($("f-rooms").value), maxR=parseFloat($("f-rent").value), q=$("f-zip").value.trim().toLowerCase(), src=$("f-source").value;
+  const shown=rows.filter(r=>{
+    if($("f-gone").checked&&r.status==="weg") return false;
+    if($("f-coop").checked&&r.kind!=="genossenschaft") return false;
+    if(!isNaN(minR)&&r.rooms!=null&&r.rooms<minR) return false;
+    if(!isNaN(maxR)&&r.rent!=null&&r.rent>maxR) return false;
+    if(src&&!(r.source||"").includes(src)) return false;
+    if(q&&!(`${r.zip||""} ${r.quartier||""} ${r.address||""} ${r.coop||""}`.toLowerCase().includes(q))) return false;
+    return true;
+  }).sort((a,b)=>(a.kind!=="genossenschaft")-(b.kind!=="genossenschaft")||String(b.firstSeen).localeCompare(String(a.firstSeen)));
+  empty.hidden=shown.length>0;
+  if(!shown.length&&rows.length) empty.textContent="Keine Treffer mit diesen Filtern. Lockere die Filter oben, um mehr zu sehen.";
+  $("count").textContent=shown.length+" von "+rows.filter(r=>r.status!=="weg").length+" aktiven";
+  const dayAgo=Date.now()-36*3600e3;
+  for(const r of shown){
+    const el=document.createElement("article"); el.className="item"+(r.status==="weg"?" weg":"");
+    const top=document.createElement("div"); top.className="item-top";
+    const h=document.createElement("h3");
+    h.textContent=r.isHint?(r.coop+": neue Ausschreibung möglich"):([r.address,[r.zip,r.quartier].filter(Boolean).join(" ")].filter(Boolean).join(", ")||"Adresse unbekannt");
+    const ps=document.createElement("div"); ps.className="pills";
+    const pill=(c,t)=>{const s=document.createElement("span");s.className="pill "+c;s.textContent=t;ps.appendChild(s)};
+    if(r.kind==="genossenschaft") pill("gen","Genossenschaft");
+    if(r.status==="weg") pill("weg","vergeben");
+    else if(new Date(r.firstSeen).getTime()>dayAgo) pill("neu","neu");
+    top.append(h,ps);
+    const f=document.createElement("div"); f.className="facts";
+    [r.rooms?r.rooms+" Zi.":null, chf(r.rent)?(chf(r.rent)+(r.rentType==="netto"?" netto":"")):null, r.area?r.area+" m²":null, r.moveIn?"Bezug "+r.moveIn:null, r.temporary?"befristet":null]
+      .filter(Boolean).forEach(x=>{const s=document.createElement("span");s.textContent=x;f.appendChild(s)});
+    const m=document.createElement("div"); m.className="meta";
+    m.textContent=[r.isHint?null:(r.coop||"Vermieter unbekannt"),"via "+r.source,"gefunden "+fmtDate(r.firstSeen)].filter(Boolean).join(" · ");
+    el.append(top);
+    if(f.childNodes.length) el.append(f);
+    el.append(m);
+    if(r.note){const n=document.createElement("div");n.className="meta";n.textContent=r.note;el.append(n)}
+    if(r.url){const a=document.createElement("a");a.href=r.url;a.target="_blank";a.rel="noopener";a.textContent=r.isHint?"Seite öffnen":"Zum Inserat";el.append(a)}
+    list.appendChild(el);
+  }
+}
+
+function renderRegister(){
+  const reg=$("register"); reg.textContent="";
+  const coops=Object.values((DATA&&DATA.coops)||{}).sort((a,b)=>a.name.localeCompare(b.name,"de"));
+  for(const c of coops){
+    const li=document.createElement("li");
+    const s=document.createElement("span"); const a=document.createElement("a"); a.href=c.url;a.target="_blank";a.rel="noopener";a.textContent=c.name;s.append(a);
+    const t=document.createElement("span"); t.className="tag"+(c.status==="gesperrt"||c.status==="Fehler"?" off":c.status==="mögliche Treffer"?" hit":""); t.textContent=c.status;
+    li.append(s,t); reg.append(li);
+  }
+}
+
+// ---------- Aktualisieren ----------
+$("btn-refresh").addEventListener("click",async()=>{
+  const b=$("btn-refresh"); b.disabled=true;
+  try{
+    if(conn().token){
+      say("Suche gestartet. Das dauert etwa 3–6 Minuten …");
+      const started=Date.now();
+      await gh("/actions/workflows/radar.yml/dispatches",{method:"POST",body:JSON.stringify({ref:"main"})});
+      await waitForRun(started);
+      say("Fertig. Neue Ergebnisse werden geladen …");
+      await new Promise(r=>setTimeout(r,45000)); // Seite braucht kurz zum Veröffentlichen
+    } else {
+      say("Lade die neuesten Ergebnisse. Für eine sofortige neue Suche hinterlege unten einen Zugangsschlüssel.");
+    }
+    await loadData();
+    say("Aktualisiert: "+fmtDate(DATA.updated));
+  }catch(e){
+    say(e.message==="no_token"?"Für eine neue Suche fehlt der Zugangsschlüssel.":"Das hat nicht geklappt: "+e.message,true);
+  }finally{b.disabled=false}
+});
+async function waitForRun(started){
+  for(let i=0;i<60;i++){
+    await new Promise(r=>setTimeout(r,10000));
+    const runs=await gh("/actions/workflows/radar.yml/runs?per_page=3");
+    const run=(runs.workflow_runs||[]).find(r=>new Date(r.created_at).getTime()>=started-60000);
+    if(run&&run.status==="completed"){
+      if(run.conclusion!=="success") throw new Error("Suche fehlgeschlagen ("+run.conclusion+"). Details im Actions-Tab auf GitHub.");
+      return;
+    }
+    if(run) say("Suche läuft … ("+Math.round((Date.now()-started)/60000)+" Min.)");
+  }
+  throw new Error("Die Suche dauert ungewöhnlich lange. Lade die Seite später neu.");
+}
+
+// ---------- Alarm-Filter speichern ----------
+function fillAlarm(f){
+  if(!f) return;
+  $("a-rooms").value=f.min_rooms;$("a-rent").value=f.max_rent;$("a-zipfrom").value=f.zip_from;$("a-zipto").value=f.zip_to;
+  $("a-coop").checked=!!f.only_coops;$("a-temp").checked=f.include_temporary!==false;
+  if(!$("f-rooms").value&&!store.get("radar-view",null)){$("f-rooms").value=f.min_rooms;$("f-rent").value=f.max_rent}
+}
+async function loadConfigIntoForm(){
+  try{
+    const file=await gh("/contents/config.json");
+    const cfg=JSON.parse(decodeURIComponent(escape(atob(file.content.replace(/\n/g,"")))));
+    fillAlarm(cfg.filter);
+    $("a-mail").checked=!!(cfg.email&&cfg.email.enabled);$("a-mailcoop").checked=!!(cfg.email&&cfg.email.only_coops);
+    for(const s of ["genossenschaften","flatfox","homegate","immoscout24"]) $("s-"+s).checked=!!cfg.sources[s];
+    return {cfg,sha:file.sha};
+  }catch(e){ return null }
+}
+$("alarm").addEventListener("toggle",()=>{if($("alarm").open&&conn().token) loadConfigIntoForm()});
+$("btn-save").addEventListener("click",async()=>{
+  const b=$("btn-save"); b.disabled=true;
+  try{
+    const cur=await loadConfigIntoFormKeep();
+    if(!cur) throw new Error("no_token");
+    const cfg=cur.cfg;
+    const num=(id,d)=>{const v=parseFloat($(id).value);return isNaN(v)?d:v};
+    cfg.filter={min_rooms:num("a-rooms",4.5),max_rent:num("a-rent",4000),zip_from:num("a-zipfrom",8000),zip_to:num("a-zipto",8099),only_coops:$("a-coop").checked,include_temporary:$("a-temp").checked};
+    cfg.email={enabled:$("a-mail").checked,only_coops:$("a-mailcoop").checked};
+    for(const s of ["genossenschaften","flatfox","homegate","immoscout24"]) cfg.sources[s]=$("s-"+s).checked;
+    const content=btoa(unescape(encodeURIComponent(JSON.stringify(cfg,null,2)+"\n")));
+    await gh("/contents/config.json",{method:"PUT",body:JSON.stringify({message:"Suchfilter angepasst",content,sha:cur.sha,branch:"main"})});
+    say("Filter gespeichert. Die nächste Suche verwendet sie – klicke «Aktualisieren», um sofort zu suchen.");
+  }catch(e){
+    say(e.message==="no_token"?"Zum Speichern fehlt der Zugangsschlüssel (siehe «Verbindung zu GitHub»).":"Speichern fehlgeschlagen: "+e.message,true);
+  }finally{b.disabled=false}
+});
+// liest config.json für sha/Grundlage, ohne die Eingaben im Formular zu überschreiben
+async function loadConfigIntoFormKeep(){
+  const file=await gh("/contents/config.json");
+  return {cfg:JSON.parse(decodeURIComponent(escape(atob(file.content.replace(/\n/g,""))))),sha:file.sha};
+}
+
+// ---------- Start ----------
+fillConn(); loadView();
+loadData().catch(()=>{$("updated").textContent="Noch keine Suche gelaufen."});
+})();
+</script>
+</body>
+</html>

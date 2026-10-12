@@ -445,7 +445,13 @@ def parse_alleimmo(html: str) -> list[dict]:
 def source_paged(name: str, url_tpl: str, parser, pages: int = 5) -> list[dict]:
     results, seen = [], set()
     for page in range(1, pages + 1):
-        found = [l for l in parser(fetch(url_tpl.format(page=page))) if l["url"] not in seen]
+        try:
+            html = fetch(url_tpl.format(page=page))
+        except requests.HTTPError as e:
+            if page > 1 and e.response is not None and e.response.status_code == 404:
+                break  # hinter der letzten Seite antwortet ImmoStreet mit 404
+            raise
+        found = [l for l in parser(html) if l["url"] not in seen]
         if not found:
             if page == 1:
                 raise RuntimeError("keine Inserate lesbar (Seitenaufbau geändert oder Abruf gesperrt)")

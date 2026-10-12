@@ -115,7 +115,7 @@ def fetch(url: str, *, as_json: bool = False):
 
 
 # Befristung erkennen: Formulierungen in Titel und Beschreibung
-TEMP_V = 2  # erhöhen, wenn sich die Erkennung ändert -> bekannte Inserate werden neu geprüft
+TEMP_V = 3  # erhöhen, wenn sich die Erkennung ändert -> bekannte Inserate werden neu geprüft
 _NUM = r"(?:\d{1,2}|zwei|drei|vier|fünf|sechs|sieben|acht|neun|zehn|elf|zwölf)"
 TEMP_PATTERNS = [
     r"befrist\w*",
@@ -134,7 +134,10 @@ TEMP_RE = re.compile("|".join(f"(?:{p})" for p in TEMP_PATTERNS), re.I)
 # «unbefristet», «nicht befristet», «keine Untermiete»
 NEGATION_RE = re.compile(r"(?:un|\bnicht\s+|\bkeine?\s+|\bohne\s+|\bnot\s+|\bno\s+)$", re.I)
 # «Untermiete nicht gestattet», «Kaution für 3 Monate»
-FORBIDDEN_AFTER_RE = re.compile(r"^\W{0,3}\s*(?:ist\s+|sind\s+)?(?:nicht|nur\s+mit|not)\s+(?:gestattet|erlaubt|möglich|zulässig|allowed)", re.I)
+FORBIDDEN_AFTER_RE = re.compile(
+    r"^\W{0,3}\s*(?:ist\s+|sind\s+)?(?:(?:nicht|nur\s+mit|not)\s+(?:gestattet|erlaubt|möglich|zulässig|allowed)"
+    r"|vorbehalten)",  # Standardklausel «Irrtümer und Zwischenvermietung vorbehalten»
+    re.I)
 DEPOSIT_BEFORE_RE = re.compile(r"(?:kaution|depot|sicherheit|garantie|mietzinsdepot|deposit)\w*\W+(?:\w+\W+){0,3}$", re.I)
 
 

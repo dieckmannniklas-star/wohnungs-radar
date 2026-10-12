@@ -289,7 +289,7 @@ function gmapsUrl(r){
 }
 function initMap(){
   if(MAP||typeof L==="undefined") return;
-  MAP=L.map("map",{scrollWheelZoom:false}).setView([47.3769,8.5417],12);
+  MAP=L.map("map",{scrollWheelZoom:false,fadeAnimation:false}).setView([47.3769,8.5417],12);
   L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",{maxZoom:19,attribution:'&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'}).addTo(MAP);
   LAYER=L.layerGroup().addTo(MAP);
   MAP.on("focus",()=>MAP.scrollWheelZoom.enable()); MAP.on("blur",()=>MAP.scrollWheelZoom.disable());

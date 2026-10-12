@@ -515,14 +515,15 @@ def source_paged(name: str, url_tpl: str, parser, pages: int = 5) -> list[dict]:
 # robots.txt verbietet Such-Parameter -> nur die erste Seite je Zimmer-Kategorie
 # --------------------------------------------------------------------------
 
-DETAIL_CACHE: dict[str, str] = {}  # Detailseite -> Befristungs-Hinweis ('' = unbefristet)
+DETAIL_CACHE: dict[str, str] = {}  # "v<TEMP_V>:<Detailseite>" -> Befristungs-Hinweis ('' = unbefristet)
 _UESC = re.compile(r"\\u([0-9a-fA-F]{4})")
 
 
 def realadvisor_temp(url: str) -> str:
     """Prüft die volle Beschreibung auf der Detailseite (steht im eingebetteten Next.js-Datenteil)."""
-    if url in DETAIL_CACHE:
-        return DETAIL_CACHE[url]
+    key = f"v{TEMP_V}:{url}"  # neue Erkennung -> Seite neu prüfen
+    if key in DETAIL_CACHE:
+        return DETAIL_CACHE[key]
     try:
         raw = fetch(url)
     except Exception:  # noqa: BLE001
@@ -548,7 +549,7 @@ def realadvisor_temp(url: str) -> str:
         text += rest
     h1 = soup.find("h1")
     hint = temp_reason((h1.get_text(" ", strip=True) if h1 else "") + " " + text)
-    DETAIL_CACHE[url] = hint
+    DETAIL_CACHE[key] = hint
     return hint
 
 
@@ -848,7 +849,7 @@ def main() -> int:
         FLATFOX_SKIP.update(data.get("flatfoxSkip", []))
     known_ext = {l["extKey"]: l for l in stored.values() if l.get("extKey")}
     GEOCACHE.update(data.get("geocache", {}))
-    DETAIL_CACHE.update(data.get("detailcache", {}))
+    DETAIL_CACHE.update({k: v for k, v in data.get("detailcache", {}).items() if k.startswith(f"v{TEMP_V}:")})
 
     found: list[dict] = []
     ok_sources, failed = [], []

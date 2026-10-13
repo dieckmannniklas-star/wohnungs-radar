@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-12T23:04:19+02:00",
+ "updated": "2026-10-13T03:12:12+02:00",
  "filter": {
   "min_rooms": 4.5,
   "max_rent": 4000,
@@ -31,7 +31,7 @@
    "lng": 8.493611021342,
    "extKey": "flatfox:86446926",
    "firstSeen": "2026-10-12T23:04:19+02:00",
-   "lastSeen": "2026-10-12T23:04:19+02:00",
+   "lastSeen": "2026-10-13T03:12:12+02:00",
    "status": "aktiv"
   },
   {
@@ -56,7 +56,7 @@
    "lng": 8.597397,
    "approx": true,
    "firstSeen": "2026-10-12T23:04:19+02:00",
-   "lastSeen": "2026-10-12T23:04:19+02:00",
+   "lastSeen": "2026-10-13T03:12:12+02:00",
    "status": "aktiv"
   },
   {
@@ -81,7 +81,7 @@
    "lng": null,
    "zipOptional": true,
    "firstSeen": "2026-10-12T23:04:19+02:00",
-   "lastSeen": "2026-10-12T23:04:19+02:00",
+   "lastSeen": "2026-10-13T03:12:12+02:00",
    "status": "aktiv"
   },
   {
@@ -102,11 +102,11 @@
    "tempV": 3,
    "url": "https://flatfox.ch/de/wohnung/8003-zurich/86408618/",
    "note": "",
-   "lat": 47.372214201683,
-   "lng": 8.516271021342,
+   "lat": 47.372216571518,
+   "lng": 8.516271361783,
    "extKey": "flatfox:86408618",
    "firstSeen": "2026-10-12T20:11:13+02:00",
-   "lastSeen": "2026-10-12T23:04:19+02:00",
+   "lastSeen": "2026-10-13T03:12:12+02:00",
    "status": "aktiv"
   },
   {
@@ -127,11 +127,11 @@
    "tempV": 3,
    "url": "https://flatfox.ch/de/wohnung/8038-zurich/86270576/",
    "note": "",
-   "lat": 47.340424201689,
-   "lng": 8.529421021349,
+   "lat": 47.340428571514,
+   "lng": 8.529421361781,
    "extKey": "flatfox:86270576",
    "firstSeen": "2026-10-12T20:11:13+02:00",
-   "lastSeen": "2026-10-12T23:04:19+02:00",
+   "lastSeen": "2026-10-13T03:12:12+02:00",
    "status": "aktiv"
   },
   {
@@ -153,7 +153,7 @@
    "lat": 47.423280841548,
    "lng": 8.542261351533,
    "firstSeen": "2026-10-12T19:31:20+02:00",
-   "lastSeen": "2026-10-12T23:04:19+02:00",
+   "lastSeen": "2026-10-13T03:12:12+02:00",
    "status": "aktiv",
    "tempHint": "",
    "tempV": 3
@@ -177,7 +177,7 @@
    "lat": 47.415443941548,
    "lng": 8.537711351533,
    "firstSeen": "2026-10-12T19:31:20+02:00",
-   "lastSeen": "2026-10-12T23:04:19+02:00",
+   "lastSeen": "2026-10-13T03:12:12+02:00",
    "status": "aktiv",
    "tempHint": "",
    "tempV": 3
@@ -201,7 +201,7 @@
    "lat": 47.331634741543,
    "lng": 8.515891351534,
    "firstSeen": "2026-10-12T19:31:20+02:00",
-   "lastSeen": "2026-10-12T23:04:19+02:00",
+   "lastSeen": "2026-10-13T03:12:12+02:00",
    "status": "aktiv",
    "tempHint": "",
    "tempV": 3
@@ -225,7 +225,7 @@
    "lat": 47.340795841545,
    "lng": 8.529991351531,
    "firstSeen": "2026-10-12T19:31:20+02:00",
-   "lastSeen": "2026-10-12T23:04:19+02:00",
+   "lastSeen": "2026-10-13T03:12:12+02:00",
    "status": "aktiv",
    "tempHint": "",
    "tempV": 3
@@ -249,7 +249,7 @@
    "lat": 47.417989741547,
    "lng": 8.549181351531,
    "firstSeen": "2026-10-12T19:25:57+02:00",
-   "lastSeen": "2026-10-12T23:04:19+02:00",
+   "lastSeen": "2026-10-13T03:12:12+02:00",
    "status": "aktiv",
    "tempHint": "",
    "tempV": 3
@@ -273,7 +273,7 @@
    "lat": 47.423280841548,
    "lng": 8.542261351533,
    "firstSeen": "2026-10-12T19:25:57+02:00",
-   "lastSeen": "2026-10-12T23:04:19+02:00",
+   "lastSeen": "2026-10-13T03:12:12+02:00",
    "status": "aktiv",
    "tempHint": "",
    "tempV": 3
@@ -297,7 +297,7 @@
    "lat": 47.325474741549,
    "lng": 8.513781351531,
    "firstSeen": "2026-10-12T19:25:57+02:00",
-   "lastSeen": "2026-10-12T23:04:19+02:00",
+   "lastSeen": "2026-10-13T03:12:12+02:00",
    "status": "aktiv",
    "tempHint": "",
    "tempV": 3
@@ -305,8 +305,8 @@
   {
    "id": "wallisellenstrasse-3-8050-4-5",
    "kind": "markt",
-   "coop": "",
-   "source": "ImmoStreet, alle-immobilien",
+   "coop": "livit ag real estate management",
+   "source": "ImmoStreet, alle-immobilien, immobilier.ch",
    "address": "Wallisellenstrasse 3",
    "zip": 8050,
    "quartier": "Zürich",
@@ -321,7 +321,7 @@
    "lat": 47.410439741541,
    "lng": 8.547081351531,
    "firstSeen": "2026-10-12T19:25:57+02:00",
-   "lastSeen": "2026-10-12T23:04:19+02:00",
+   "lastSeen": "2026-10-13T03:12:12+02:00",
    "status": "aktiv",
    "tempHint": "",
    "tempV": 3
@@ -345,7 +345,7 @@
    "lat": 47.372885841545,
    "lng": 8.490601351531,
    "firstSeen": "2026-10-12T19:25:57+02:00",
-   "lastSeen": "2026-10-12T23:04:19+02:00",
+   "lastSeen": "2026-10-13T03:12:12+02:00",
    "status": "aktiv",
    "tempHint": "",
    "tempV": 3
@@ -369,7 +369,7 @@
    "lat": 47.412254741542,
    "lng": 8.480391351533,
    "firstSeen": "2026-10-12T19:25:57+02:00",
-   "lastSeen": "2026-10-12T23:04:19+02:00",
+   "lastSeen": "2026-10-13T03:12:12+02:00",
    "status": "aktiv",
    "tempHint": "",
    "tempV": 3
@@ -393,7 +393,7 @@
    "lat": 47.369834741541,
    "lng": 8.518481351539,
    "firstSeen": "2026-10-12T19:25:57+02:00",
-   "lastSeen": "2026-10-12T23:04:19+02:00",
+   "lastSeen": "2026-10-13T03:12:12+02:00",
    "status": "aktiv",
    "tempHint": "",
    "tempV": 3
@@ -417,7 +417,7 @@
    "lat": 47.386354741541,
    "lng": 8.487711351539,
    "firstSeen": "2026-10-12T19:25:57+02:00",
-   "lastSeen": "2026-10-12T23:04:19+02:00",
+   "lastSeen": "2026-10-13T03:12:12+02:00",
    "status": "aktiv",
    "tempHint": "",
    "tempV": 3
@@ -441,7 +441,7 @@
    "lat": 47.408576941543,
    "lng": 8.483411351531,
    "firstSeen": "2026-10-12T19:25:57+02:00",
-   "lastSeen": "2026-10-12T23:04:19+02:00",
+   "lastSeen": "2026-10-13T03:12:12+02:00",
    "status": "aktiv",
    "tempHint": "",
    "tempV": 3
@@ -465,7 +465,7 @@
    "lat": 47.424224741545,
    "lng": 8.540671351534,
    "firstSeen": "2026-10-12T19:25:57+02:00",
-   "lastSeen": "2026-10-12T23:04:19+02:00",
+   "lastSeen": "2026-10-13T03:12:12+02:00",
    "status": "aktiv",
    "tempHint": "",
    "tempV": 3
@@ -473,8 +473,8 @@
   {
    "id": "grossackerstrasse-75-8041-4-5",
    "kind": "markt",
-   "coop": "",
-   "source": "ImmoStreet, alle-immobilien",
+   "coop": "livit ag real estate management",
+   "source": "ImmoStreet, alle-immobilien, immobilier.ch",
    "address": "Grossackerstrasse 75",
    "zip": 8041,
    "quartier": "Zürich",
@@ -489,7 +489,7 @@
    "lat": 47.323914741541,
    "lng": 8.509811351538,
    "firstSeen": "2026-10-12T19:25:57+02:00",
-   "lastSeen": "2026-10-12T23:04:19+02:00",
+   "lastSeen": "2026-10-13T03:12:12+02:00",
    "status": "aktiv",
    "tempHint": "",
    "tempV": 3
@@ -513,7 +513,7 @@
    "lat": 47.346164741545,
    "lng": 8.532341351532,
    "firstSeen": "2026-10-12T19:25:57+02:00",
-   "lastSeen": "2026-10-12T23:04:19+02:00",
+   "lastSeen": "2026-10-13T03:12:12+02:00",
    "status": "aktiv",
    "tempHint": "",
    "tempV": 3
@@ -521,8 +521,8 @@
   {
    "id": "im-glockenacker-53-8053-5-5",
    "kind": "markt",
-   "coop": "livit ag real estate management",
-   "source": "ImmoStreet, alle-immobilien, immobilier.ch",
+   "coop": "Livit AG",
+   "source": "ImmoStreet, alle-immobilien, RealAdvisor, immobilier.ch",
    "address": "Im Glockenacker 53",
    "zip": 8053,
    "quartier": "Zürich",
@@ -537,7 +537,7 @@
    "lat": 47.360595841549,
    "lng": 8.600631351538,
    "firstSeen": "2026-10-12T19:25:57+02:00",
-   "lastSeen": "2026-10-12T23:04:19+02:00",
+   "lastSeen": "2026-10-13T03:12:12+02:00",
    "status": "aktiv",
    "tempHint": "",
    "tempV": 3
@@ -561,7 +561,7 @@
    "lat": 47.348574741545,
    "lng": 8.576211351532,
    "firstSeen": "2026-10-12T19:25:57+02:00",
-   "lastSeen": "2026-10-12T23:04:19+02:00",
+   "lastSeen": "2026-10-13T03:12:12+02:00",
    "status": "aktiv",
    "tempHint": "…Wohnen im Grünen-befristet bis 30.06.20……",
    "tempV": 3
@@ -569,8 +569,8 @@
   {
    "id": "grossackerstrasse-81-8041-4-5",
    "kind": "markt",
-   "coop": "livit ag real estate management",
-   "source": "ImmoStreet, alle-immobilien, immobilier.ch",
+   "coop": "",
+   "source": "ImmoStreet, alle-immobilien",
    "address": "Grossackerstrasse 81",
    "zip": 8041,
    "quartier": "Zürich",
@@ -585,7 +585,7 @@
    "lat": 47.324084741543,
    "lng": 8.509431351539,
    "firstSeen": "2026-10-12T19:25:57+02:00",
-   "lastSeen": "2026-10-12T23:04:19+02:00",
+   "lastSeen": "2026-10-13T03:12:12+02:00",
    "status": "aktiv",
    "tempHint": "",
    "tempV": 3
@@ -609,7 +609,7 @@
    "lat": 47.340193941548,
    "lng": 8.521371351534,
    "firstSeen": "2026-10-12T19:25:57+02:00",
-   "lastSeen": "2026-10-12T23:04:19+02:00",
+   "lastSeen": "2026-10-13T03:12:12+02:00",
    "status": "aktiv",
    "tempHint": "",
    "tempV": 3
@@ -617,8 +617,8 @@
   {
    "id": "sihlweidstrasse-64-8041-5-5",
    "kind": "markt",
-   "coop": "H&B Real Estate AG",
-   "source": "ImmoStreet, alle-immobilien, RealAdvisor",
+   "coop": "",
+   "source": "ImmoStreet, alle-immobilien",
    "address": "Sihlweidstrasse 64",
    "zip": 8041,
    "quartier": "Zürich",
@@ -633,7 +633,7 @@
    "lat": 47.327504741542,
    "lng": 8.518251351531,
    "firstSeen": "2026-10-12T19:25:57+02:00",
-   "lastSeen": "2026-10-12T23:04:19+02:00",
+   "lastSeen": "2026-10-13T03:12:12+02:00",
    "status": "aktiv",
    "tempHint": "",
    "tempV": 3
@@ -657,7 +657,7 @@
    "lat": 47.401186941541,
    "lng": 8.499761351534,
    "firstSeen": "2026-10-12T19:25:57+02:00",
-   "lastSeen": "2026-10-12T23:04:19+02:00",
+   "lastSeen": "2026-10-13T03:12:12+02:00",
    "status": "aktiv",
    "tempHint": "",
    "tempV": 3
@@ -665,8 +665,8 @@
   {
    "id": "turbinenstrasse-33-8005-4-5",
    "kind": "markt",
-   "coop": "livit ag real estate management",
-   "source": "ImmoStreet, alle-immobilien, immobilier.ch",
+   "coop": "",
+   "source": "ImmoStreet, alle-immobilien",
    "address": "Turbinenstrasse 33",
    "zip": 8005,
    "quartier": "Zürich",
@@ -681,7 +681,7 @@
    "lat": 47.387076941542,
    "lng": 8.515031351539,
    "firstSeen": "2026-10-12T19:25:57+02:00",
-   "lastSeen": "2026-10-12T23:04:19+02:00",
+   "lastSeen": "2026-10-13T03:12:12+02:00",
    "status": "aktiv",
    "tempHint": "",
    "tempV": 3
@@ -706,7 +706,7 @@
    "lng": 8.540656,
    "approx": true,
    "firstSeen": "2026-10-12T19:25:57+02:00",
-   "lastSeen": "2026-10-12T23:04:19+02:00",
+   "lastSeen": "2026-10-13T03:12:12+02:00",
    "status": "aktiv",
    "tempHint": "",
    "tempV": 3
@@ -715,7 +715,7 @@
    "id": "doldertal-17-8032-5",
    "kind": "markt",
    "coop": "Schaeppi Grundstücke AG",
-   "source": "Flatfox, ImmoStreet, alle-immobilien, immobilier.ch",
+   "source": "Flatfox, ImmoStreet, alle-immobilien",
    "address": "Doldertal 17",
    "zip": 8032,
    "quartier": "Zürich",
@@ -727,10 +727,10 @@
    "temporary": true,
    "url": "https://flatfox.ch/de/wohnung/doldertal-17-8032-zurich/86181606/",
    "note": "",
-   "lat": 47.373064201688,
-   "lng": 8.564771021344,
+   "lat": 47.373065571513,
+   "lng": 8.564771361783,
    "firstSeen": "2026-10-12T19:25:57+02:00",
-   "lastSeen": "2026-10-12T23:04:19+02:00",
+   "lastSeen": "2026-10-13T03:12:12+02:00",
    "status": "aktiv",
    "tempHint": "…Befristet: Grosszügige 5-Zimmerwohnung an exklusiver Lage i…",
    "tempV": 3,
@@ -755,7 +755,7 @@
    "lat": 47.424154741544,
    "lng": 8.541731351531,
    "firstSeen": "2026-10-12T19:25:57+02:00",
-   "lastSeen": "2026-10-12T23:04:19+02:00",
+   "lastSeen": "2026-10-13T03:12:12+02:00",
    "status": "aktiv",
    "tempHint": "",
    "tempV": 3
@@ -779,7 +779,7 @@
    "lat": 47.407147041542,
    "lng": 8.568601351534,
    "firstSeen": "2026-10-12T19:25:57+02:00",
-   "lastSeen": "2026-10-12T23:04:19+02:00",
+   "lastSeen": "2026-10-13T03:12:12+02:00",
    "status": "aktiv",
    "tempHint": "",
    "tempV": 3
@@ -803,7 +803,7 @@
    "lat": 47.424084041546,
    "lng": 8.549371351533,
    "firstSeen": "2026-10-12T19:25:57+02:00",
-   "lastSeen": "2026-10-12T23:04:19+02:00",
+   "lastSeen": "2026-10-13T03:12:12+02:00",
    "status": "aktiv",
    "tempHint": "…4.5-Zimmer-Maisonette befristet für 1 J……",
    "tempV": 3
@@ -827,7 +827,7 @@
    "lat": 47.410220841549,
    "lng": 8.524661351536,
    "firstSeen": "2026-10-12T19:25:57+02:00",
-   "lastSeen": "2026-10-12T23:04:19+02:00",
+   "lastSeen": "2026-10-13T03:12:12+02:00",
    "status": "aktiv",
    "tempHint": "…Befristete 5.5-Zimmer-Wohnung an zentra……",
    "tempV": 3
@@ -851,7 +851,7 @@
    "lat": 47.407915841546,
    "lng": 8.552411351531,
    "firstSeen": "2026-10-12T19:25:57+02:00",
-   "lastSeen": "2026-10-12T23:04:19+02:00",
+   "lastSeen": "2026-10-13T03:12:12+02:00",
    "status": "aktiv",
    "tempHint": "",
    "tempV": 3
@@ -875,7 +875,7 @@
    "lat": 47.365034741544,
    "lng": 8.566631351538,
    "firstSeen": "2026-10-12T19:25:57+02:00",
-   "lastSeen": "2026-10-12T23:04:19+02:00",
+   "lastSeen": "2026-10-13T03:12:12+02:00",
    "status": "aktiv",
    "tempHint": "…Befristete 5-Zimmer-Altbauwohnung direk……",
    "tempV": 3
@@ -899,7 +899,7 @@
    "lat": 47.418067041549,
    "lng": 8.546851351536,
    "firstSeen": "2026-10-12T19:25:57+02:00",
-   "lastSeen": "2026-10-12T23:04:19+02:00",
+   "lastSeen": "2026-10-13T03:12:12+02:00",
    "status": "aktiv",
    "tempHint": "",
    "tempV": 3
@@ -920,10 +920,10 @@
    "temporary": true,
    "url": "https://flatfox.ch/de/wohnung/beckhammer-12-8057-zurich/86391534/",
    "note": "",
-   "lat": 47.401355201689,
-   "lng": 8.542011021345,
+   "lat": 47.401354571514,
+   "lng": 8.542011361785,
    "firstSeen": "2026-10-12T19:25:57+02:00",
-   "lastSeen": "2026-10-12T23:04:19+02:00",
+   "lastSeen": "2026-10-13T03:12:12+02:00",
    "status": "aktiv",
    "tempHint": "…ch eine Besichtigung. **WICHTIG: Die Wohnung wird befristet bis** **zum 31.01.2027** **vermietet.**…",
    "tempV": 3,
@@ -949,7 +949,7 @@
    "lng": 8.53752,
    "approx": true,
    "firstSeen": "2026-10-12T19:25:57+02:00",
-   "lastSeen": "2026-10-12T23:04:19+02:00",
+   "lastSeen": "2026-10-13T03:12:12+02:00",
    "status": "aktiv",
    "tempHint": "…R-HAUS IN ZÜRICH - KREIS 2 WOLLISHOFEN, MÖBLIERT, TEMPORÄR MIETDAUER ab 1. Dezember 2026 bis 21. April 2027…",
    "tempV": 3
@@ -974,7 +974,7 @@
    "lng": 8.5508,
    "approx": true,
    "firstSeen": "2026-10-12T19:25:57+02:00",
-   "lastSeen": "2026-10-12T23:04:19+02:00",
+   "lastSeen": "2026-10-13T03:12:12+02:00",
    "status": "aktiv",
    "tempHint": "",
    "tempV": 3
@@ -998,7 +998,7 @@
    "lat": 47.376069741544,
    "lng": 8.525161351531,
    "firstSeen": "2026-10-12T19:25:57+02:00",
-   "lastSeen": "2026-10-12T23:04:19+02:00",
+   "lastSeen": "2026-10-13T03:12:12+02:00",
    "status": "aktiv",
    "tempHint": "",
    "tempV": 3
@@ -1023,7 +1023,7 @@
    "lng": 8.512796,
    "approx": true,
    "firstSeen": "2026-10-12T19:25:57+02:00",
-   "lastSeen": "2026-10-12T23:04:19+02:00",
+   "lastSeen": "2026-10-13T03:12:12+02:00",
    "status": "aktiv",
    "tempHint": "",
    "tempV": 3
@@ -1048,7 +1048,7 @@
    "lng": 8.540656,
    "approx": true,
    "firstSeen": "2026-10-12T19:25:57+02:00",
-   "lastSeen": "2026-10-12T23:04:19+02:00",
+   "lastSeen": "2026-10-13T03:12:12+02:00",
    "status": "aktiv",
    "tempHint": "",
    "tempV": 3
@@ -1072,7 +1072,7 @@
    "lat": 47.411598,
    "lng": 8.56815,
    "firstSeen": "2026-10-12T19:25:57+02:00",
-   "lastSeen": "2026-10-12T23:04:19+02:00",
+   "lastSeen": "2026-10-13T03:12:12+02:00",
    "status": "aktiv",
    "tempHint": "",
    "tempV": 3
@@ -1097,7 +1097,7 @@
    "lng": 8.52337,
    "approx": true,
    "firstSeen": "2026-10-12T19:25:57+02:00",
-   "lastSeen": "2026-10-12T23:04:19+02:00",
+   "lastSeen": "2026-10-13T03:12:12+02:00",
    "status": "aktiv",
    "tempHint": "",
    "tempV": 3
@@ -1121,7 +1121,7 @@
    "lat": 47.414032,
    "lng": 8.518545,
    "firstSeen": "2026-10-12T19:25:57+02:00",
-   "lastSeen": "2026-10-12T23:04:19+02:00",
+   "lastSeen": "2026-10-13T03:12:12+02:00",
    "status": "aktiv",
    "tempHint": "",
    "tempV": 3
@@ -1146,7 +1146,7 @@
    "lng": 8.487007,
    "approx": true,
    "firstSeen": "2026-10-12T19:25:57+02:00",
-   "lastSeen": "2026-10-12T23:04:19+02:00",
+   "lastSeen": "2026-10-13T03:12:12+02:00",
    "status": "aktiv",
    "tempHint": "",
    "tempV": 3
@@ -1171,7 +1171,7 @@
    "lng": 8.5205,
    "approx": true,
    "firstSeen": "2026-10-12T19:25:57+02:00",
-   "lastSeen": "2026-10-12T23:04:19+02:00",
+   "lastSeen": "2026-10-13T03:12:12+02:00",
    "status": "aktiv",
    "tempHint": "",
    "tempV": 3
@@ -1196,7 +1196,7 @@
    "lng": 8.50045,
    "approx": true,
    "firstSeen": "2026-10-12T19:25:57+02:00",
-   "lastSeen": "2026-10-12T23:04:19+02:00",
+   "lastSeen": "2026-10-13T03:12:12+02:00",
    "status": "aktiv",
    "tempHint": "",
    "tempV": 3
@@ -1221,7 +1221,7 @@
    "lng": 8.52337,
    "approx": true,
    "firstSeen": "2026-10-12T19:25:57+02:00",
-   "lastSeen": "2026-10-12T23:04:19+02:00",
+   "lastSeen": "2026-10-13T03:12:12+02:00",
    "status": "aktiv",
    "tempHint": "",
    "tempV": 3
@@ -1246,7 +1246,7 @@
    "lng": 8.52337,
    "approx": true,
    "firstSeen": "2026-10-12T19:25:57+02:00",
-   "lastSeen": "2026-10-12T23:04:19+02:00",
+   "lastSeen": "2026-10-13T03:12:12+02:00",
    "status": "aktiv",
    "tempHint": "",
    "tempV": 3
@@ -1271,7 +1271,7 @@
    "lng": 8.53752,
    "approx": true,
    "firstSeen": "2026-10-12T19:25:57+02:00",
-   "lastSeen": "2026-10-12T23:04:19+02:00",
+   "lastSeen": "2026-10-13T03:12:12+02:00",
    "status": "aktiv",
    "tempHint": "",
    "tempV": 3
@@ -1296,7 +1296,7 @@
    "lng": 8.561379,
    "approx": true,
    "firstSeen": "2026-10-12T19:25:57+02:00",
-   "lastSeen": "2026-10-12T23:04:19+02:00",
+   "lastSeen": "2026-10-13T03:12:12+02:00",
    "status": "aktiv",
    "tempHint": "",
    "tempV": 3
@@ -1321,7 +1321,7 @@
    "lng": 8.516149,
    "approx": true,
    "firstSeen": "2026-10-12T19:25:57+02:00",
-   "lastSeen": "2026-10-12T23:04:19+02:00",
+   "lastSeen": "2026-10-13T03:12:12+02:00",
    "status": "aktiv",
    "tempHint": "",
    "tempV": 3
@@ -1346,7 +1346,7 @@
    "lng": 8.50045,
    "approx": true,
    "firstSeen": "2026-10-12T19:25:57+02:00",
-   "lastSeen": "2026-10-12T23:04:19+02:00",
+   "lastSeen": "2026-10-13T03:12:12+02:00",
    "status": "aktiv",
    "tempHint": "",
    "tempV": 3
@@ -1371,7 +1371,7 @@
    "lng": 8.490266,
    "approx": true,
    "firstSeen": "2026-10-12T19:25:57+02:00",
-   "lastSeen": "2026-10-12T23:04:19+02:00",
+   "lastSeen": "2026-10-13T03:12:12+02:00",
    "status": "aktiv",
    "tempHint": "",
    "tempV": 3
@@ -1396,7 +1396,7 @@
    "lng": 8.53752,
    "approx": true,
    "firstSeen": "2026-10-12T19:25:57+02:00",
-   "lastSeen": "2026-10-12T23:04:19+02:00",
+   "lastSeen": "2026-10-13T03:12:12+02:00",
    "status": "aktiv",
    "tempHint": "",
    "tempV": 3
@@ -1421,7 +1421,7 @@
    "lng": 8.543152,
    "approx": true,
    "firstSeen": "2026-10-12T19:25:57+02:00",
-   "lastSeen": "2026-10-12T23:04:19+02:00",
+   "lastSeen": "2026-10-13T03:12:12+02:00",
    "status": "aktiv",
    "tempHint": "",
    "tempV": 3
@@ -1446,7 +1446,7 @@
    "lng": 8.564458,
    "approx": true,
    "firstSeen": "2026-10-12T19:25:57+02:00",
-   "lastSeen": "2026-10-12T23:04:19+02:00",
+   "lastSeen": "2026-10-13T03:12:12+02:00",
    "status": "aktiv",
    "tempHint": "",
    "tempV": 3
@@ -1471,7 +1471,7 @@
    "lng": 8.5508,
    "approx": true,
    "firstSeen": "2026-10-12T19:25:57+02:00",
-   "lastSeen": "2026-10-12T23:04:19+02:00",
+   "lastSeen": "2026-10-13T03:12:12+02:00",
    "status": "aktiv",
    "tempHint": "",
    "tempV": 3
@@ -1496,7 +1496,7 @@
    "lng": 8.487007,
    "approx": true,
    "firstSeen": "2026-10-12T19:25:57+02:00",
-   "lastSeen": "2026-10-12T23:04:19+02:00",
+   "lastSeen": "2026-10-13T03:12:12+02:00",
    "status": "aktiv",
    "tempHint": "",
    "tempV": 3
@@ -1521,7 +1521,7 @@
    "lng": 8.508303,
    "approx": true,
    "firstSeen": "2026-10-12T19:25:57+02:00",
-   "lastSeen": "2026-10-12T23:04:19+02:00",
+   "lastSeen": "2026-10-13T03:12:12+02:00",
    "status": "aktiv",
    "tempHint": "",
    "tempV": 3
@@ -1546,7 +1546,7 @@
    "lng": 8.541609,
    "approx": true,
    "firstSeen": "2026-10-12T19:25:57+02:00",
-   "lastSeen": "2026-10-12T23:04:19+02:00",
+   "lastSeen": "2026-10-13T03:12:12+02:00",
    "status": "aktiv",
    "tempHint": "",
    "tempV": 3
@@ -1571,7 +1571,7 @@
    "lng": 8.52337,
    "approx": true,
    "firstSeen": "2026-10-12T19:25:57+02:00",
-   "lastSeen": "2026-10-12T23:04:19+02:00",
+   "lastSeen": "2026-10-13T03:12:12+02:00",
    "status": "aktiv",
    "tempHint": "",
    "tempV": 3
@@ -1594,7 +1594,7 @@
    "note": "",
    "extKey": "flatfox:86446148",
    "firstSeen": "2026-10-12T17:29:02+02:00",
-   "lastSeen": "2026-10-12T23:04:19+02:00",
+   "lastSeen": "2026-10-13T03:12:12+02:00",
    "status": "aktiv",
    "lat": 47.422124201186,
    "lng": 8.497212212147,
@@ -1619,7 +1619,7 @@
    "note": "",
    "extKey": "flatfox:86444824",
    "firstSeen": "2026-10-12T17:29:02+02:00",
-   "lastSeen": "2026-10-12T23:04:19+02:00",
+   "lastSeen": "2026-10-13T03:12:12+02:00",
    "status": "aktiv",
    "lat": 47.385145201181,
    "lng": 8.480952212141,
@@ -1644,7 +1644,7 @@
    "note": "",
    "extKey": "flatfox:86423289",
    "firstSeen": "2026-10-12T17:29:02+02:00",
-   "lastSeen": "2026-10-12T23:04:19+02:00",
+   "lastSeen": "2026-10-13T03:12:12+02:00",
    "status": "aktiv",
    "lat": 47.416054201181,
    "lng": 8.538852212147,
@@ -1693,7 +1693,7 @@
    "note": "",
    "extKey": "flatfox:86438884",
    "firstSeen": "2026-10-12T17:29:02+02:00",
-   "lastSeen": "2026-10-12T23:04:19+02:00",
+   "lastSeen": "2026-10-13T03:12:12+02:00",
    "status": "aktiv",
    "lat": 47.422184201185,
    "lng": 8.551342212148,
@@ -1718,7 +1718,7 @@
    "note": "",
    "extKey": "flatfox:86433843",
    "firstSeen": "2026-10-12T17:29:02+02:00",
-   "lastSeen": "2026-10-12T23:04:19+02:00",
+   "lastSeen": "2026-10-13T03:12:12+02:00",
    "status": "aktiv",
    "lat": 47.323937201186,
    "lng": 8.510212212145,
@@ -1743,7 +1743,7 @@
    "note": "",
    "extKey": "flatfox:86432007",
    "firstSeen": "2026-10-12T17:29:02+02:00",
-   "lastSeen": "2026-10-12T23:04:19+02:00",
+   "lastSeen": "2026-10-13T03:12:12+02:00",
    "status": "aktiv",
    "lat": 47.425365201183,
    "lng": 8.550372212149,
@@ -1768,7 +1768,7 @@
    "note": "",
    "extKey": "flatfox:86429045",
    "firstSeen": "2026-10-12T17:29:02+02:00",
-   "lastSeen": "2026-10-12T23:04:19+02:00",
+   "lastSeen": "2026-10-13T03:12:12+02:00",
    "status": "aktiv",
    "lat": 47.371254201182,
    "lng": 8.525932212148,
@@ -1793,7 +1793,7 @@
    "note": "",
    "extKey": "flatfox:86428831",
    "firstSeen": "2026-10-12T17:29:02+02:00",
-   "lastSeen": "2026-10-12T23:04:19+02:00",
+   "lastSeen": "2026-10-13T03:12:12+02:00",
    "status": "aktiv",
    "lat": 47.404457201187,
    "lng": 8.496992212146,
@@ -1818,7 +1818,7 @@
    "note": "",
    "extKey": "flatfox:86428801",
    "firstSeen": "2026-10-12T17:29:02+02:00",
-   "lastSeen": "2026-10-12T23:04:19+02:00",
+   "lastSeen": "2026-10-13T03:12:12+02:00",
    "status": "aktiv",
    "lat": 47.359064201185,
    "lng": 8.552872212145,
@@ -1843,7 +1843,7 @@
    "note": "",
    "extKey": "flatfox:86422329",
    "firstSeen": "2026-10-12T17:29:02+02:00",
-   "lastSeen": "2026-10-12T23:04:19+02:00",
+   "lastSeen": "2026-10-13T03:12:12+02:00",
    "status": "aktiv",
    "lat": 47.380744201181,
    "lng": 8.517322212143,
@@ -1868,7 +1868,7 @@
    "note": "",
    "extKey": "flatfox:86421795",
    "firstSeen": "2026-10-12T17:29:02+02:00",
-   "lastSeen": "2026-10-12T23:04:19+02:00",
+   "lastSeen": "2026-10-13T03:12:12+02:00",
    "status": "aktiv",
    "lat": 47.414554201186,
    "lng": 8.539432212148,
@@ -1893,7 +1893,7 @@
    "note": "",
    "extKey": "flatfox:86419938",
    "firstSeen": "2026-10-12T17:29:02+02:00",
-   "lastSeen": "2026-10-12T23:04:19+02:00",
+   "lastSeen": "2026-10-13T03:12:12+02:00",
    "status": "aktiv",
    "lat": 47.367115201188,
    "lng": 8.567892212149,
@@ -1918,7 +1918,7 @@
    "note": "",
    "extKey": "flatfox:86412259",
    "firstSeen": "2026-10-12T17:29:02+02:00",
-   "lastSeen": "2026-10-12T23:04:19+02:00",
+   "lastSeen": "2026-10-13T03:12:12+02:00",
    "status": "aktiv",
    "lat": 47.421194201189,
    "lng": 8.503562212141,
@@ -1943,7 +1943,7 @@
    "note": "",
    "extKey": "flatfox:86409922",
    "firstSeen": "2026-10-12T17:29:02+02:00",
-   "lastSeen": "2026-10-12T23:04:19+02:00",
+   "lastSeen": "2026-10-13T03:12:12+02:00",
    "status": "aktiv",
    "lat": 47.353773201186,
    "lng": 8.527192212142,
@@ -1968,7 +1968,7 @@
    "note": "",
    "extKey": "flatfox:86406914",
    "firstSeen": "2026-10-12T17:29:02+02:00",
-   "lastSeen": "2026-10-12T23:04:19+02:00",
+   "lastSeen": "2026-10-13T03:12:12+02:00",
    "status": "aktiv",
    "lat": 47.383230201185,
    "lng": 8.501052212144,
@@ -2017,7 +2017,7 @@
    "note": "",
    "extKey": "flatfox:86403447",
    "firstSeen": "2026-10-12T17:29:02+02:00",
-   "lastSeen": "2026-10-12T23:04:19+02:00",
+   "lastSeen": "2026-10-13T03:12:12+02:00",
    "status": "aktiv",
    "lat": 47.386474201181,
    "lng": 8.542812212143,
@@ -2042,7 +2042,7 @@
    "note": "",
    "extKey": "flatfox:86400235",
    "firstSeen": "2026-10-12T17:29:02+02:00",
-   "lastSeen": "2026-10-12T23:04:19+02:00",
+   "lastSeen": "2026-10-13T03:12:12+02:00",
    "status": "aktiv",
    "lat": 47.412314201181,
    "lng": 8.557212212141,
@@ -2067,7 +2067,7 @@
    "note": "",
    "extKey": "flatfox:86394134",
    "firstSeen": "2026-10-12T17:29:02+02:00",
-   "lastSeen": "2026-10-12T23:04:19+02:00",
+   "lastSeen": "2026-10-13T03:12:12+02:00",
    "status": "aktiv",
    "lat": 47.356614201182,
    "lng": 8.592272212141,
@@ -2092,7 +2092,7 @@
    "note": "",
    "extKey": "flatfox:86382613",
    "firstSeen": "2026-10-12T17:29:02+02:00",
-   "lastSeen": "2026-10-12T23:04:19+02:00",
+   "lastSeen": "2026-10-13T03:12:12+02:00",
    "status": "aktiv",
    "lat": 47.407806201189,
    "lng": 8.567902212142,
@@ -2117,7 +2117,7 @@
    "note": "",
    "extKey": "flatfox:86380665",
    "firstSeen": "2026-10-12T17:29:02+02:00",
-   "lastSeen": "2026-10-12T23:04:19+02:00",
+   "lastSeen": "2026-10-13T03:12:12+02:00",
    "status": "aktiv",
    "lat": 47.334334201181,
    "lng": 8.512432212146,
@@ -2142,7 +2142,7 @@
    "note": "",
    "extKey": "flatfox:86377572",
    "firstSeen": "2026-10-12T17:29:02+02:00",
-   "lastSeen": "2026-10-12T23:04:19+02:00",
+   "lastSeen": "2026-10-13T03:12:12+02:00",
    "status": "aktiv",
    "lat": 47.408124201188,
    "lng": 8.568232212141,
@@ -2167,7 +2167,7 @@
    "note": "",
    "extKey": "flatfox:86377257",
    "firstSeen": "2026-10-12T17:29:02+02:00",
-   "lastSeen": "2026-10-12T23:04:19+02:00",
+   "lastSeen": "2026-10-13T03:12:12+02:00",
    "status": "aktiv",
    "lat": 47.423284201189,
    "lng": 8.542332212149,
@@ -2192,7 +2192,7 @@
    "note": "",
    "extKey": "flatfox:86370852",
    "firstSeen": "2026-10-12T17:29:02+02:00",
-   "lastSeen": "2026-10-12T23:04:19+02:00",
+   "lastSeen": "2026-10-13T03:12:12+02:00",
    "status": "aktiv",
    "lat": 47.424750201184,
    "lng": 8.520552212142,
@@ -2217,7 +2217,7 @@
    "note": "",
    "extKey": "flatfox:86365605",
    "firstSeen": "2026-10-12T17:29:02+02:00",
-   "lastSeen": "2026-10-12T23:04:19+02:00",
+   "lastSeen": "2026-10-13T03:12:12+02:00",
    "status": "aktiv",
    "lat": 47.385844201181,
    "lng": 8.543332212143,
@@ -2242,7 +2242,7 @@
    "note": "",
    "extKey": "flatfox:86361601",
    "firstSeen": "2026-10-12T17:29:02+02:00",
-   "lastSeen": "2026-10-12T23:04:19+02:00",
+   "lastSeen": "2026-10-13T03:12:12+02:00",
    "status": "aktiv",
    "lat": 47.407806201189,
    "lng": 8.567902212142,
@@ -2267,7 +2267,7 @@
    "note": "",
    "extKey": "flatfox:86361656",
    "firstSeen": "2026-10-12T17:29:02+02:00",
-   "lastSeen": "2026-10-12T23:04:19+02:00",
+   "lastSeen": "2026-10-13T03:12:12+02:00",
    "status": "aktiv",
    "lat": 47.377156201183,
    "lng": 8.555082212148,
@@ -2292,7 +2292,7 @@
    "note": "",
    "extKey": "flatfox:86357917",
    "firstSeen": "2026-10-12T17:29:02+02:00",
-   "lastSeen": "2026-10-12T23:04:19+02:00",
+   "lastSeen": "2026-10-13T03:12:12+02:00",
    "status": "aktiv",
    "lat": 47.403334201182,
    "lng": 8.582932212146,
@@ -2317,7 +2317,7 @@
    "note": "",
    "extKey": "flatfox:86348292",
    "firstSeen": "2026-10-12T17:29:02+02:00",
-   "lastSeen": "2026-10-12T23:04:19+02:00",
+   "lastSeen": "2026-10-13T03:12:12+02:00",
    "status": "aktiv",
    "lat": 47.386988201189,
    "lng": 8.473912212142,
@@ -2342,7 +2342,7 @@
    "note": "",
    "extKey": "flatfox:86345457",
    "firstSeen": "2026-10-12T17:29:02+02:00",
-   "lastSeen": "2026-10-12T23:04:19+02:00",
+   "lastSeen": "2026-10-13T03:12:12+02:00",
    "status": "aktiv",
    "lat": 47.388784201187,
    "lng": 8.492752212146,
@@ -2367,7 +2367,7 @@
    "note": "",
    "extKey": "flatfox:86311503",
    "firstSeen": "2026-10-12T17:29:02+02:00",
-   "lastSeen": "2026-10-12T23:04:19+02:00",
+   "lastSeen": "2026-10-13T03:12:12+02:00",
    "status": "aktiv",
    "lat": 47.426128201186,
    "lng": 8.504762212144,
@@ -2392,7 +2392,7 @@
    "note": "",
    "extKey": "flatfox:86168041",
    "firstSeen": "2026-10-12T17:29:02+02:00",
-   "lastSeen": "2026-10-12T23:04:19+02:00",
+   "lastSeen": "2026-10-13T03:12:12+02:00",
    "status": "aktiv",
    "lat": 47.413509201189,
    "lng": 8.558292212146,
@@ -2417,7 +2417,7 @@
    "note": "",
    "extKey": "flatfox:86190964",
    "firstSeen": "2026-10-12T17:29:02+02:00",
-   "lastSeen": "2026-10-12T23:04:19+02:00",
+   "lastSeen": "2026-10-13T03:12:12+02:00",
    "status": "aktiv",
    "lat": 47.377084201182,
    "lng": 8.528772212146,
@@ -2442,7 +2442,7 @@
    "note": "",
    "extKey": "flatfox:86289716",
    "firstSeen": "2026-10-12T17:29:02+02:00",
-   "lastSeen": "2026-10-12T23:04:19+02:00",
+   "lastSeen": "2026-10-13T03:12:12+02:00",
    "status": "aktiv",
    "lat": 47.422944201182,
    "lng": 8.502472212142,
@@ -2515,7 +2515,7 @@
    "note": "",
    "extKey": "flatfox:86226618",
    "firstSeen": "2026-10-12T17:29:02+02:00",
-   "lastSeen": "2026-10-12T23:04:19+02:00",
+   "lastSeen": "2026-10-13T03:12:12+02:00",
    "status": "aktiv",
    "lat": 47.408489201186,
    "lng": 8.558392212141,
@@ -2540,7 +2540,7 @@
    "note": "",
    "extKey": "flatfox:86032598",
    "firstSeen": "2026-10-12T17:29:02+02:00",
-   "lastSeen": "2026-10-12T23:04:19+02:00",
+   "lastSeen": "2026-10-13T03:12:12+02:00",
    "status": "aktiv",
    "lat": 47.382684201187,
    "lng": 8.598482212143,
@@ -2565,7 +2565,7 @@
    "note": "",
    "extKey": "flatfox:85871796",
    "firstSeen": "2026-10-12T17:29:02+02:00",
-   "lastSeen": "2026-10-12T23:04:19+02:00",
+   "lastSeen": "2026-10-13T03:12:12+02:00",
    "status": "aktiv",
    "lat": 47.403334201182,
    "lng": 8.582932212146,
@@ -2590,7 +2590,7 @@
    "note": "Seite erwähnt 4,5 Zimmer, 4,5-Zimmer, 5,5 Zimmer. Bitte prüfen. Auszug: et sich nach der Wohnungsgrösse: 1,5-Zimmer-Wohnung: 3500 CHF 2,5-Zimmer-Wohnung: 4500 CHF 3,5-Zimmer-Wohnung: 5500 CHF 4,5-Zimmer-Wohnung: 6500 CHF 5,5-Zimmer-Wohnung: 7500 CHF 6,5-Zimmer-Wohnung: 8500 CHF Das Anteilkapital wird auf die Vertragsparteien aufgeteilt. Der Mindestanteil pro M",
    "isHint": true,
    "firstSeen": "2026-10-12T17:29:02+02:00",
-   "lastSeen": "2026-10-12T23:04:19+02:00",
+   "lastSeen": "2026-10-13T03:12:12+02:00",
    "status": "aktiv"
   },
   {
@@ -2611,7 +2611,7 @@
    "note": "Seite erwähnt 4.5 Zimmer. Bitte prüfen. Auszug: legte Siedlung mit insgesamt 102 Wohnungen, einer Unterniveaugarage, Aussenparklätzen und Bastelräumen. Es stehen 2.0 – 4.5 Zimmerwohnungen mit attraktiven Balkonflächen zur Verfügung. Die grosszügigen und schön gestalteten Grün- und Spielflächen laden zum Verweilen ein. Die in den Baujahr",
    "isHint": true,
    "firstSeen": "2026-10-12T17:29:02+02:00",
-   "lastSeen": "2026-10-12T23:04:19+02:00",
+   "lastSeen": "2026-10-13T03:12:12+02:00",
    "status": "aktiv"
   },
   {
@@ -2632,7 +2632,7 @@
    "note": "Seite erwähnt 4.5-Zi, 4.5-Zimmer. Bitte prüfen. Auszug: 4.5-Zi-Whg Neubau Freie 4.5-Zimmer-Wohnungen im Neubau WhgNr Adresse Lage Bezug m2 Miete +NK Plan - - - - - - - -",
    "isHint": true,
    "firstSeen": "2026-10-12T17:29:02+02:00",
-   "lastSeen": "2026-10-12T23:04:19+02:00",
+   "lastSeen": "2026-10-13T03:12:12+02:00",
    "status": "aktiv"
   },
   {
@@ -2653,7 +2653,7 @@
    "note": "Seite erwähnt 5.5-Zi, 5.5-Zimmer. Bitte prüfen. Auszug: 5.5-Zi-Whg Neubau Freie 5.5-Zimmer-Wohnungen im Neubau WhgNr Adresse Lage Bezug m2 Miete +NK Plan - - - - - - - -",
    "isHint": true,
    "firstSeen": "2026-10-12T17:29:02+02:00",
-   "lastSeen": "2026-10-12T23:04:19+02:00",
+   "lastSeen": "2026-10-13T03:12:12+02:00",
    "status": "aktiv"
   },
   {
@@ -2674,7 +2674,7 @@
    "note": "Seite erwähnt 4½-Zimmer. Bitte prüfen. Auszug: eilsscheinen von gegenwärtig CHF 2‘000.– bis CHF 2‘500.– pro Zimmer, wobei halbe Zimmer aufgerundet werden. Wer in eine 4½-Zimmer-Wohnung einzieht, muss demzufolge Anteilsscheine im Gesamtbetrag von CHF 10'000.– bis CHF 12‘500.– zeichnen. Die Genossenschaft ist bestrebt, das Anteilsschein",
    "isHint": true,
    "firstSeen": "2026-10-12T17:29:02+02:00",
-   "lastSeen": "2026-10-12T23:04:19+02:00",
+   "lastSeen": "2026-10-13T03:12:12+02:00",
    "status": "aktiv"
   },
   {
@@ -2695,7 +2695,7 @@
    "note": "Seite erwähnt 4.5 Zimmer. Bitte prüfen. Auszug: Mindestbelegung Die Anzahl der Zimmer minus 1 ergibt die Mindestanzahl der Bewohnenden. So müssen zum Beispiel in einer 4.5 Zimmer-Wohnung mindestens 3 Personen leben. Halbe Zimmer werden nicht mitgerechnet. Wirtschaftliche Verhältnisse Der Mietzins und die wirtschaftlichen Verhältnisse de",
    "isHint": true,
    "firstSeen": "2026-10-12T17:29:02+02:00",
-   "lastSeen": "2026-10-12T23:04:19+02:00",
+   "lastSeen": "2026-10-13T03:12:12+02:00",
    "status": "aktiv"
   },
   {
@@ -2716,7 +2716,7 @@
    "note": "Seite erwähnt 4.5-Zimmer, 5 Zimmer, 6.5-Zimmer. Bitte prüfen. Auszug: ichtanteilschein-Kapitals: für 1- bis 2.5-Zimmer-Wohnung: CHF 5'500 für 3- bis 3.5-Zimmer-Wohnung: CHF 7'500 für 4- bis 4.5-Zimmer-Wohnung: CHF 8'500 für 5- bis 6.5-Zimmer-Wohnung: CHF 9'500 Wie lauten die Belegungsvorschriften? Bei der Vermietung sollen die Wohnungen nicht unterbelegt wer",
    "isHint": true,
    "firstSeen": "2026-10-12T17:29:02+02:00",
-   "lastSeen": "2026-10-12T23:04:19+02:00",
+   "lastSeen": "2026-10-13T03:12:12+02:00",
    "status": "aktiv"
   }
  ],
@@ -2727,7 +2727,7 @@
    "status": "mögliche Treffer",
    "hash": "163482c67d10343fbc1bfba2cfdf6a258025d66674127ddf471d48bbc441dc2c",
    "lastChange": null,
-   "checked": "2026-10-12T23:01:25+02:00",
+   "checked": "2026-10-13T03:08:40+02:00",
    "sizes": [
     "4,5 Zimmer",
     "4,5-Zimmer",
@@ -2742,7 +2742,7 @@
    "status": "mögliche Treffer",
    "hash": "a1f86016056058576171a67543f05e31b057e65d9fa5b3b5f448be892ebb7c90",
    "lastChange": null,
-   "checked": "2026-10-12T23:01:28+02:00",
+   "checked": "2026-10-13T03:08:42+02:00",
    "sizes": [
     "4.5 Zimmer"
    ]
@@ -2753,7 +2753,7 @@
    "status": "keine freien Wohnungen",
    "hash": "7a16c5c57df53603995e08d3d4793c2a73ae7c86adc871e7001b326a4371018b",
    "lastChange": null,
-   "checked": "2026-10-12T23:01:30+02:00",
+   "checked": "2026-10-13T03:08:45+02:00",
    "sizes": []
   },
   "https://baufreunde.ch/vermietung/": {
@@ -2762,7 +2762,7 @@
    "status": "keine freien Wohnungen",
    "hash": "b566d3dcc51dcca4ac868c62013dd5e03b1841fa324e4938c8cd72c82d4006af",
    "lastChange": null,
-   "checked": "2026-10-12T23:01:32+02:00",
+   "checked": "2026-10-13T03:08:47+02:00",
    "sizes": []
   },
   "https://www.bep-zuerich.ch/vermietung/freie-objekte/": {
@@ -2771,7 +2771,7 @@
    "status": "keine freien Wohnungen",
    "hash": "af26dc8c5abe16f52fde0db68d0df1612c00932489ac86d008ab1f8d23187b18",
    "lastChange": null,
-   "checked": "2026-10-12T23:01:36+02:00",
+   "checked": "2026-10-13T03:08:50+02:00",
    "sizes": []
   },
   "https://www.bonlieu.ch/der-bonlieuwohnbereich.html": {
@@ -2780,7 +2780,7 @@
    "status": "keine passende Grösse erkannt",
    "hash": "ff5f454638a6beae62ad3e27f0b25f5220a3ecbd89fee7140e1a9b87976d2432",
    "lastChange": null,
-   "checked": "2026-10-12T23:01:37+02:00",
+   "checked": "2026-10-13T03:08:52+02:00",
    "sizes": []
   },
   "https://www.bgbrunnenhof.ch/dienstleistungen/vermietung/": {
@@ -2789,7 +2789,7 @@
    "status": "keine passende Grösse erkannt",
    "hash": "52be75f12914696bb879a6a5a09797d01290f68a2313cb24e3589985206ae453",
    "lastChange": null,
-   "checked": "2026-10-12T23:01:39+02:00",
+   "checked": "2026-10-13T03:08:54+02:00",
    "sizes": []
   },
   "https://www.bsz-schoenau.ch/vermietung": {
@@ -2798,7 +2798,7 @@
    "status": "keine passende Grösse erkannt",
    "hash": "66ba1de4b8dd126735c31b57cd88f64a0f78378eeb8cfee9aa90f20871f6568e",
    "lastChange": null,
-   "checked": "2026-10-12T23:01:41+02:00",
+   "checked": "2026-10-13T03:08:56+02:00",
    "sizes": []
   },
   "https://burgmatte.ch": {
@@ -2807,7 +2807,7 @@
    "status": "keine freien Wohnungen",
    "hash": "8ad6a57e86a7e8517609d5d4a2c6c7721ecfcefc48fc174795b8e3640edb8c62",
    "lastChange": null,
-   "checked": "2026-10-12T23:01:43+02:00",
+   "checked": "2026-10-13T03:08:58+02:00",
    "sizes": []
   },
   "https://www.eba-zuerich.ch/neu4.5zi.php": {
@@ -2816,7 +2816,7 @@
    "status": "mögliche Treffer",
    "hash": "3448de892c2be3d3ba32ea7037d6109b5f34c952c0b48edff3a4f8d8f306322d",
    "lastChange": null,
-   "checked": "2026-10-12T23:01:46+02:00",
+   "checked": "2026-10-13T03:09:01+02:00",
    "sizes": [
     "4.5-Zi",
     "4.5-Zimmer"
@@ -2828,7 +2828,7 @@
    "status": "mögliche Treffer",
    "hash": "87195a0b62a9d6ebfb35f4b55fdd882a4c1b70f931b58f4955b0b4992d02347e",
    "lastChange": null,
-   "checked": "2026-10-12T23:01:47+02:00",
+   "checked": "2026-10-13T03:09:03+02:00",
    "sizes": [
     "5.5-Zi",
     "5.5-Zimmer"
@@ -2840,17 +2840,17 @@
    "status": "keine freien Wohnungen",
    "hash": "59e08add18da0333d0754fd9cd461cd52f828885e9b2b925afeea8dac8913501",
    "lastChange": null,
-   "checked": "2026-10-12T23:01:48+02:00",
+   "checked": "2026-10-13T03:09:04+02:00",
    "sizes": []
   },
   "https://fgzzh.ch/freie-objekte/": {
    "name": "FGZ",
    "url": "https://fgzzh.ch/freie-objekte/",
-   "status": "keine passende Grösse erkannt",
-   "hash": "1e7ece2f4b47135452a6bd358c06ffe7c21f33f5163a57d3afaa458524720889",
+   "status": "Fehler",
+   "hash": null,
    "lastChange": null,
-   "checked": "2026-10-12T23:01:51+02:00",
-   "sizes": []
+   "checked": "2026-10-13T03:09:06+02:00",
+   "error": "HTTPError"
   },
   "https://www.freiblick.ch/de/portrait/vermietung": {
    "name": "Freiblick",
@@ -2858,7 +2858,7 @@
    "status": "mögliche Treffer",
    "hash": "9f3412fb3bb6ee6cdad519aa380fece0a1c768e205466906bca11f9da49a09c6",
    "lastChange": null,
-   "checked": "2026-10-12T23:01:52+02:00",
+   "checked": "2026-10-13T03:09:48+02:00",
    "sizes": [
     "4½-Zimmer"
    ]
@@ -2869,7 +2869,7 @@
    "status": "gesperrt",
    "hash": null,
    "lastChange": null,
-   "checked": "2026-10-12T23:01:55+02:00",
+   "checked": "2026-10-13T03:09:51+02:00",
    "error": "Website blockiert (HTTP 403)"
   },
   "https://www.bg-gisa.ch/wohnungen": {
@@ -2878,7 +2878,7 @@
    "status": "keine passende Grösse erkannt",
    "hash": "998bb78d4eeb96aef1b33430ecc61535100a972b991352d63e6af94038742a88",
    "lastChange": null,
-   "checked": "2026-10-12T23:01:55+02:00",
+   "checked": "2026-10-13T03:09:52+02:00",
    "sizes": []
   },
   "https://www.bg-glattal.ch/vermietung": {
@@ -2887,7 +2887,7 @@
    "status": "keine passende Grösse erkannt",
    "hash": "1aa46ec317775fa6d2d5b5821148ebfa29c0d1c2ab4ad04598ede5a47009eef9",
    "lastChange": null,
-   "checked": "2026-10-12T23:01:57+02:00",
+   "checked": "2026-10-13T03:09:54+02:00",
    "sizes": []
   },
   "https://www.habitat8000.ch/": {
@@ -2896,7 +2896,7 @@
    "status": "keine passende Grösse erkannt",
    "hash": "f87020caf36831b8596d1e1cf3c04f40a3e58bf84ece37dba63368b4f14c9299",
    "lastChange": null,
-   "checked": "2026-10-12T23:01:59+02:00",
+   "checked": "2026-10-13T03:09:55+02:00",
    "sizes": []
   },
   "https://www.bg-heimelig.ch": {
@@ -2905,7 +2905,7 @@
    "status": "keine passende Grösse erkannt",
    "hash": "d2b15664c0b9e4f527e5f1174eb0d348e3743bc6c3f894154de470063e5933a5",
    "lastChange": null,
-   "checked": "2026-10-12T23:02:05+02:00",
+   "checked": "2026-10-13T03:09:59+02:00",
    "sizes": []
   },
   "https://www.bgim.ch/": {
@@ -2914,7 +2914,7 @@
    "status": "keine freien Wohnungen",
    "hash": "40ffddc271ccffe9dc02ee5bc639aade56e7ab104c66878648db8eb135bfb8e4",
    "lastChange": null,
-   "checked": "2026-10-12T23:02:10+02:00",
+   "checked": "2026-10-13T03:10:02+02:00",
    "sizes": []
   },
   "https://www.invia-zuerich.ch": {
@@ -2923,7 +2923,7 @@
    "status": "keine passende Grösse erkannt",
    "hash": "aabb5cb69cf5c9f79959c4011290171ce7dc98fdb121bbd2cb5d1499e93a210c",
    "lastChange": null,
-   "checked": "2026-10-12T23:02:13+02:00",
+   "checked": "2026-10-13T03:10:05+02:00",
    "sizes": []
   },
   "https://www.kalkbreite.net": {
@@ -2932,7 +2932,7 @@
    "status": "keine passende Grösse erkannt",
    "hash": "469304dab4caa7c3fe42c303029a1c131f29d5a7cf9ae9186c8469e977c013e5",
    "lastChange": null,
-   "checked": "2026-10-12T23:02:15+02:00",
+   "checked": "2026-10-13T03:10:07+02:00",
    "sizes": []
   },
   "https://kraftwerk1.ch/freie-objekte": {
@@ -2941,7 +2941,7 @@
    "status": "keine passende Grösse erkannt",
    "hash": "a07f20ed9e0084c27cefb65e76c6a274c41d4d4fb01bdfd767b9e58bded33e9c",
    "lastChange": null,
-   "checked": "2026-10-12T23:02:16+02:00",
+   "checked": "2026-10-13T03:10:10+02:00",
    "sizes": []
   },
   "https://www.bgl-zuerich.ch/vermietungen": {
@@ -2950,7 +2950,7 @@
    "status": "keine passende Grösse erkannt",
    "hash": "b79d586ee16ec23a9a63eb5276d94fed607b76684f901c0dca70b72e2aa8eabd",
    "lastChange": null,
-   "checked": "2026-10-12T23:02:18+02:00",
+   "checked": "2026-10-13T03:10:12+02:00",
    "sizes": []
   },
   "https://www.gbl.ch/freie-objekte.php": {
@@ -2959,7 +2959,7 @@
    "status": "keine passende Grösse erkannt",
    "hash": "6c72409ed15b9b007157f389755a2dbedfbfc81b77552f8d883d14a881f6bbd5",
    "lastChange": null,
-   "checked": "2026-10-12T23:02:19+02:00",
+   "checked": "2026-10-13T03:10:13+02:00",
    "sizes": []
   },
   "https://www.linthescher.ch/vermietung/wohnungen": {
@@ -2968,7 +2968,7 @@
    "status": "keine passende Grösse erkannt",
    "hash": "b1458a303539089aa928db2fb7b42602fd43febf99bdad43f3a365f4afbfbf58",
    "lastChange": null,
-   "checked": "2026-10-12T23:02:21+02:00",
+   "checked": "2026-10-13T03:10:15+02:00",
    "sizes": []
   },
   "https://www.logis.ch/de/Immobilien/Zuerich": {
@@ -2977,7 +2977,7 @@
    "status": "keine passende Grösse erkannt",
    "hash": "eeb92074518f60af148d70030f72495622d37cf6d552d97eb3b0716523392e8a",
    "lastChange": null,
-   "checked": "2026-10-12T23:02:23+02:00",
+   "checked": "2026-10-13T03:10:17+02:00",
    "sizes": []
   },
   "https://bg-luegisland.ch": {
@@ -2986,7 +2986,7 @@
    "status": "keine passende Grösse erkannt",
    "hash": "8819d1242d8cdc0a01191c330cb39c63cf4db0afdab13ab63612d20b148b1648",
    "lastChange": null,
-   "checked": "2026-10-12T23:02:26+02:00",
+   "checked": "2026-10-13T03:10:20+02:00",
    "sizes": []
   },
   "https://www.mbgz.ch/vermietung/": {
@@ -2995,7 +2995,7 @@
    "status": "keine passende Grösse erkannt",
    "hash": "432b36289f6f9c07fb6c53b10f32129ad3b57708d229961a8bfd8a69564e984b",
    "lastChange": null,
-   "checked": "2026-10-12T23:02:28+02:00",
+   "checked": "2026-10-13T03:10:22+02:00",
    "sizes": []
   },
   "https://www.mehralswohnen.ch/freie-objekte": {
@@ -3004,7 +3004,7 @@
    "status": "keine passende Grösse erkannt",
    "hash": "616c7a1b211f3c02955355605e07f8062274f9550693f7f9b54585fba757d846",
    "lastChange": null,
-   "checked": "2026-10-12T23:02:30+02:00",
+   "checked": "2026-10-13T03:10:24+02:00",
    "sizes": []
   },
   "https://www.milchbuck.ch/freie-wohnungen/": {
@@ -3013,7 +3013,7 @@
    "status": "keine freien Wohnungen",
    "hash": "d714a9bba7b2660a2f77df826a02c7c118de3a376ee94815c0bb3fc4194cdbad",
    "lastChange": null,
-   "checked": "2026-10-12T23:02:32+02:00",
+   "checked": "2026-10-13T03:10:26+02:00",
    "sizes": []
   },
   "https://www.bgoberstrass.ch/vermietung": {
@@ -3022,7 +3022,7 @@
    "status": "keine freien Wohnungen",
    "hash": "447bac3ebd25e347b0a666f2d9969f571ba6579bdc0f565ad002e7492d7f291b",
    "lastChange": null,
-   "checked": "2026-10-12T23:02:36+02:00",
+   "checked": "2026-10-13T03:10:30+02:00",
    "sizes": []
   },
   "https://www.pwg.ch/liegenschaften/zu-vermieten": {
@@ -3031,7 +3031,7 @@
    "status": "mögliche Treffer",
    "hash": "29f4a9f3377a14e710b9aa9e616dcd888e6c48864bd574245c9fc5fead356a92",
    "lastChange": null,
-   "checked": "2026-10-12T23:02:38+02:00",
+   "checked": "2026-10-13T03:10:33+02:00",
    "sizes": [
     "4.5 Zimmer"
    ]
@@ -3042,7 +3042,7 @@
    "status": "keine passende Grösse erkannt",
    "hash": "58458f961dda56a7f1f257616d6267ae91e52476e59d9ab4d6cb62e17461faa6",
    "lastChange": null,
-   "checked": "2026-10-12T23:02:40+02:00",
+   "checked": "2026-10-13T03:10:35+02:00",
    "sizes": []
   },
   "https://schoenheim.ch/freie-wohnungen/": {
@@ -3051,7 +3051,7 @@
    "status": "keine passende Grösse erkannt",
    "hash": "3d1cd1eb41cc8985af12e63121c3f950eba9e92dfcb8937ad21c7598810dcba4",
    "lastChange": null,
-   "checked": "2026-10-12T23:02:42+02:00",
+   "checked": "2026-10-13T03:10:37+02:00",
    "sizes": []
   },
   "https://gb-selbsthilfe.ch/siedlungen/mietobjekte/": {
@@ -3060,7 +3060,7 @@
    "status": "keine freien Wohnungen",
    "hash": "d7270cfa3b028a43e41210af650b8d89059d1ac7c93b4ace487fa0d9588432d8",
    "lastChange": null,
-   "checked": "2026-10-12T23:02:48+02:00",
+   "checked": "2026-10-13T03:10:43+02:00",
    "sizes": []
   },
   "https://bg-sonnengarten.ch/freie-wohnungen": {
@@ -3069,7 +3069,7 @@
    "status": "keine freien Wohnungen",
    "hash": "3713d086275e91947888fa77ead400cacb013ceec1f388b4d77245a74cfadcae",
    "lastChange": null,
-   "checked": "2026-10-12T23:02:50+02:00",
+   "checked": "2026-10-13T03:10:48+02:00",
    "sizes": []
   },
   "https://www.stadt-zuerich.ch/de/lebenslagen/wohnen/freie-wohnungen.html": {
@@ -3078,7 +3078,7 @@
    "status": "keine passende Grösse erkannt",
    "hash": "50315313f1db2a32e483ef128c1216ac0e5293774ca4ab5924a42837046ec8dc",
    "lastChange": null,
-   "checked": "2026-10-12T23:02:52+02:00",
+   "checked": "2026-10-13T03:10:50+02:00",
    "sizes": []
   },
   "https://aporta-stiftung.ch/liegenschaften/wohnungsbewerbung": {
@@ -3087,7 +3087,7 @@
    "status": "keine passende Grösse erkannt",
    "hash": "39bf10d96d304c09f44d7899e38a0d1a28ab625ca625caaaf23c608269417db2",
    "lastChange": null,
-   "checked": "2026-10-12T23:02:54+02:00",
+   "checked": "2026-10-13T03:10:52+02:00",
    "sizes": []
   },
   "https://bgsj.ch": {
@@ -3096,7 +3096,7 @@
    "status": "keine passende Grösse erkannt",
    "hash": "a1e2d58457a651096f7b3834ca9d4ab40dc0a12897d8097854a649d2a3d0d2f9",
    "lastChange": null,
-   "checked": "2026-10-12T23:02:56+02:00",
+   "checked": "2026-10-13T03:10:54+02:00",
    "sizes": []
   },
   "https://www.sued-ost.ch/siedlungen/freie-wohnungen": {
@@ -3105,7 +3105,7 @@
    "status": "keine passende Grösse erkannt",
    "hash": "8779f88319d6ff9306daa67328f2a15bd7c6e5cb0d0a2fd02d0d5a76eae7cba4",
    "lastChange": null,
-   "checked": "2026-10-12T23:02:58+02:00",
+   "checked": "2026-10-13T03:10:57+02:00",
    "sizes": []
   },
   "https://www.bgturicum.ch/": {
@@ -3114,7 +3114,7 @@
    "status": "keine passende Grösse erkannt",
    "hash": "522fc368e0bc6d70483168bbb31019652b4ec6b79d3d01ac075f0f7c4a1df6c1",
    "lastChange": null,
-   "checked": "2026-10-12T23:03:00+02:00",
+   "checked": "2026-10-13T03:10:59+02:00",
    "sizes": []
   },
   "https://vrenelisgaertli.ch/freie-wohnungen/": {
@@ -3123,7 +3123,7 @@
    "status": "keine freien Wohnungen",
    "hash": "bd0ce26fd5f247b9593571c1174b016a71addaa1a3c0fb334be05710b476698c",
    "lastChange": null,
-   "checked": "2026-10-12T23:03:03+02:00",
+   "checked": "2026-10-13T03:11:02+02:00",
    "sizes": []
   },
   "https://bg-waidberg.ch/wohnen-und-leben/freie-wohnungen/": {
@@ -3132,7 +3132,7 @@
    "status": "keine freien Wohnungen",
    "hash": "f0790317fa36a8733783af4451330826964ffdcfaab693af1da0ca9284ee5636",
    "lastChange": null,
-   "checked": "2026-10-12T23:03:06+02:00",
+   "checked": "2026-10-13T03:11:05+02:00",
    "sizes": []
   },
   "https://www.waidmatt.ch/siedlungen/freie-wohnungen/": {
@@ -3141,7 +3141,7 @@
    "status": "keine passende Grösse erkannt",
    "hash": "f494023838769d06da0938721c8dc5c3f6b7984d7416f62770b7cc52b9124d1c",
    "lastChange": null,
-   "checked": "2026-10-12T23:03:08+02:00",
+   "checked": "2026-10-13T03:11:07+02:00",
    "sizes": []
   },
   "https://bg-werdmuehle.ch/liegenschaften/": {
@@ -3150,7 +3150,7 @@
    "status": "keine passende Grösse erkannt",
    "hash": "dc72afc5f04385da9926730c529f863e982e4c529ec3bf8415b3abaaa34a1adc",
    "lastChange": null,
-   "checked": "2026-10-12T23:03:12+02:00",
+   "checked": "2026-10-13T03:11:10+02:00",
    "sizes": []
   },
   "https://www.bg-zentral.ch/index.php?id=6": {
@@ -3159,7 +3159,7 @@
    "status": "keine passende Grösse erkannt",
    "hash": "35fe56f27f50b4a2ae516c7cf2751cbde516c4cb657aed074d735cd452632049",
    "lastChange": null,
-   "checked": "2026-10-12T23:03:14+02:00",
+   "checked": "2026-10-13T03:11:13+02:00",
    "sizes": []
   },
   "https://www.zumkorn.ch/freie-objekte": {
@@ -3168,7 +3168,7 @@
    "status": "keine passende Grösse erkannt",
    "hash": "a6a5db6ddbc66a09b1c58c14948a7aa90ecc0acb7f1567be9fda45cf7923d9de",
    "lastChange": null,
-   "checked": "2026-10-12T23:03:16+02:00",
+   "checked": "2026-10-13T03:11:15+02:00",
    "sizes": []
   },
   "https://zbwg.ch/": {
@@ -3177,7 +3177,7 @@
    "status": "keine freien Wohnungen",
    "hash": "31e2ce946cbcc3bb77b8c8594a2c74f98a9d2d378aae0920d6b2bc6ecede7d4a",
    "lastChange": null,
-   "checked": "2026-10-12T23:03:20+02:00",
+   "checked": "2026-10-13T03:11:17+02:00",
    "sizes": []
   },
   "https://www.gbz7.ch/": {
@@ -3186,7 +3186,7 @@
    "status": "keine passende Grösse erkannt",
    "hash": "c5307ff426a77eea6915e4b44868df30acd293dd1a5f08a5a6268dd69844b3a9",
    "lastChange": null,
-   "checked": "2026-10-12T23:03:23+02:00",
+   "checked": "2026-10-13T03:11:20+02:00",
    "sizes": []
   },
   "https://gbmz.ch/siedlungen": {
@@ -3195,7 +3195,7 @@
    "status": "keine passende Grösse erkannt",
    "hash": "e1da0ba3eb5cffc34ff64300ed4ba70389919cd9c8b95ed7482042a883221e61",
    "lastChange": null,
-   "checked": "2026-10-12T23:03:26+02:00",
+   "checked": "2026-10-13T03:11:24+02:00",
    "sizes": []
   },
   "https://www.wogeno-zuerich.ch/genossenschaft/freie-wohnungen-und-objekte/": {
@@ -3204,7 +3204,7 @@
    "status": "keine passende Grösse erkannt",
    "hash": "3d2ab65a6487f20fc0115ae75dd0166bfa8228b1345ba1d34e4c39440e09b8dd",
    "lastChange": null,
-   "checked": "2026-10-12T23:03:28+02:00",
+   "checked": "2026-10-13T03:11:26+02:00",
    "sizes": []
   },
   "https://www.rotach.ch/portfolio/vermietung": {
@@ -3213,7 +3213,7 @@
    "status": "mögliche Treffer",
    "hash": "bf71310b23e11b8089e22c476ab5ea4273616a0ed61be31cec05cb967ca18268",
    "lastChange": null,
-   "checked": "2026-10-12T23:03:31+02:00",
+   "checked": "2026-10-13T03:11:29+02:00",
    "sizes": [
     "4.5-Zimmer",
     "5 Zimmer",
@@ -3226,7 +3226,7 @@
    "status": "keine passende Grösse erkannt",
    "hash": "2d898a4b0714ab131a0aec0125da82dd5464ea968ade6be2b73561fdc4170cef",
    "lastChange": null,
-   "checked": "2026-10-12T23:03:34+02:00",
+   "checked": "2026-10-13T03:11:30+02:00",
    "sizes": []
   },
   "https://www.gewobag.ch/": {
@@ -3235,7 +3235,7 @@
    "status": "keine passende Grösse erkannt",
    "hash": "2361e3308d5a5f9d3e6f7d2e9031eb244ac658819a49fe3a8f92fd9a8f98487f",
    "lastChange": null,
-   "checked": "2026-10-12T23:03:36+02:00",
+   "checked": "2026-10-13T03:11:32+02:00",
    "sizes": []
   },
   "https://www.asig.ch": {
@@ -3244,7 +3244,7 @@
    "status": "keine passende Grösse erkannt",
    "hash": "d2eb8844ea962dbbf063b8cb35d8c75e0d1e38627f00bcafdeff4cf2e69e2ab1",
    "lastChange": null,
-   "checked": "2026-10-12T23:03:38+02:00",
+   "checked": "2026-10-13T03:11:34+02:00",
    "sizes": []
   },
   "https://bahoge.ch": {
@@ -3253,7 +3253,7 @@
    "status": "keine passende Grösse erkannt",
    "hash": "bb56adefb29201d5443f7d3c023c0f2739f27fbc724d63ac6777bb0de318caea",
    "lastChange": null,
-   "checked": "2026-10-12T23:03:44+02:00",
+   "checked": "2026-10-13T03:11:38+02:00",
    "sizes": []
   },
   "https://bdz.ch/vermietung/": {
@@ -3262,7 +3262,7 @@
    "status": "keine freien Wohnungen",
    "hash": "63a60cd919cfb0467a75d8d6d52b88eac769fee773c7b7d5ba3e0f04f7b1bf9f",
    "lastChange": null,
-   "checked": "2026-10-12T23:03:48+02:00",
+   "checked": "2026-10-13T03:11:42+02:00",
    "sizes": []
   },
   "https://hagenbruenneli.ch": {
@@ -3271,7 +3271,7 @@
    "status": "keine passende Grösse erkannt",
    "hash": "05b0f1ac5051fb4d1a49a3a9457b266294085cd506e97fa51eb53960f3d92a4e",
    "lastChange": null,
-   "checked": "2026-10-12T23:03:50+02:00",
+   "checked": "2026-10-13T03:11:44+02:00",
    "sizes": []
   },
   "http://genossenschaft-gasi.ch/": {
@@ -3280,7 +3280,7 @@
    "status": "keine passende Grösse erkannt",
    "hash": "0656a3139baed03a66fad8d4b05842968edb2658b9a5d2295b53b13508d26852",
    "lastChange": null,
-   "checked": "2026-10-12T23:03:57+02:00",
+   "checked": "2026-10-13T03:11:50+02:00",
    "sizes": []
   },
   "https://bgsilu.ch": {
@@ -3289,7 +3289,7 @@
    "status": "keine passende Grösse erkannt",
    "hash": "af7995dc59b789626482f1e6e087b66db6f45528dd51d3c66e721ae9761ab96d",
    "lastChange": null,
-   "checked": "2026-10-12T23:03:59+02:00",
+   "checked": "2026-10-13T03:11:52+02:00",
    "sizes": []
   },
   "https://einfach-wohnen.ch": {
@@ -3298,7 +3298,7 @@
    "status": "keine passende Grösse erkannt",
    "hash": "a253656950a67088945b57ec61f1748f96ff9681e0d929a07431857a77506736",
    "lastChange": null,
-   "checked": "2026-10-12T23:04:02+02:00",
+   "checked": "2026-10-13T03:11:55+02:00",
    "sizes": []
   },
   "https://sunnigehof.ch": {
@@ -3307,7 +3307,7 @@
    "status": "keine passende Grösse erkannt",
    "hash": "d4686f2b7c6736935b2bfaead46d71ec4feecb122f68c6b16bbd8955af7e66af",
    "lastChange": null,
-   "checked": "2026-10-12T23:04:05+02:00",
+   "checked": "2026-10-13T03:11:58+02:00",
    "sizes": []
   },
   "https://bgsvea.ch": {
@@ -3316,7 +3316,7 @@
    "status": "keine passende Grösse erkannt",
    "hash": "e4e476305dbf72c821ed0d7bf2f82f053b58a0753a7214885ed25b6f01806508",
    "lastChange": null,
-   "checked": "2026-10-12T23:04:08+02:00",
+   "checked": "2026-10-13T03:12:01+02:00",
    "sizes": []
   },
   "https://www.bgz2.ch": {
@@ -3325,7 +3325,7 @@
    "status": "gesperrt",
    "hash": null,
    "lastChange": null,
-   "checked": "2026-10-12T23:04:10+02:00",
+   "checked": "2026-10-13T03:12:03+02:00",
    "error": "robots.txt erlaubt keinen automatischen Abruf"
   },
   "https://wsgz.ch/de/": {
@@ -3334,7 +3334,7 @@
    "status": "keine passende Grösse erkannt",
    "hash": "9ff8f61b6122d5828a06a34cfcea3d85c846045a17707e27e385a32d74445313",
    "lastChange": null,
-   "checked": "2026-10-12T23:04:10+02:00",
+   "checked": "2026-10-13T03:12:04+02:00",
    "sizes": []
   },
   "https://www.bgzurlinden.ch/freie-mietobjekte": {
@@ -3343,7 +3343,7 @@
    "status": "keine passende Grösse erkannt",
    "hash": "23ce68d08716b22702eee21e085ff6c26f0374c7d6cf3b12a4a7beb382ccefd7",
    "lastChange": null,
-   "checked": "2026-10-12T23:04:12+02:00",
+   "checked": "2026-10-13T03:12:06+02:00",
    "sizes": []
   },
   "https://www.bg-halde.ch/externe-mietinteressenten/anmeldung-fuer-eine-wohnung-/-wartelisten": {
@@ -3352,7 +3352,7 @@
    "status": "keine passende Grösse erkannt",
    "hash": "7601ea6886a7e95fdf229290a8174f59ad20268f1d445a32c6f195375b556aea",
    "lastChange": null,
-   "checked": "2026-10-12T23:04:14+02:00",
+   "checked": "2026-10-13T03:12:07+02:00",
    "sizes": []
   },
   "https://www.geho.ch/vermietung/": {
@@ -3361,7 +3361,7 @@
    "status": "keine passende Grösse erkannt",
    "hash": "fe89b717594eaf6e3caab4970780b1d2bea2c4f5a0a924ed56a2c87ce2ba0eee",
    "lastChange": null,
-   "checked": "2026-10-12T23:04:16+02:00",
+   "checked": "2026-10-13T03:12:09+02:00",
    "sizes": []
   }
  },
@@ -3487,6 +3487,22 @@
     "Genossenschaften nicht lesbar: Frohheim, Zürich 2 (BGZ2)"
    ],
    "new": 3
+  },
+  {
+   "at": "2026-10-13T03:12:12+02:00",
+   "ok": [
+    "Flatfox",
+    "ImmoStreet",
+    "alle-immobilien",
+    "RealAdvisor",
+    "immobilier.ch",
+    "Ron Orp",
+    "Genossenschaften"
+   ],
+   "failed": [
+    "Genossenschaften nicht lesbar: FGZ, Frohheim, Zürich 2 (BGZ2)"
+   ],
+   "new": 0
   }
  ],
  "flatfoxSkip": [
@@ -4055,6 +4071,7 @@
   "v3:https://realadvisor.ch/de/mieten/wohnung/8001-zurich-NAG4-D4A9": "",
   "v3:https://realadvisor.ch/de/mieten/wohnung/8004-zurich-ZZ74-B4JB": "",
   "v3:https://realadvisor.ch/de/mieten/wohnung/64-sihlweidstrasse-8041-zurich-YJDB-AMX4": "",
-  "v3:https://realadvisor.ch/de/mieten/wohnung/8053-zurich-6ZMD-D6JO": ""
+  "v3:https://realadvisor.ch/de/mieten/wohnung/8053-zurich-6ZMD-D6JO": "",
+  "v3:https://realadvisor.ch/de/mieten/wohnung/53-im-glockenacker-8053-zurich-85VA-7P52": ""
  }
 }

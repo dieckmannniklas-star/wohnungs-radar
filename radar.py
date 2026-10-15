@@ -707,26 +707,89 @@ def rooms_pattern(min_rooms: float) -> re.Pattern:
     return re.compile(r"(?<![\d.,])(" + "|".join(vals) + r")\s*-?\s*(zimmer|zi\b|zi\.|-zimmer)", re.I)
 
 
+def page_lines(raw: str) -> list[str]:
+    """Zerlegt eine Seite (HTML oder JSON-Schnittstelle) in Textzeilen."""
+    raw = raw or ""
+    if raw.lstrip()[:1] in "{[":
+        try:
+            parts = []
+
+            def walk(o):
+                if isinstance(o, dict):
+                    for v in o.values():
+                        walk(v)
+                elif isinstance(o, list):
+                    for v in o:
+                        walk(v)
+                elif isinstance(o, str) and not re.match(r"^\d{4}-\d\d-\d\dT|^https?://|^[a-z0-9]{20,}$", o):
+                    parts.append(BeautifulSoup(o, "html.parser").get_text("\n") if "<" in o else o)
+            walk(json.loads(raw))
+            raw_lines = "\n".join(parts).split("\n")
+        except json.JSONDecodeError:
+            raw_lines = raw.split("\n")
+    else:
+        soup = BeautifulSoup(raw, "html.parser")
+        for tag in soup(["script", "style", "noscript", "header", "footer", "nav", "form", "svg"]):
+            tag.decompose()
+        raw_lines = soup.get_text("\n").split("\n")
+    lines = [re.sub(r"\s+", " ", l).strip(" |·-") for l in raw_lines]
+    return [l for l in lines if len(l) > 2]
+
+
 def page_text(html: str) -> str:
-    soup = BeautifulSoup(html, "html.parser")
-    for tag in soup(["script", "style", "noscript", "header", "footer", "nav", "form", "svg"]):
-        tag.decompose()
-    text = soup.get_text(" ", strip=True)
-    text = re.sub(r"\s+", " ", text)
+    text = " ".join(page_lines(html))
     # Datumsangaben, Zähler u. ä. glätten, damit nicht jede Kleinigkeit als Änderung gilt
     return re.sub(r"\b\d{1,2}\.\d{1,2}\.\d{2,4}\b", "", text)
+
+
+# Zeile erwähnt irgendeine Zimmerzahl (unabhängig vom Filter, damit Filteränderungen nichts «neu» machen)
+ANY_ROOMS_RE = re.compile(r"(?<![\d.,])\d{1,2}(?:[.,]5|\s?½|\s?1/2)?\s*-?\s*(?:zimmer|zi\b|zi\.)", re.I)
+# Hinweise auf ein konkretes Inserat in der Umgebung einer Zimmerzahl
+RENT_HINT_RE = re.compile(
+    r"\b(?:mietzins|miete|bruttomiete|nettomiete|netto|brutto|nebenkosten|akonto)\b\W{0,5}(?:chf|fr\.?)?\s*[\d'’]{3,}"
+    r"|chf\s*[\d'’]{3,}[^·.]{0,15}?(?:/|pro\s+monat|mtl|monatlich|netto|brutto|inkl|exkl|zzgl|\+\s*nk)"
+    r"|(?:^|·\s)(?:chf|fr\.)\s*[\d'’]{3,6}(?:\.-|\.–|\.00)?\s*(?:·|$)", re.I)  # eigene kurze Zeile «CHF 2290»
+DATE_HINT_RE = re.compile(
+    r"\b(?:bezug\w*|frei\s+ab|verfügbar\s+ab|ab\s+sofort|per\s+sofort|mietbeginn|einzug\w*|einzugstermin)\b"
+    r"|\b(?:per|ab)\s+(?:\d{1,2}\.\s*\d{1,2}\.|\d{1,2}\.\s+[a-zä]+\s+\d{4}|anfang|mitte|ende)", re.I)
+# Regeln und Tabellen, die Zimmerzahlen nennen, ohne eine Wohnung anzubieten
+RULE_LINE_RE = re.compile(r"anteil\w*|mindestens\s+\d+\s+person|belegung\w*|richtet\s+sich|halbe\s+zimmer"
+                          r"|pro\s+zimmer|minus\s+1|max\.\s*\d+\s*zimmer|personen", re.I)
+RULE_WINDOW_RE = re.compile(r"belegungsvorschrift|mindestbelegung|belegungsrichtlinie|vermietungsreglement", re.I)
+DIGIT_RE = re.compile(r"\d")
+
+
+def room_value(text: str):
+    m = re.search(r"(\d{1,2})(?:[.,](5)|\s?(½|1/2))?", text)
+    if not m:
+        return None
+    return int(m.group(1)) + (0.5 if (m.group(2) or m.group(3)) else 0)
+COOP_NEW_DAYS = 14  # so lange bleibt eine neu aufgetauchte Erwähnung als Hinweis stehen
+
+
+def coop_hint_rent(window: str):
+    m = re.search(r"(?:mietzins|miete|brutto|bruttomiete|netto|nettomiete)\D{0,25}?(?:chf|fr\.?)?\s*([\d'’]{3,6})", window, re.I) \
+        or re.search(r"chf\s*([\d'’]{3,6})(?:\.-|\.–|\.00)?\s*(?:/\s*mt|/\s*monat|pro\s+monat|mtl|monatlich)", window, re.I)
+    if not m and not re.search(r"anteil|kaution|depot", window, re.I):
+        m = re.search(r"(?:chf|fr\.)\s*([\d'’]{3,6})", window, re.I)
+    val = to_float(m.group(1)) if m else None
+    return val if val and 500 <= val <= 15000 else None
 
 
 def source_coops(coops: list, flt: dict, prev_state: dict) -> tuple[list[dict], dict, list[str]]:
     rx = rooms_pattern(float(flt["min_rooms"]))
     hits, state, failed = [], {}, []
+    now = datetime.now(TZ)
     for name, url, *rest in coops:
         # optional dritter Eintrag: Adresse, unter der die Daten tatsächlich stehen (z. B. Schnittstelle)
         fetch_url = rest[0] if rest else url
+        old = prev_state.get(url, {})
         entry = {"name": name, "url": url, "status": "unbekannt", "hash": None,
-                 "lastChange": prev_state.get(url, {}).get("lastChange"), "checked": now_iso()}
+                 "lastChange": old.get("lastChange"), "checked": now_iso()}
         try:
-            text = page_text(fetch(fetch_url))
+            raw = fetch(fetch_url)
+            lines = page_lines(raw)
+            text = page_text(raw)
         except Blocked as e:
             entry["status"] = "gesperrt"
             entry["error"] = str(e)
@@ -740,38 +803,73 @@ def source_coops(coops: list, flt: dict, prev_state: dict) -> tuple[list[dict], 
             state[url] = entry
             continue
         h = hashlib.sha256(text.encode()).hexdigest()
-        old = prev_state.get(url, {})
-        changed = old.get("hash") not in (None, h)
-        if changed:
+        if old.get("hash") not in (None, h):
             entry["lastChange"] = now_iso()
         entry["hash"] = h
-        size_hits = sorted({m.group(0) for m in rx.finditer(text)})
+
+        # Zeilen mit Zahlen merken: wann tauchten sie zum ersten Mal auf?
+        baseline = "lines" not in old  # erster Lauf mit dieser Logik: bestehender Inhalt gilt als alt
+        seen_before = old.get("lines", {})
+        # Seiten wie «Freie 4.5-Zimmer-Wohnungen» nennen die Grösse nur in der Überschrift
+        title_rooms = next((rx.search(l) for l in lines[:5] if rx.search(l)), None)
+        line_state, found = {}, []
+        last_hit = -10
+        for i, line in enumerate(lines):
+            if not DIGIT_RE.search(line) or len(line_state) >= 400:
+                continue
+            key = hashlib.sha1(line.lower().encode()).hexdigest()[:12]
+            first = seen_before.get(key) or ("alt" if baseline else now_iso())
+            line_state[key] = first
+            if i - last_hit <= 3:  # gehört noch zum selben Inserat bzw. zur selben Tabellenzeile
+                continue
+            is_new = first != "alt" and (now - datetime.fromisoformat(first)).days < COOP_NEW_DAYS
+            window = " · ".join(lines[max(0, i - 3): i + 4])
+            m = rx.search(line)
+            if not m:
+                # neue Tabellenzeile ohne Zimmerzahl auf einer Seite, deren Überschrift die Grösse nennt
+                if is_new and title_rooms and not ANY_ROOMS_RE.search(line) and (
+                        RENT_HINT_RE.search(window) or DATE_HINT_RE.search(window)):
+                    found.append((key, title_rooms.group(0), line, window, True, first))
+                    last_hit = i
+                continue
+            if RULE_LINE_RE.search(line) or RULE_WINDOW_RE.search(window):
+                continue
+            is_listing = bool(RENT_HINT_RE.search(window) or DATE_HINT_RE.search(window))
+            if is_listing or is_new:
+                found.append((key, m.group(0), line, window, is_listing, first))
+                last_hit = i
+        entry["lines"] = line_state
+
         says_none = bool(NONE_RE.search(text))
-        entry["status"] = "keine freien Wohnungen" if says_none and not size_hits else (
-            "mögliche Treffer" if size_hits else "keine passende Grösse erkannt")
-        entry["sizes"] = size_hits[:5]
+        if found:
+            entry["status"] = "Inserat erkannt" if any(f[4] for f in found) else "neue Erwähnung"
+        else:
+            entry["status"] = "keine freien Wohnungen" if says_none else "nichts Passendes"
+        entry["sizes"] = sorted({f[1] for f in found})[:5]
         state[url] = entry
-        if size_hits:
-            snippet = ""
-            m = rx.search(text)
-            if m:
-                snippet = text[max(0, m.start() - 120): m.end() + 160]
+
+        for key, size, line, window, is_listing, first in found[:6]:
+            reason = temp_reason(window)
+            label = "Inserat auf der Seite" if is_listing else "Neu auf der Seite"
+            if first != "alt":
+                label += f" (seit {datetime.fromisoformat(first).strftime('%d.%m.')})"
             hits.append({
-                "id": slug("coop-" + name + "-" + h[:10]),
+                "id": slug(f"coop-{name}-{key}"),
                 "kind": "genossenschaft",
                 "coop": name,
                 "source": "Website",
                 "address": "",
                 "zip": None,
                 "quartier": "",
-                "rooms": to_float(size_hits[0]),
-                "rent": None,
+                "rooms": room_value(size),
+                "rent": coop_hint_rent(window),
                 "rentType": "",
                 "area": None,
                 "moveIn": "",
-                "temporary": False,
+                "temporary": bool(reason),
+                "tempHint": reason,
                 "url": url,
-                "note": "Seite erwähnt " + ", ".join(size_hits[:3]) + ". Bitte prüfen. Auszug: " + snippet,
+                "note": f"{label}: {line[:200]}" + (f" | Umfeld: {window[:300]}" if window != line else ""),
                 "isHint": True,
             })
         time.sleep(1)
@@ -916,7 +1014,8 @@ def main() -> int:
             locate(l)
             if l["address"] and not had_zip and l.get("zip"):  # PLZ erst durch Nachschlagen bekannt
                 l["id"] = slug(listing_key(l["address"], l["zip"], l["rooms"]))
-        if l.get("isHint") or matches(l, flt):
+        hint_ok = l.get("isHint") and not (l.get("rent") and l["rent"] > float(flt["max_rent"]))
+        if hint_ok or (not l.get("isHint") and matches(l, flt)):
             if l["id"] in current:  # dieselbe Wohnung auf mehreren Portalen
                 cur = current[l["id"]]
                 if l["source"] not in cur["source"]:

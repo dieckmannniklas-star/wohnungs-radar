@@ -277,7 +277,7 @@ function renderRegister(){
   for(const c of coops){
     const li=document.createElement("li");
     const s=document.createElement("span"); const a=document.createElement("a"); a.href=c.url;a.target="_blank";a.rel="noopener";a.textContent=c.name;s.append(a);
-    const t=document.createElement("span"); t.className="tag"+(c.status==="gesperrt"||c.status==="Fehler"?" off":c.status==="mögliche Treffer"?" hit":""); t.textContent=c.status;
+    const t=document.createElement("span"); t.className="tag"+(c.status==="gesperrt"||c.status==="Fehler"?" off":(c.status==="Inserat erkannt"||c.status==="neue Erwähnung")?" hit":""); t.textContent=c.status;
     li.append(s,t); reg.append(li);
   }
 }
@@ -285,7 +285,7 @@ function renderRegister(){
 // ---------- Karte ----------
 let MAP=null, LAYER=null; const MARKERS={};
 const hasPos=r=>typeof r.lat==="number"&&typeof r.lng==="number";
-function title(r){return r.isHint?(r.coop+": neue Ausschreibung möglich"):([r.address,[r.zip,r.quartier].filter(Boolean).join(" ")].filter(Boolean).join(", ")||"Adresse unbekannt")}
+function title(r){return r.isHint?(r.coop+": "+(String(r.note||"").startsWith("Inserat")?"Inserat auf der Website":"Neues auf der Website")):([r.address,[r.zip,r.quartier].filter(Boolean).join(" ")].filter(Boolean).join(", ")||"Adresse unbekannt")}
 function gmapsUrl(r){
   let q="";
   if(r.address) q=[r.address,[r.zip,r.quartier||"Zürich"].filter(Boolean).join(" ")].join(", ");

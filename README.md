@@ -5,7 +5,7 @@ Sucht alle 4 Stunden nach Mietwohnungen in der Stadt Zürich und meldet neue Tre
 **Was es durchsucht**
 
 - **Flatfox, ImmoStreet, alle-immobilien, RealAdvisor, immobilier.ch und Ron Orp**: alle Inserate, die deinen Filtern entsprechen (Standard: ab 4,5 Zimmer, bis CHF 4'000 brutto, PLZ 8000–8099). Inserate von Genossenschaften werden markiert. ImmoStreet und alle-immobilien zeigen die Inserate von Homegate und ImmoScout24, die selbst automatische Abrufe sperren.
-- **Rund 70 Genossenschafts-Websites**: Das Programm erkennt, wenn eine Seite eine passende Zimmerzahl erwähnt, und schickt dir einen Hinweis mit Link. Genaue Miete und Adresse siehst du dann auf der Seite der Genossenschaft.
+- **Rund 70 Genossenschafts-Websites**: Das Programm merkt sich jede Zeile der Seiten und meldet zwei Dinge: Zeilen, die wie ein Inserat aussehen (passende Zimmerzahl plus Miete oder Bezugstermin), und neu aufgetauchte Erwähnungen einer passenden Zimmerzahl (14 Tage lang). Regeln und Tabellen wie Anteilkapital oder Belegungsvorschriften werden ignoriert. Genaue Angaben siehst du auf der Seite der Genossenschaft.
 
 **Was du bekommst**
 

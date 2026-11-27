@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-26T23:00:15+01:00",
+ "updated": "2026-11-27T10:09:48+01:00",
  "filter": {
   "min_rooms": 4.5,
   "max_rent": 4000,
@@ -9,6 +9,31 @@
   "include_temporary": true
  },
  "listings": [
+  {
+   "id": "militarstr-105-8004-5-5",
+   "kind": "markt",
+   "coop": "CSL Immobilien AG",
+   "source": "Flatfox",
+   "address": "Militärstr. 105",
+   "zip": 8004,
+   "quartier": "Zürich",
+   "rooms": 5.5,
+   "rent": 3600.0,
+   "rentType": "brutto",
+   "area": 122.0,
+   "moveIn": "2027-01-16",
+   "temporary": false,
+   "tempHint": "",
+   "tempV": 3,
+   "url": "https://flatfox.ch/de/wohnung/militarstr-105-8004-zurich/86586698/",
+   "note": "",
+   "lat": 47.379065204841,
+   "lng": 8.528621592012,
+   "extKey": "flatfox:86586698",
+   "firstSeen": "2026-11-27T10:09:48+01:00",
+   "lastSeen": "2026-11-27T10:09:48+01:00",
+   "status": "aktiv"
+  },
   {
    "id": "witikonerstr-399-8053-4-5",
    "kind": "markt",
@@ -31,7 +56,7 @@
    "lng": 8.593272101202,
    "extKey": "flatfox:86420182",
    "firstSeen": "2026-11-26T23:00:15+01:00",
-   "lastSeen": "2026-11-26T23:00:15+01:00",
+   "lastSeen": "2026-11-27T10:09:48+01:00",
    "status": "aktiv"
   },
   {
@@ -56,7 +81,7 @@
    "lng": 8.527702101206,
    "extKey": "flatfox:86328370",
    "firstSeen": "2026-11-26T23:00:15+01:00",
-   "lastSeen": "2026-11-26T23:00:15+01:00",
+   "lastSeen": "2026-11-27T10:09:48+01:00",
    "status": "aktiv"
   },
   {
@@ -81,7 +106,7 @@
    "lng": 8.524811491985,
    "extKey": "flatfox:86580890",
    "firstSeen": "2026-11-26T10:00:11+01:00",
-   "lastSeen": "2026-11-26T23:00:15+01:00",
+   "lastSeen": "2026-11-27T10:09:48+01:00",
    "status": "aktiv"
   },
   {
@@ -106,7 +131,7 @@
    "lng": 8.531944190209,
    "extKey": "flatfox:86580499",
    "firstSeen": "2026-11-26T01:45:00+01:00",
-   "lastSeen": "2026-11-26T23:00:15+01:00",
+   "lastSeen": "2026-11-27T10:09:48+01:00",
    "status": "aktiv"
   },
   {
@@ -131,7 +156,7 @@
    "lng": 8.514549194201,
    "extKey": "flatfox:86577975",
    "firstSeen": "2026-11-26T01:45:00+01:00",
-   "lastSeen": "2026-11-26T23:00:15+01:00",
+   "lastSeen": "2026-11-27T10:09:48+01:00",
    "status": "aktiv"
   },
   {
@@ -180,7 +205,7 @@
    "lng": 8.516201181682,
    "extKey": "flatfox:86577979",
    "firstSeen": "2026-11-25T04:49:24+01:00",
-   "lastSeen": "2026-11-26T23:00:15+01:00",
+   "lastSeen": "2026-11-27T10:09:48+01:00",
    "status": "aktiv"
   },
   {
@@ -205,7 +230,7 @@
    "lng": 8.527155212203,
    "extKey": "flatfox:86576721",
    "firstSeen": "2026-11-24T20:47:12+01:00",
-   "lastSeen": "2026-11-26T23:00:15+01:00",
+   "lastSeen": "2026-11-27T10:09:48+01:00",
    "status": "aktiv"
   },
   {
@@ -230,7 +255,7 @@
    "lng": 8.529430212206,
    "extKey": "flatfox:86576651",
    "firstSeen": "2026-11-24T20:47:12+01:00",
-   "lastSeen": "2026-11-26T23:00:15+01:00",
+   "lastSeen": "2026-11-27T10:09:48+01:00",
    "status": "aktiv"
   },
   {
@@ -306,7 +331,7 @@
    "lng": 8.504771911141,
    "extKey": "flatfox:86551471",
    "firstSeen": "2026-11-23T21:38:40+01:00",
-   "lastSeen": "2026-11-26T23:00:15+01:00",
+   "lastSeen": "2026-11-27T10:09:48+01:00",
    "status": "aktiv"
   },
   {
@@ -357,7 +382,7 @@
    "lng": 8.530201262271,
    "extKey": "flatfox:86565548",
    "firstSeen": "2026-11-22T23:10:07+01:00",
-   "lastSeen": "2026-11-26T23:00:15+01:00",
+   "lastSeen": "2026-11-27T10:09:48+01:00",
    "status": "aktiv"
   },
   {
@@ -456,14 +481,14 @@
    "lng": 8.541356451884,
    "extKey": "flatfox:86418045",
    "firstSeen": "2026-11-20T08:50:29+01:00",
-   "lastSeen": "2026-11-26T23:00:15+01:00",
+   "lastSeen": "2026-11-27T10:09:48+01:00",
    "status": "aktiv"
   },
   {
    "id": "rieterstrasse-37-8002-4-5",
    "kind": "markt",
    "coop": "livit ag real estate management",
-   "source": "ImmoStreet, alle-immobilien, immobilier.ch",
+   "source": "immobilier.ch",
    "address": "Rieterstrasse 37",
    "zip": 8002,
    "quartier": "Zürich",
@@ -475,12 +500,12 @@
    "temporary": false,
    "tempHint": "",
    "tempV": 3,
-   "url": "https://www.homegate.ch/mieten/4003643209",
+   "url": "https://www.immobilier.ch/de/mieten/wohnung/zurich/zurich/livit-ag-real-estate-management-675/ihre-neue-wohlfuhloase-an-bevozugter-wohnlage-1617170",
    "note": "",
-   "lat": 47.3583125,
-   "lng": 8.5263052,
+   "lat": 47.3583048,
+   "lng": 8.5263283,
    "firstSeen": "2026-11-20T00:18:07+01:00",
-   "lastSeen": "2026-11-26T23:00:15+01:00",
+   "lastSeen": "2026-11-27T10:09:48+01:00",
    "status": "aktiv"
   },
   {
@@ -530,7 +555,7 @@
    "lng": 8.531935124673,
    "extKey": "flatfox:86553814",
    "firstSeen": "2026-11-18T18:38:48+01:00",
-   "lastSeen": "2026-11-26T23:00:15+01:00",
+   "lastSeen": "2026-11-27T10:09:48+01:00",
    "status": "aktiv"
   },
   {
@@ -555,7 +580,7 @@
    "lng": 8.557242324821,
    "extKey": "flatfox:86552527",
    "firstSeen": "2026-11-18T00:43:22+01:00",
-   "lastSeen": "2026-11-26T23:00:15+01:00",
+   "lastSeen": "2026-11-27T10:09:48+01:00",
    "status": "aktiv"
   },
   {
@@ -580,7 +605,7 @@
    "lng": 8.502162323825,
    "extKey": "flatfox:86548911",
    "firstSeen": "2026-11-18T00:43:22+01:00",
-   "lastSeen": "2026-11-26T23:00:15+01:00",
+   "lastSeen": "2026-11-27T10:09:48+01:00",
    "status": "aktiv"
   },
   {
@@ -629,7 +654,7 @@
    "lng": 8.510864769589,
    "extKey": "flatfox:86530289",
    "firstSeen": "2026-11-17T14:56:13+01:00",
-   "lastSeen": "2026-11-26T23:00:15+01:00",
+   "lastSeen": "2026-11-27T10:09:48+01:00",
    "status": "aktiv"
   },
   {
@@ -850,7 +875,7 @@
    "lng": 8.514702101181,
    "extKey": "flatfox:86484709",
    "firstSeen": "2026-11-16T08:22:43+01:00",
-   "lastSeen": "2026-11-26T23:00:15+01:00",
+   "lastSeen": "2026-11-27T10:09:48+01:00",
    "status": "aktiv"
   },
   {
@@ -925,7 +950,7 @@
    "lng": 8.480952101395,
    "extKey": "flatfox:86444824",
    "firstSeen": "2026-11-14T02:07:28+01:00",
-   "lastSeen": "2026-11-26T23:00:15+01:00",
+   "lastSeen": "2026-11-27T10:09:48+01:00",
    "status": "aktiv"
   },
   {
@@ -950,7 +975,7 @@
    "lng": 8.517262101392,
    "extKey": "flatfox:86293161",
    "firstSeen": "2026-11-14T02:07:28+01:00",
-   "lastSeen": "2026-11-26T23:00:15+01:00",
+   "lastSeen": "2026-11-27T10:09:48+01:00",
    "status": "aktiv"
   },
   {
@@ -975,7 +1000,7 @@
    "lng": 8.512472101393,
    "extKey": "flatfox:86184140",
    "firstSeen": "2026-11-14T02:07:28+01:00",
-   "lastSeen": "2026-11-26T23:00:15+01:00",
+   "lastSeen": "2026-11-27T10:09:48+01:00",
    "status": "aktiv"
   },
   {
@@ -1024,7 +1049,7 @@
    "lng": 8.599022511508,
    "extKey": "flatfox:86538992",
    "firstSeen": "2026-11-12T23:31:10+01:00",
-   "lastSeen": "2026-11-26T23:00:15+01:00",
+   "lastSeen": "2026-11-27T10:09:48+01:00",
    "status": "aktiv"
   },
   {
@@ -1049,7 +1074,7 @@
    "lng": 8.561379,
    "approx": true,
    "firstSeen": "2026-11-12T23:31:10+01:00",
-   "lastSeen": "2026-11-26T23:00:15+01:00",
+   "lastSeen": "2026-11-27T10:09:48+01:00",
    "status": "aktiv"
   },
   {
@@ -1409,7 +1434,7 @@
    "lng": 8.493931034517,
    "extKey": "flatfox:86445646",
    "firstSeen": "2026-11-10T14:55:43+01:00",
-   "lastSeen": "2026-11-26T23:00:15+01:00",
+   "lastSeen": "2026-11-27T10:09:48+01:00",
    "status": "aktiv"
   },
   {
@@ -1692,7 +1717,7 @@
    "lng": 8.487007,
    "approx": true,
    "firstSeen": "2026-11-09T14:59:44+01:00",
-   "lastSeen": "2026-11-26T23:00:15+01:00",
+   "lastSeen": "2026-11-27T10:09:48+01:00",
    "status": "aktiv"
   },
   {
@@ -1744,7 +1769,7 @@
    "lng": 8.479301996918,
    "extKey": "flatfox:86524767",
    "firstSeen": "2026-11-08T22:21:42+01:00",
-   "lastSeen": "2026-11-26T23:00:15+01:00",
+   "lastSeen": "2026-11-27T10:09:48+01:00",
    "status": "aktiv"
   },
   {
@@ -1821,7 +1846,7 @@
    "lng": 8.590653212209,
    "extKey": "flatfox:86576008",
    "firstSeen": "2026-11-07T22:20:56+01:00",
-   "lastSeen": "2026-11-26T23:00:15+01:00",
+   "lastSeen": "2026-11-27T10:09:48+01:00",
    "status": "aktiv"
   },
   {
@@ -1872,7 +1897,7 @@
    "lng": 8.559831021549,
    "extKey": "flatfox:86519570",
    "firstSeen": "2026-11-07T22:20:56+01:00",
-   "lastSeen": "2026-11-26T23:00:15+01:00",
+   "lastSeen": "2026-11-27T10:09:48+01:00",
    "status": "aktiv"
   },
   {
@@ -1974,7 +1999,7 @@
    "lng": 8.503422371561,
    "extKey": "flatfox:86521472",
    "firstSeen": "2026-11-06T14:56:53+01:00",
-   "lastSeen": "2026-11-26T23:00:15+01:00",
+   "lastSeen": "2026-11-27T10:09:48+01:00",
    "status": "aktiv"
   },
   {
@@ -2023,7 +2048,7 @@
    "lat": 47.406158,
    "lng": 8.485854,
    "firstSeen": "2026-11-06T10:44:26+01:00",
-   "lastSeen": "2026-11-26T23:00:15+01:00",
+   "lastSeen": "2026-11-27T10:09:48+01:00",
    "status": "aktiv"
   },
   {
@@ -2149,7 +2174,7 @@
    "lng": 8.520491611833,
    "extKey": "flatfox:86518928",
    "firstSeen": "2026-11-05T18:42:51+01:00",
-   "lastSeen": "2026-11-26T23:00:15+01:00",
+   "lastSeen": "2026-11-27T10:09:48+01:00",
    "status": "aktiv"
   },
   {
@@ -2277,7 +2302,7 @@
    "lng": 8.543517454862,
    "extKey": "flatfox:86507239",
    "firstSeen": "2026-11-05T15:00:46+01:00",
-   "lastSeen": "2026-11-26T23:00:15+01:00",
+   "lastSeen": "2026-11-27T10:09:48+01:00",
    "status": "aktiv"
   },
   {
@@ -2353,7 +2378,7 @@
    "lng": 8.499215,
    "extKey": "flatfox:86481767",
    "firstSeen": "2026-11-03T18:36:24+01:00",
-   "lastSeen": "2026-11-26T23:00:15+01:00",
+   "lastSeen": "2026-11-27T10:09:48+01:00",
    "status": "aktiv",
    "goneSince": "2026-11-11T10:43:05+01:00"
   },
@@ -2607,7 +2632,7 @@
    "lng": 8.50045,
    "approx": true,
    "firstSeen": "2026-11-01T14:34:18+01:00",
-   "lastSeen": "2026-11-26T23:00:15+01:00",
+   "lastSeen": "2026-11-27T10:09:48+01:00",
    "status": "aktiv"
   },
   {
@@ -2683,7 +2708,7 @@
    "lng": 8.540656,
    "approx": true,
    "firstSeen": "2026-10-31T18:17:50+01:00",
-   "lastSeen": "2026-11-26T23:00:15+01:00",
+   "lastSeen": "2026-11-27T10:09:48+01:00",
    "status": "aktiv"
   },
   {
@@ -2708,7 +2733,7 @@
    "lng": 8.546857121956,
    "extKey": "flatfox:86504134",
    "firstSeen": "2026-10-31T14:32:59+01:00",
-   "lastSeen": "2026-11-26T23:00:15+01:00",
+   "lastSeen": "2026-11-27T10:09:48+01:00",
    "status": "aktiv"
   },
   {
@@ -2835,7 +2860,7 @@
    "lat": 47.382198,
    "lng": 8.485725,
    "firstSeen": "2026-10-31T02:45:08+01:00",
-   "lastSeen": "2026-11-26T23:00:15+01:00",
+   "lastSeen": "2026-11-27T10:09:48+01:00",
    "status": "aktiv"
   },
   {
@@ -2937,7 +2962,7 @@
    "lng": 8.4849548,
    "extKey": "flatfox:86213807",
    "firstSeen": "2026-10-30T18:28:44+01:00",
-   "lastSeen": "2026-11-26T23:00:15+01:00",
+   "lastSeen": "2026-11-27T10:09:48+01:00",
    "status": "aktiv",
    "goneSince": "2026-11-10T10:39:19+01:00"
   },
@@ -3039,7 +3064,7 @@
    "lng": 8.532646,
    "approx": true,
    "firstSeen": "2026-10-30T14:46:52+01:00",
-   "lastSeen": "2026-11-26T23:00:15+01:00",
+   "lastSeen": "2026-11-27T10:09:48+01:00",
    "status": "aktiv"
   },
   {
@@ -3064,7 +3089,7 @@
    "lng": 8.543152,
    "approx": true,
    "firstSeen": "2026-10-30T14:46:52+01:00",
-   "lastSeen": "2026-11-26T23:00:15+01:00",
+   "lastSeen": "2026-11-27T10:09:48+01:00",
    "status": "aktiv"
   },
   {
@@ -3166,7 +3191,7 @@
    "lng": 8.516177,
    "extKey": "flatfox:86484907",
    "firstSeen": "2026-10-30T10:36:01+01:00",
-   "lastSeen": "2026-11-26T23:00:15+01:00",
+   "lastSeen": "2026-11-27T10:09:48+01:00",
    "status": "aktiv",
    "goneSince": "2026-11-20T18:22:14+01:00"
   },
@@ -3240,7 +3265,7 @@
    "lng": 8.550891011283,
    "extKey": "flatfox:86537108",
    "firstSeen": "2026-10-29T14:47:23+01:00",
-   "lastSeen": "2026-11-26T23:00:15+01:00",
+   "lastSeen": "2026-11-27T10:09:48+01:00",
    "status": "aktiv"
   },
   {
@@ -3316,14 +3341,14 @@
    "lng": 8.485083972161,
    "extKey": "flatfox:86229603",
    "firstSeen": "2026-10-28T14:43:39+01:00",
-   "lastSeen": "2026-11-26T23:00:15+01:00",
+   "lastSeen": "2026-11-27T10:09:48+01:00",
    "status": "aktiv"
   },
   {
    "id": "grossackerstrasse-83-8041-4-5",
    "kind": "markt",
    "coop": "livit ag real estate management",
-   "source": "ImmoStreet, alle-immobilien, immobilier.ch",
+   "source": "immobilier.ch",
    "address": "Grossackerstrasse 83",
    "zip": 8041,
    "quartier": "Zürich",
@@ -3335,12 +3360,12 @@
    "temporary": false,
    "tempHint": "",
    "tempV": 3,
-   "url": "https://www.homegate.ch/mieten/4003586734",
+   "url": "https://www.immobilier.ch/de/mieten/wohnung/zurich/zurich/livit-ag-real-estate-management-675/einmalige-weitsicht-direkt-am-waldrand-1537353",
    "note": "",
-   "lat": 47.3239279,
-   "lng": 8.5094797,
+   "lat": 47.3239347,
+   "lng": 8.5094767,
    "firstSeen": "2026-10-28T14:43:39+01:00",
-   "lastSeen": "2026-11-26T23:00:15+01:00",
+   "lastSeen": "2026-11-27T10:09:48+01:00",
    "status": "aktiv"
   },
   {
@@ -3365,7 +3390,7 @@
    "lng": 8.4965654,
    "extKey": "flatfox:86479097",
    "firstSeen": "2026-10-28T10:36:04+01:00",
-   "lastSeen": "2026-11-26T23:00:15+01:00",
+   "lastSeen": "2026-11-27T10:09:48+01:00",
    "status": "aktiv"
   },
   {
@@ -3516,7 +3541,7 @@
    "lng": 8.560142094578,
    "extKey": "flatfox:86447202",
    "firstSeen": "2026-10-26T18:29:03+01:00",
-   "lastSeen": "2026-11-26T23:00:15+01:00",
+   "lastSeen": "2026-11-27T10:09:48+01:00",
    "status": "aktiv"
   },
   {
@@ -3541,7 +3566,7 @@
    "lng": 8.514722104706,
    "extKey": "flatfox:86545359",
    "firstSeen": "2026-10-26T16:09:53+01:00",
-   "lastSeen": "2026-11-26T23:00:15+01:00",
+   "lastSeen": "2026-11-27T10:09:48+01:00",
    "status": "aktiv"
   },
   {
@@ -3566,7 +3591,7 @@
    "lng": 8.536712261852,
    "extKey": "flatfox:86484613",
    "firstSeen": "2026-10-26T16:09:53+01:00",
-   "lastSeen": "2026-11-26T23:00:15+01:00",
+   "lastSeen": "2026-11-27T10:09:48+01:00",
    "status": "aktiv"
   },
   {
@@ -3591,7 +3616,7 @@
    "lng": 8.475772261851,
    "extKey": "flatfox:86443155",
    "firstSeen": "2026-10-26T16:09:53+01:00",
-   "lastSeen": "2026-11-26T23:00:15+01:00",
+   "lastSeen": "2026-11-27T10:09:48+01:00",
    "status": "aktiv",
    "goneSince": "2026-11-02T22:28:41+01:00"
   },
@@ -3843,7 +3868,7 @@
    "lng": 8.550671984738,
    "extKey": "flatfox:86472164",
    "firstSeen": "2026-10-21T19:28:47+02:00",
-   "lastSeen": "2026-11-26T23:00:15+01:00",
+   "lastSeen": "2026-11-27T10:09:48+01:00",
    "status": "aktiv"
   },
   {
@@ -4222,7 +4247,7 @@
    "lng": 8.532462001507,
    "extKey": "flatfox:86466116",
    "firstSeen": "2026-10-19T23:14:34+02:00",
-   "lastSeen": "2026-11-26T23:00:15+01:00",
+   "lastSeen": "2026-11-27T10:09:48+01:00",
    "status": "aktiv",
    "goneSince": "2026-10-27T22:21:28+01:00"
   },
@@ -4271,7 +4296,7 @@
    "lng": 8.5205,
    "approx": true,
    "firstSeen": "2026-10-19T07:20:51+02:00",
-   "lastSeen": "2026-11-26T23:00:15+01:00",
+   "lastSeen": "2026-11-27T10:09:48+01:00",
    "status": "aktiv"
   },
   {
@@ -4322,7 +4347,7 @@
    "lng": 8.478903202289,
    "extKey": "flatfox:86462741",
    "firstSeen": "2026-10-18T19:10:02+02:00",
-   "lastSeen": "2026-11-26T23:00:15+01:00",
+   "lastSeen": "2026-11-27T10:09:48+01:00",
    "status": "aktiv"
   },
   {
@@ -4397,7 +4422,7 @@
    "lng": 8.490588992302,
    "extKey": "flatfox:86461299",
    "firstSeen": "2026-10-17T15:19:28+02:00",
-   "lastSeen": "2026-11-26T23:00:15+01:00",
+   "lastSeen": "2026-11-27T10:09:48+01:00",
    "status": "aktiv"
   },
   {
@@ -4596,7 +4621,7 @@
    "lng": 8.520051588638,
    "extKey": "flatfox:86358300",
    "firstSeen": "2026-10-15T10:51:05+02:00",
-   "lastSeen": "2026-11-26T23:00:15+01:00",
+   "lastSeen": "2026-11-27T10:09:48+01:00",
    "status": "aktiv"
   },
   {
@@ -4698,7 +4723,7 @@
    "lng": 8.497051602559,
    "extKey": "flatfox:86451008",
    "firstSeen": "2026-10-14T11:18:03+02:00",
-   "lastSeen": "2026-11-26T23:00:15+01:00",
+   "lastSeen": "2026-11-27T10:09:48+01:00",
    "status": "aktiv"
   },
   {
@@ -4800,7 +4825,7 @@
    "lng": 8.52337,
    "approx": true,
    "firstSeen": "2026-10-13T15:13:19+02:00",
-   "lastSeen": "2026-11-26T23:00:15+01:00",
+   "lastSeen": "2026-11-27T10:09:48+01:00",
    "status": "aktiv"
   },
   {
@@ -4877,7 +4902,7 @@
    "lng": 8.493632101331,
    "extKey": "flatfox:86561356",
    "firstSeen": "2026-10-12T23:04:19+02:00",
-   "lastSeen": "2026-11-26T23:00:15+01:00",
+   "lastSeen": "2026-11-27T10:09:48+01:00",
    "status": "aktiv",
    "goneSince": "2026-10-27T22:21:28+01:00"
   },
@@ -4929,7 +4954,7 @@
    "lng": 8.529422261773,
    "extKey": "flatfox:86270576",
    "firstSeen": "2026-10-12T20:11:13+02:00",
-   "lastSeen": "2026-11-26T23:00:15+01:00",
+   "lastSeen": "2026-11-27T10:09:48+01:00",
    "status": "aktiv"
   },
   {
@@ -5083,7 +5108,7 @@
    "id": "wallisellenstrasse-3-8050-4-5",
    "kind": "markt",
    "coop": "livit ag real estate management",
-   "source": "ImmoStreet, alle-immobilien, immobilier.ch",
+   "source": "immobilier.ch",
    "address": "Wallisellenstrasse 3",
    "zip": 8050,
    "quartier": "Zürich",
@@ -5093,12 +5118,12 @@
    "area": 89.0,
    "moveIn": "",
    "temporary": false,
-   "url": "https://www.homegate.ch/mieten/4003515735",
+   "url": "https://www.immobilier.ch/de/mieten/wohnung/zurich/zurich/livit-ag-real-estate-management-675/toll-gelegene-wohnung-in-oerlikon-1586091",
    "note": "",
-   "lat": 47.4104308,
-   "lng": 8.5470844,
+   "lat": 47.4104182,
+   "lng": 8.5471114,
    "firstSeen": "2026-10-12T19:25:57+02:00",
-   "lastSeen": "2026-11-26T23:00:15+01:00",
+   "lastSeen": "2026-11-27T10:09:48+01:00",
    "status": "aktiv",
    "tempHint": "",
    "tempV": 3
@@ -5206,7 +5231,7 @@
    "id": "grossackerstrasse-75-8041-4-5",
    "kind": "markt",
    "coop": "livit ag real estate management",
-   "source": "ImmoStreet, alle-immobilien, immobilier.ch",
+   "source": "immobilier.ch",
    "address": "Grossackerstrasse 75",
    "zip": 8041,
    "quartier": "Zürich",
@@ -5216,12 +5241,12 @@
    "area": 102.0,
    "moveIn": "",
    "temporary": false,
-   "url": "https://www.homegate.ch/mieten/4003526455",
+   "url": "https://www.immobilier.ch/de/mieten/wohnung/zurich/zurich/livit-ag-real-estate-management-675/erholen-sie-sich-vom-alltagsstress-1485718",
    "note": "",
-   "lat": 47.32391738891602,
-   "lng": 8.509812355041504,
+   "lat": 47.3239196,
+   "lng": 8.5098239,
    "firstSeen": "2026-10-12T19:25:57+02:00",
-   "lastSeen": "2026-11-26T23:00:15+01:00",
+   "lastSeen": "2026-11-27T10:09:48+01:00",
    "status": "aktiv",
    "tempHint": "",
    "tempV": 3
@@ -5304,7 +5329,7 @@
    "id": "tuchmacherstrasse-36-8041-4-5",
    "kind": "markt",
    "coop": "livit ag real estate management",
-   "source": "ImmoStreet, alle-immobilien, immobilier.ch",
+   "source": "immobilier.ch",
    "address": "Tuchmacherstrasse 36",
    "zip": 8041,
    "quartier": "Zürich",
@@ -5314,12 +5339,12 @@
    "area": 114.0,
    "moveIn": "",
    "temporary": false,
-   "url": "https://www.homegate.ch/mieten/4003591964",
+   "url": "https://www.immobilier.ch/de/mieten/wohnung/zurich/zurich/livit-ag-real-estate-management-675/in-der-city-zuhause-im-grunen-daheim-1574453",
    "note": "",
-   "lat": 47.34019181050997,
-   "lng": 8.521376338314367,
+   "lat": 47.3402761,
+   "lng": 8.5212368,
    "firstSeen": "2026-10-12T19:25:57+02:00",
-   "lastSeen": "2026-11-26T23:00:15+01:00",
+   "lastSeen": "2026-11-27T10:09:48+01:00",
    "status": "aktiv",
    "tempHint": "",
    "tempV": 3,
@@ -5420,7 +5445,7 @@
    "lat": 47.373064133719,
    "lng": 8.564772261771,
    "firstSeen": "2026-10-12T19:25:57+02:00",
-   "lastSeen": "2026-11-26T23:00:15+01:00",
+   "lastSeen": "2026-11-27T10:09:48+01:00",
    "status": "aktiv",
    "tempHint": "…Befristet: Grosszügige 5-Zimmerwohnung an exklusiver Lage i…",
    "tempV": 3,
@@ -5494,7 +5519,7 @@
    "lat": 47.407875201205,
    "lng": 8.552451641023,
    "firstSeen": "2026-10-12T19:25:57+02:00",
-   "lastSeen": "2026-11-26T23:00:15+01:00",
+   "lastSeen": "2026-11-27T10:09:48+01:00",
    "status": "aktiv",
    "tempHint": "",
    "tempV": 3,
@@ -5849,7 +5874,7 @@
    "lng": 8.53752,
    "approx": true,
    "firstSeen": "2026-10-12T19:25:57+02:00",
-   "lastSeen": "2026-11-26T23:00:15+01:00",
+   "lastSeen": "2026-11-27T10:09:48+01:00",
    "status": "aktiv",
    "tempHint": "",
    "tempV": 3
@@ -5924,7 +5949,7 @@
    "lng": 8.50045,
    "approx": true,
    "firstSeen": "2026-10-12T19:25:57+02:00",
-   "lastSeen": "2026-11-26T23:00:15+01:00",
+   "lastSeen": "2026-11-27T10:09:48+01:00",
    "status": "aktiv",
    "tempHint": "",
    "tempV": 3
@@ -5949,7 +5974,7 @@
    "lng": 8.490266,
    "approx": true,
    "firstSeen": "2026-10-12T19:25:57+02:00",
-   "lastSeen": "2026-11-26T23:00:15+01:00",
+   "lastSeen": "2026-11-27T10:09:48+01:00",
    "status": "aktiv",
    "tempHint": "",
    "tempV": 3
@@ -6076,7 +6101,7 @@
    "lng": 8.487007,
    "approx": true,
    "firstSeen": "2026-10-12T19:25:57+02:00",
-   "lastSeen": "2026-11-26T23:00:15+01:00",
+   "lastSeen": "2026-11-27T10:09:48+01:00",
    "status": "aktiv",
    "tempHint": "",
    "tempV": 3
@@ -6101,7 +6126,7 @@
    "lng": 8.508303,
    "approx": true,
    "firstSeen": "2026-10-12T19:25:57+02:00",
-   "lastSeen": "2026-11-26T23:00:15+01:00",
+   "lastSeen": "2026-11-27T10:09:48+01:00",
    "status": "aktiv",
    "tempHint": "",
    "tempV": 3
@@ -6126,7 +6151,7 @@
    "lng": 8.541609,
    "approx": true,
    "firstSeen": "2026-10-12T19:25:57+02:00",
-   "lastSeen": "2026-11-26T23:00:15+01:00",
+   "lastSeen": "2026-11-27T10:09:48+01:00",
    "status": "aktiv",
    "tempHint": "",
    "tempV": 3
@@ -6174,7 +6199,7 @@
    "note": "",
    "extKey": "flatfox:86448309",
    "firstSeen": "2026-10-12T17:29:02+02:00",
-   "lastSeen": "2026-11-26T23:00:15+01:00",
+   "lastSeen": "2026-11-27T10:09:48+01:00",
    "status": "aktiv",
    "lat": 47.385144201718,
    "lng": 8.480958371823,
@@ -6225,7 +6250,7 @@
    "note": "",
    "extKey": "flatfox:86429045",
    "firstSeen": "2026-10-12T17:29:02+02:00",
-   "lastSeen": "2026-11-26T23:00:15+01:00",
+   "lastSeen": "2026-11-27T10:09:48+01:00",
    "status": "aktiv",
    "lat": 47.371254201182,
    "lng": 8.525932212148,
@@ -6302,7 +6327,7 @@
    "note": "",
    "extKey": "flatfox:86479921",
    "firstSeen": "2026-10-12T17:29:02+02:00",
-   "lastSeen": "2026-11-26T23:00:15+01:00",
+   "lastSeen": "2026-11-27T10:09:48+01:00",
    "status": "aktiv",
    "lat": 47.380721722065,
    "lng": 8.517321181686,
@@ -6405,7 +6430,7 @@
    "note": "",
    "extKey": "flatfox:86406914",
    "firstSeen": "2026-10-12T17:29:02+02:00",
-   "lastSeen": "2026-11-26T23:00:15+01:00",
+   "lastSeen": "2026-11-27T10:09:48+01:00",
    "status": "aktiv",
    "lat": 47.383231721833,
    "lng": 8.501051494726,
@@ -6431,7 +6456,7 @@
    "note": "",
    "extKey": "flatfox:86394134",
    "firstSeen": "2026-10-12T17:29:02+02:00",
-   "lastSeen": "2026-11-26T23:00:15+01:00",
+   "lastSeen": "2026-11-27T10:09:48+01:00",
    "status": "aktiv",
    "lat": 47.356614201182,
    "lng": 8.592272212141,
@@ -6482,7 +6507,7 @@
    "note": "",
    "extKey": "flatfox:86464687",
    "firstSeen": "2026-10-12T17:29:02+02:00",
-   "lastSeen": "2026-11-26T23:00:15+01:00",
+   "lastSeen": "2026-11-27T10:09:48+01:00",
    "status": "aktiv",
    "lat": 47.334304516984,
    "lng": 8.512521881139,
@@ -6534,7 +6559,7 @@
    "note": "",
    "extKey": "flatfox:86504068",
    "firstSeen": "2026-10-12T17:29:02+02:00",
-   "lastSeen": "2026-11-26T23:00:15+01:00",
+   "lastSeen": "2026-11-27T10:09:48+01:00",
    "status": "aktiv",
    "lat": 47.423354207595,
    "lng": 8.542272511501,
@@ -6635,7 +6660,7 @@
    "note": "",
    "extKey": "flatfox:86357917",
    "firstSeen": "2026-10-12T17:29:02+02:00",
-   "lastSeen": "2026-11-26T23:00:15+01:00",
+   "lastSeen": "2026-11-27T10:09:48+01:00",
    "status": "aktiv",
    "lat": 47.403334201182,
    "lng": 8.582932212146,
@@ -6660,7 +6685,7 @@
    "note": "",
    "extKey": "flatfox:86521639",
    "firstSeen": "2026-10-12T17:29:02+02:00",
-   "lastSeen": "2026-11-26T23:00:15+01:00",
+   "lastSeen": "2026-11-27T10:09:48+01:00",
    "status": "aktiv",
    "lat": 47.386981721699,
    "lng": 8.473912371561,
@@ -6686,7 +6711,7 @@
    "note": "",
    "extKey": "flatfox:86311503",
    "firstSeen": "2026-10-12T17:29:02+02:00",
-   "lastSeen": "2026-11-26T23:00:15+01:00",
+   "lastSeen": "2026-11-27T10:09:48+01:00",
    "status": "aktiv",
    "lat": 47.426128201186,
    "lng": 8.504762212144,
@@ -6737,7 +6762,7 @@
    "note": "",
    "extKey": "flatfox:86458717",
    "firstSeen": "2026-10-12T17:29:02+02:00",
-   "lastSeen": "2026-11-26T23:00:15+01:00",
+   "lastSeen": "2026-11-27T10:09:48+01:00",
    "status": "aktiv",
    "lat": 47.382685201891,
    "lng": 8.598481814662,
@@ -6762,7 +6787,7 @@
    "note": "",
    "extKey": "flatfox:86527598",
    "firstSeen": "2026-10-12T17:29:02+02:00",
-   "lastSeen": "2026-11-26T23:00:15+01:00",
+   "lastSeen": "2026-11-27T10:09:48+01:00",
    "status": "aktiv",
    "lat": 47.403331722143,
    "lng": 8.582935445825,
@@ -6777,7 +6802,7 @@
    "status": "nichts Passendes",
    "hash": "7ed6159770df8451754569d79a70bdf0c2ee404fb792bfbe1008f260c4a721b4",
    "lastChange": "2026-11-25T16:00:00+01:00",
-   "checked": "2026-11-26T22:57:50+01:00",
+   "checked": "2026-11-27T10:07:11+01:00",
    "lines": {
     "e3249a16954f": "2026-11-25T16:00:00+01:00",
     "a7c8cedb65aa": "2026-11-25T16:00:00+01:00",
@@ -6810,7 +6835,7 @@
    "status": "gesperrt",
    "hash": null,
    "lastChange": "2026-11-02T02:47:57+01:00",
-   "checked": "2026-11-26T22:57:52+01:00",
+   "checked": "2026-11-27T10:07:13+01:00",
    "error": "Website blockiert (HTTP 403)"
   },
   "https://www.bagestra.ch/objekte/index.php?cat=whg": {
@@ -6819,7 +6844,7 @@
    "status": "keine freien Wohnungen",
    "hash": "8636e5f9bce3bed67a3c70db2e8fdf6055a4dfa5ee52f40ed16ebdbedc9c6e7c",
    "lastChange": "2026-10-15T10:47:05+02:00",
-   "checked": "2026-11-26T22:57:53+01:00",
+   "checked": "2026-11-27T10:07:14+01:00",
    "lines": {
     "4733bfff5fbd": "alt",
     "70d3c996b21e": "alt"
@@ -6832,7 +6857,7 @@
    "status": "keine freien Wohnungen",
    "hash": "e891c509c27e168d4a0ec260097f35813c7364189253297294f55d4ee78201cf",
    "lastChange": "2026-10-15T10:47:08+02:00",
-   "checked": "2026-11-26T22:57:54+01:00",
+   "checked": "2026-11-27T10:07:16+01:00",
    "lines": {
     "9ab66be9ab20": "alt",
     "0c0322cdc6d3": "alt"
@@ -6845,7 +6870,7 @@
    "status": "Fehler",
    "hash": null,
    "lastChange": "2026-10-26T16:07:12+01:00",
-   "checked": "2026-11-26T22:57:57+01:00",
+   "checked": "2026-11-27T10:07:19+01:00",
    "error": "HTTPError"
   },
   "https://www.bonlieu.ch/der-bonlieuwohnbereich.html": {
@@ -6854,7 +6879,7 @@
    "status": "nichts Passendes",
    "hash": "b7fe5fc58859cf75b351739987864535dab180bcc61f41677aca0b9d05b4375d",
    "lastChange": "2026-10-15T10:47:12+02:00",
-   "checked": "2026-11-26T22:58:02+01:00",
+   "checked": "2026-11-27T10:07:24+01:00",
    "lines": {
     "25225ca7ca5d": "alt",
     "dd2f4c3dfaad": "alt",
@@ -6884,7 +6909,7 @@
    "status": "gesperrt",
    "hash": null,
    "lastChange": "2026-11-02T02:48:09+01:00",
-   "checked": "2026-11-26T22:58:04+01:00",
+   "checked": "2026-11-27T10:07:26+01:00",
    "error": "Website blockiert (HTTP 403)"
   },
   "https://www.bsz-schoenau.ch/vermietung": {
@@ -6893,7 +6918,7 @@
    "status": "gesperrt",
    "hash": null,
    "lastChange": null,
-   "checked": "2026-11-26T22:58:04+01:00",
+   "checked": "2026-11-27T10:07:27+01:00",
    "error": "Website blockiert (HTTP 403)"
   },
   "https://burgmatte.ch": {
@@ -6902,7 +6927,7 @@
    "status": "keine freien Wohnungen",
    "hash": "8ad6a57e86a7e8517609d5d4a2c6c7721ecfcefc48fc174795b8e3640edb8c62",
    "lastChange": null,
-   "checked": "2026-11-26T22:58:05+01:00",
+   "checked": "2026-11-27T10:07:28+01:00",
    "lines": {
     "eea77c03bd1c": "alt",
     "6960f8197515": "alt"
@@ -6915,7 +6940,7 @@
    "status": "nichts Passendes",
    "hash": "d356459c1989b07b2d64da3b4ae110603977c82bbd1d374f531295a425ca4f23",
    "lastChange": "2026-10-15T10:47:20+02:00",
-   "checked": "2026-11-26T22:58:07+01:00",
+   "checked": "2026-11-27T10:07:30+01:00",
    "lines": {
     "976a36a4a812": "alt",
     "e186f079a2bd": "alt"
@@ -6928,7 +6953,7 @@
    "status": "nichts Passendes",
    "hash": "e8bdd5c81705cf3da61acdc991cc001ea32c5939ffb9dd34ffb2ff272ff430c8",
    "lastChange": "2026-10-15T10:47:21+02:00",
-   "checked": "2026-11-26T22:58:08+01:00",
+   "checked": "2026-11-27T10:07:32+01:00",
    "lines": {
     "df6f32246572": "alt",
     "0a32fdb9052b": "alt"
@@ -6941,7 +6966,7 @@
    "status": "keine freien Wohnungen",
    "hash": "df995d11328dbb5558b81d0a94f9639e38b1e4198867771b04174c14660d253f",
    "lastChange": "2026-11-06T10:41:58+01:00",
-   "checked": "2026-11-26T22:58:09+01:00",
+   "checked": "2026-11-27T10:07:33+01:00",
    "lines": {},
    "sizes": []
   },
@@ -6951,7 +6976,7 @@
    "status": "nichts Passendes",
    "hash": "655540b1ad63076fd2bb542d1b5e2310c1f13281f06458c3fdccbaa44a960e1b",
    "lastChange": "2026-10-15T10:47:26+02:00",
-   "checked": "2026-11-26T22:58:11+01:00",
+   "checked": "2026-11-27T10:07:35+01:00",
    "lines": {
     "35de5e52d57b": "alt",
     "2adb9e142996": "alt",
@@ -6965,7 +6990,7 @@
    "status": "nichts Passendes",
    "hash": "9f3412fb3bb6ee6cdad519aa380fece0a1c768e205466906bca11f9da49a09c6",
    "lastChange": null,
-   "checked": "2026-11-26T22:58:14+01:00",
+   "checked": "2026-11-27T10:07:37+01:00",
    "lines": {
     "b55e8cf06743": "alt",
     "414c07820e66": "alt",
@@ -6993,7 +7018,7 @@
    "status": "keine freien Wohnungen",
    "hash": "6dd764c11ab4591cfc8f5ab3ca061cf8b41cb73c2bc45d35ed38a0f0abfaed58",
    "lastChange": null,
-   "checked": "2026-11-26T22:58:16+01:00",
+   "checked": "2026-11-27T10:07:39+01:00",
    "lines": {
     "115f3f7fb43a": "alt",
     "9d7cffa5dc29": "alt",
@@ -7014,7 +7039,7 @@
    "status": "gesperrt",
    "hash": null,
    "lastChange": "2026-11-18T18:36:30+01:00",
-   "checked": "2026-11-26T22:58:18+01:00",
+   "checked": "2026-11-27T10:07:41+01:00",
    "error": "Website blockiert (HTTP 403)"
   },
   "https://www.bg-glattal.ch/vermietung": {
@@ -7023,7 +7048,7 @@
    "status": "nichts Passendes",
    "hash": "983e189e0d0388826212cbbef042458f3d5a2b4ffe8e90f869cdc9cde99cbabf",
    "lastChange": "2026-11-25T16:00:31+01:00",
-   "checked": "2026-11-26T22:58:19+01:00",
+   "checked": "2026-11-27T10:07:42+01:00",
    "lines": {
     "36ee0105370f": "alt",
     "38a2c9290a51": "2026-11-25T16:00:31+01:00",
@@ -7040,7 +7065,7 @@
    "status": "nichts Passendes",
    "hash": "f87020caf36831b8596d1e1cf3c04f40a3e58bf84ece37dba63368b4f14c9299",
    "lastChange": null,
-   "checked": "2026-11-26T22:58:20+01:00",
+   "checked": "2026-11-27T10:07:44+01:00",
    "lines": {
     "09291ea72cb9": "alt",
     "303e379d0852": "alt"
@@ -7053,7 +7078,7 @@
    "status": "gesperrt",
    "hash": null,
    "lastChange": "2026-11-02T02:48:32+01:00",
-   "checked": "2026-11-26T22:58:23+01:00",
+   "checked": "2026-11-27T10:07:48+01:00",
    "error": "Website blockiert (HTTP 403)"
   },
   "https://www.bgim.ch/": {
@@ -7062,7 +7087,7 @@
    "status": "keine freien Wohnungen",
    "hash": "cb50b73a3d5f01ebbba3e6d0325eda36d9e0ece11d0d6e2e638ad27519e8839b",
    "lastChange": "2026-10-15T10:47:43+02:00",
-   "checked": "2026-11-26T22:58:24+01:00",
+   "checked": "2026-11-27T10:07:49+01:00",
    "lines": {
     "98526688aaf1": "alt"
    },
@@ -7074,7 +7099,7 @@
    "status": "nichts Passendes",
    "hash": "e1aece064bf0898450403b1c46afe7984f8f0826b36074bb28afae594bb62105",
    "lastChange": "2026-10-15T10:47:44+02:00",
-   "checked": "2026-11-26T22:58:29+01:00",
+   "checked": "2026-11-27T10:07:53+01:00",
    "lines": {
     "416db05b9778": "alt",
     "43e98d8f625d": "alt",
@@ -7128,7 +7153,7 @@
    "status": "nichts Passendes",
    "hash": "7a07e524029f99608d17336613da097ad042f13eff7c11cd03d1079c95ebcf90",
    "lastChange": "2026-11-24T20:45:08+01:00",
-   "checked": "2026-11-26T22:58:30+01:00",
+   "checked": "2026-11-27T10:07:54+01:00",
    "lines": {
     "a29e9df9102f": "2026-11-13T17:46:37+01:00",
     "2eb88732fa9a": "alt",
@@ -7146,7 +7171,7 @@
    "status": "nichts Passendes",
    "hash": "190e9b97bb04cfe20d9bae235650fd99f0019bacf45feba5b8c1aecbb612f9d4",
    "lastChange": "2026-10-15T10:47:48+02:00",
-   "checked": "2026-11-26T22:58:32+01:00",
+   "checked": "2026-11-27T10:07:56+01:00",
    "lines": {
     "bdfbc93c8d8b": "alt",
     "89991f82f8bd": "alt",
@@ -7161,7 +7186,7 @@
    "status": "nichts Passendes",
    "hash": "b79d586ee16ec23a9a63eb5276d94fed607b76684f901c0dca70b72e2aa8eabd",
    "lastChange": null,
-   "checked": "2026-11-26T22:58:33+01:00",
+   "checked": "2026-11-27T10:07:58+01:00",
    "lines": {
     "42fb9319af9c": "alt",
     "928f2ee3b43b": "alt",
@@ -7181,7 +7206,7 @@
    "status": "nichts Passendes",
    "hash": "6c72409ed15b9b007157f389755a2dbedfbfc81b77552f8d883d14a881f6bbd5",
    "lastChange": null,
-   "checked": "2026-11-26T22:58:35+01:00",
+   "checked": "2026-11-27T10:07:59+01:00",
    "lines": {},
    "sizes": []
   },
@@ -7191,7 +7216,7 @@
    "status": "nichts Passendes",
    "hash": "213133645dec0e209327058d453c183a4bc0c8ca29e47ed52ee7777c9c8de70d",
    "lastChange": "2026-10-15T10:47:53+02:00",
-   "checked": "2026-11-26T22:58:36+01:00",
+   "checked": "2026-11-27T10:08:01+01:00",
    "lines": {},
    "sizes": []
   },
@@ -7201,7 +7226,7 @@
    "status": "nichts Passendes",
    "hash": "650c8ad0b14dbd03f9363f4f271573b9827de25c22e5b72c05a1a56d0faaa22d",
    "lastChange": "2026-10-15T10:47:56+02:00",
-   "checked": "2026-11-26T22:58:38+01:00",
+   "checked": "2026-11-27T10:08:03+01:00",
    "lines": {
     "6a2ec5383646": "alt",
     "a0332a7ec0a1": "alt",
@@ -7281,7 +7306,7 @@
    "status": "gesperrt",
    "hash": null,
    "lastChange": "2026-11-02T02:48:51+01:00",
-   "checked": "2026-11-26T22:58:40+01:00",
+   "checked": "2026-11-27T10:08:05+01:00",
    "error": "Website blockiert (HTTP 403)"
   },
   "https://www.mbgz.ch/vermietung/": {
@@ -7290,7 +7315,7 @@
    "status": "nichts Passendes",
    "hash": "ea451416b2ab0deef1763b264955e921498c243c7f77a1dcd64bc3c9034603a8",
    "lastChange": "2026-10-15T10:48:00+02:00",
-   "checked": "2026-11-26T22:58:40+01:00",
+   "checked": "2026-11-27T10:08:06+01:00",
    "lines": {
     "f61fbad4ef6a": "alt",
     "b3ab77e826ed": "alt"
@@ -7303,7 +7328,7 @@
    "status": "nichts Passendes",
    "hash": "616c7a1b211f3c02955355605e07f8062274f9550693f7f9b54585fba757d846",
    "lastChange": null,
-   "checked": "2026-11-26T22:58:43+01:00",
+   "checked": "2026-11-27T10:08:08+01:00",
    "lines": {},
    "sizes": []
   },
@@ -7313,7 +7338,7 @@
    "status": "keine freien Wohnungen",
    "hash": "1a627bc201303e92d32666c5a65be58de747f781992de75d54ce140b40d59513",
    "lastChange": "2026-11-09T14:58:08+01:00",
-   "checked": "2026-11-26T22:58:44+01:00",
+   "checked": "2026-11-27T10:08:11+01:00",
    "lines": {
     "b597149beca1": "alt",
     "9566eb65fe4a": "alt",
@@ -7331,7 +7356,7 @@
    "status": "keine freien Wohnungen",
    "hash": "4129d43107a2e7ec97e76973a5700f587dadecfaa8a1a2986bebe2ef8971f703",
    "lastChange": "2026-11-18T18:37:08+01:00",
-   "checked": "2026-11-26T22:58:48+01:00",
+   "checked": "2026-11-27T10:08:15+01:00",
    "lines": {
     "4bad2be37bea": "alt",
     "968564fa9867": "alt",
@@ -7344,24 +7369,11 @@
    "name": "PWG",
    "url": "https://www.pwg.ch/liegenschaften/zu-vermieten",
    "status": "nichts Passendes",
-   "hash": "32451895419a499576e44bbc7683a319857f28d68c909fe5e8d79f54680767af",
-   "lastChange": "2026-11-26T22:58:51+01:00",
-   "checked": "2026-11-26T22:58:50+01:00",
+   "hash": "8cbb1b620d8b0069c1f23cafa14dafe7b66b7e838c1302a66b17faaa190ec43a",
+   "lastChange": "2026-11-27T10:08:19+01:00",
+   "checked": "2026-11-27T10:08:17+01:00",
    "lines": {
     "3dad2b21bd98": "alt",
-    "bae6f18b101e": "2026-11-24T20:45:33+01:00",
-    "fc79f8452393": "2026-11-24T20:45:33+01:00",
-    "de8f8f7b2914": "2026-11-20T08:48:55+01:00",
-    "975797b0e65b": "2026-11-20T08:48:55+01:00",
-    "d6d1ac110caf": "2026-11-24T20:45:33+01:00",
-    "5a9ca4366009": "2026-11-24T20:45:33+01:00",
-    "14483cb3aaea": "2026-11-24T20:45:33+01:00",
-    "f47ef6b1afe8": "2026-11-24T20:45:33+01:00",
-    "29feff9dee87": "2026-11-26T09:58:24+01:00",
-    "2325c98a2fb8": "2026-11-24T20:45:33+01:00",
-    "8487b286aeb8": "2026-11-24T20:45:33+01:00",
-    "8a8fde31e5ee": "2026-11-24T20:45:33+01:00",
-    "488051c4d08f": "2026-11-24T20:45:33+01:00",
     "9add2ed04786": "2026-11-25T16:01:11+01:00",
     "2a40d5e8b619": "alt",
     "6165b8792c65": "2026-11-25T16:01:11+01:00",
@@ -7463,7 +7475,7 @@
    "status": "nichts Passendes",
    "hash": "497988e7da5c39b2fef435646a0edd0d4ff0a52a2243247cb921e4ec26415c24",
    "lastChange": "2026-10-15T10:48:14+02:00",
-   "checked": "2026-11-26T22:58:52+01:00",
+   "checked": "2026-11-27T10:08:20+01:00",
    "lines": {
     "9bb5a7b44c1c": "alt",
     "5186e153105e": "alt",
@@ -7477,7 +7489,7 @@
    "status": "nichts Passendes",
    "hash": "3a2ecd9342a29af46f517c1b1ddf8a03eb04773ea5234a07406c260da403284c",
    "lastChange": "2026-11-11T10:41:32+01:00",
-   "checked": "2026-11-26T22:58:54+01:00",
+   "checked": "2026-11-27T10:08:21+01:00",
    "lines": {
     "da26953333b9": "alt",
     "877ef68f6f59": "2026-11-11T10:41:32+01:00"
@@ -7490,7 +7502,7 @@
    "status": "keine freien Wohnungen",
    "hash": "d7270cfa3b028a43e41210af650b8d89059d1ac7c93b4ace487fa0d9588432d8",
    "lastChange": null,
-   "checked": "2026-11-26T22:58:59+01:00",
+   "checked": "2026-11-27T10:08:27+01:00",
    "lines": {},
    "sizes": []
   },
@@ -7500,7 +7512,7 @@
    "status": "keine freien Wohnungen",
    "hash": "b1a39ff679a584b8dc532d73cf0dcb4fc7b96528b15928695cc55aca886a59ae",
    "lastChange": "2026-11-12T14:20:36+01:00",
-   "checked": "2026-11-26T22:59:01+01:00",
+   "checked": "2026-11-27T10:08:31+01:00",
    "lines": {},
    "sizes": []
   },
@@ -7510,7 +7522,7 @@
    "status": "nichts Passendes",
    "hash": "3c28fc261e4c71b4d1c3fb6659147d6a058a6fa74232d70265cd79ee33130c80",
    "lastChange": "2026-11-10T18:31:50+01:00",
-   "checked": "2026-11-26T22:59:03+01:00",
+   "checked": "2026-11-27T10:08:33+01:00",
    "lines": {},
    "sizes": []
   },
@@ -7520,7 +7532,7 @@
    "status": "nichts Passendes",
    "hash": "77bed935f9349901963ee4df16014c7a6741308995e09e0eda4fd801b88145f0",
    "lastChange": "2026-10-29T18:32:52+01:00",
-   "checked": "2026-11-26T22:59:05+01:00",
+   "checked": "2026-11-27T10:08:35+01:00",
    "lines": {},
    "sizes": []
   },
@@ -7530,7 +7542,7 @@
    "status": "nichts Passendes",
    "hash": "399d90dff8a8da4e40848957a50d6eed54150633f037c48888fd94d497becfb2",
    "lastChange": "2026-10-15T10:49:49+02:00",
-   "checked": "2026-11-26T22:59:07+01:00",
+   "checked": "2026-11-27T10:08:37+01:00",
    "lines": {
     "7c72d5ab7657": "alt",
     "f8b6e31c6803": "alt",
@@ -7549,7 +7561,7 @@
    "status": "nichts Passendes",
    "hash": "a9be77443b99728cecf5205a704e59e8710d68044f01727f30f07e191a864cf2",
    "lastChange": "2026-11-09T22:35:57+01:00",
-   "checked": "2026-11-26T22:59:09+01:00",
+   "checked": "2026-11-27T10:08:40+01:00",
    "lines": {
     "a8613b8ae1bf": "alt",
     "101bed6556f4": "alt"
@@ -7562,7 +7574,7 @@
    "status": "gesperrt",
    "hash": null,
    "lastChange": null,
-   "checked": "2026-11-26T22:59:11+01:00",
+   "checked": "2026-11-27T10:08:42+01:00",
    "error": "Website blockiert (HTTP 403)"
   },
   "https://vrenelisgaertli.ch/freie-wohnungen/": {
@@ -7571,7 +7583,7 @@
    "status": "keine freien Wohnungen",
    "hash": "bd0ce26fd5f247b9593571c1174b016a71addaa1a3c0fb334be05710b476698c",
    "lastChange": null,
-   "checked": "2026-11-26T22:59:12+01:00",
+   "checked": "2026-11-27T10:08:43+01:00",
    "lines": {},
    "sizes": []
   },
@@ -7581,7 +7593,7 @@
    "status": "keine freien Wohnungen",
    "hash": "f0790317fa36a8733783af4451330826964ffdcfaab693af1da0ca9284ee5636",
    "lastChange": "2026-11-04T14:53:57+01:00",
-   "checked": "2026-11-26T22:59:14+01:00",
+   "checked": "2026-11-27T10:08:46+01:00",
    "lines": {},
    "sizes": []
   },
@@ -7591,7 +7603,7 @@
    "status": "nichts Passendes",
    "hash": "e12e7fffafac1400feed5e1cae604c7b1ee2459a8d609cff3c631d49bafc6353",
    "lastChange": "2026-10-15T10:50:01+02:00",
-   "checked": "2026-11-26T22:59:16+01:00",
+   "checked": "2026-11-27T10:08:48+01:00",
    "lines": {
     "c3f4552160b0": "alt",
     "1bd1dace7fc3": "alt",
@@ -7613,7 +7625,7 @@
    "status": "nichts Passendes",
    "hash": "0c4bd8920c18776d373221b2a71dbb2ed8d7c89936f5d9975f1efbdd7cde2ca1",
    "lastChange": "2026-10-15T10:50:04+02:00",
-   "checked": "2026-11-26T22:59:20+01:00",
+   "checked": "2026-11-27T10:08:51+01:00",
    "lines": {
     "01592d51db5a": "alt",
     "7428478ce45a": "alt",
@@ -7640,7 +7652,7 @@
    "status": "Fehler",
    "hash": null,
    "lastChange": "2026-10-15T10:50:06+02:00",
-   "checked": "2026-11-26T22:59:22+01:00",
+   "checked": "2026-11-27T10:08:54+01:00",
    "error": "HTTPError"
   },
   "https://www.zumkorn.ch/freie-objekte": {
@@ -7649,7 +7661,7 @@
    "status": "nichts Passendes",
    "hash": "a6a5db6ddbc66a09b1c58c14948a7aa90ecc0acb7f1567be9fda45cf7923d9de",
    "lastChange": null,
-   "checked": "2026-11-26T22:59:26+01:00",
+   "checked": "2026-11-27T10:08:58+01:00",
    "lines": {},
    "sizes": []
   },
@@ -7659,7 +7671,7 @@
    "status": "keine freien Wohnungen",
    "hash": "e95fa418b8581261cd07e7a97dc9ab45826de3c125d392386bb2dbf45ec1810f",
    "lastChange": "2026-10-21T11:20:06+02:00",
-   "checked": "2026-11-26T22:59:28+01:00",
+   "checked": "2026-11-27T10:09:00+01:00",
    "lines": {},
    "sizes": []
   },
@@ -7669,7 +7681,7 @@
    "status": "nichts Passendes",
    "hash": "c5307ff426a77eea6915e4b44868df30acd293dd1a5f08a5a6268dd69844b3a9",
    "lastChange": null,
-   "checked": "2026-11-26T22:59:30+01:00",
+   "checked": "2026-11-27T10:09:03+01:00",
    "lines": {
     "3d463ac1e131": "alt",
     "c1b3757e0177": "alt",
@@ -7695,7 +7707,7 @@
    "status": "nichts Passendes",
    "hash": "e1da0ba3eb5cffc34ff64300ed4ba70389919cd9c8b95ed7482042a883221e61",
    "lastChange": null,
-   "checked": "2026-11-26T22:59:33+01:00",
+   "checked": "2026-11-27T10:09:06+01:00",
    "lines": {
     "90a59aeb15ce": "alt",
     "d25353ea7b20": "alt",
@@ -7728,9 +7740,9 @@
    "name": "Wogeno",
    "url": "https://www.wogeno-zuerich.ch/genossenschaft/freie-wohnungen-und-objekte/",
    "status": "nichts Passendes",
-   "hash": "b02960f83f7c96cb9e920ff7a53edc2685c6f7ec2e1dc2aa2255df229063287e",
-   "lastChange": "2026-11-17T14:55:32+01:00",
-   "checked": "2026-11-26T22:59:35+01:00",
+   "hash": "b921c10a6d49b8b7fa24b6c5605064cc8ab63fe57e37d53958bf1428feb1b3f2",
+   "lastChange": "2026-11-27T10:09:09+01:00",
+   "checked": "2026-11-27T10:09:08+01:00",
    "lines": {
     "cb79bc95fac5": "alt",
     "44d9e374b9e7": "alt",
@@ -7742,7 +7754,7 @@
     "62c5a3cb7584": "2026-11-11T14:58:58+01:00",
     "3088de09e6c7": "2026-11-11T14:58:58+01:00",
     "4432211640e5": "2026-11-11T14:58:58+01:00",
-    "c12dca2dc027": "2026-11-17T14:55:32+01:00",
+    "df54f47f6d0e": "2026-11-27T10:09:09+01:00",
     "66fa1258fc54": "alt",
     "e3a19801aedb": "alt",
     "e79b5edcf3e0": "alt"
@@ -7755,7 +7767,7 @@
    "status": "keine freien Wohnungen",
    "hash": "36de5049a75b8fd1ee565ef591d76b12f2afd0da73495d207103779130e4f58c",
    "lastChange": "2026-10-15T10:50:21+02:00",
-   "checked": "2026-11-26T22:59:37+01:00",
+   "checked": "2026-11-27T10:09:10+01:00",
    "lines": {
     "5dca340a4214": "alt",
     "1191ea9aee22": "alt",
@@ -7779,7 +7791,7 @@
    "status": "gesperrt",
    "hash": null,
    "lastChange": "2026-11-02T02:49:55+01:00",
-   "checked": "2026-11-26T22:59:38+01:00",
+   "checked": "2026-11-27T10:09:12+01:00",
    "error": "Website blockiert (HTTP 403)"
   },
   "https://www.gewobag.ch/": {
@@ -7788,7 +7800,7 @@
    "status": "nichts Passendes",
    "hash": "6854aec56012720162a158e337e0dc6ca498ff85d507da44754af5ad57d5274f",
    "lastChange": "2026-10-15T10:50:24+02:00",
-   "checked": "2026-11-26T22:59:39+01:00",
+   "checked": "2026-11-27T10:09:13+01:00",
    "lines": {
     "dd8c58fea0d9": "alt",
     "49ecb93dcbcf": "alt",
@@ -7803,16 +7815,15 @@
    "name": "ASIG",
    "url": "https://www.asig-wohnen.ch/",
    "status": "nichts Passendes",
-   "hash": "7bb062f392bd555272b29e271c9afeb0ab18d386104215d0da8e347e9cb1cf4f",
-   "lastChange": "2026-11-26T09:59:36+01:00",
-   "checked": "2026-11-26T22:59:41+01:00",
+   "hash": "9375f930c486e8a658c381ea5333846a2bd627c8d236e5ba67a4026796d2e2b9",
+   "lastChange": "2026-11-27T10:09:16+01:00",
+   "checked": "2026-11-27T10:09:15+01:00",
    "lines": {
     "2852dee541ae": "alt",
     "3cf2e7b1319b": "alt",
     "c3ca77f80b7a": "alt",
     "0e500593a036": "alt",
     "302568e0bc38": "alt",
-    "3561d8f22220": "2026-11-09T14:59:08+01:00",
     "bce17ddc131f": "2026-11-13T17:47:53+01:00",
     "f52c21eb59cb": "2026-11-13T17:47:53+01:00",
     "7a356f3beb9a": "2026-11-19T14:59:58+01:00",
@@ -7826,7 +7837,7 @@
    "status": "nichts Passendes",
    "hash": "7b624a33fdd09ded126ec84692678bf2715623a5cdee0eb3433033b744cb0d9c",
    "lastChange": "2026-10-15T10:50:31+02:00",
-   "checked": "2026-11-26T22:59:43+01:00",
+   "checked": "2026-11-27T10:09:17+01:00",
    "lines": {
     "41c327f44ffe": "alt",
     "f75bdbe98717": "alt",
@@ -7846,7 +7857,7 @@
    "status": "keine freien Wohnungen",
    "hash": "8b2b008c674ed5c2037239a8375c85cbf05c7e5a62d0073673ae9ad32d73b394",
    "lastChange": "2026-10-21T23:22:57+02:00",
-   "checked": "2026-11-26T22:59:46+01:00",
+   "checked": "2026-11-27T10:09:20+01:00",
    "lines": {
     "265602fc7143": "alt"
    },
@@ -7858,7 +7869,7 @@
    "status": "nichts Passendes",
    "hash": "51967b15d869a193284a88c61e00623883eb2e4735e62e5af0f4282ef5d5f2ce",
    "lastChange": "2026-10-20T11:18:40+02:00",
-   "checked": "2026-11-26T22:59:48+01:00",
+   "checked": "2026-11-27T10:09:22+01:00",
    "lines": {
     "57ed92b8fc1c": "alt",
     "932e786d38e4": "alt",
@@ -7872,7 +7883,7 @@
    "status": "nichts Passendes",
    "hash": "0656a3139baed03a66fad8d4b05842968edb2658b9a5d2295b53b13508d26852",
    "lastChange": null,
-   "checked": "2026-11-26T22:59:52+01:00",
+   "checked": "2026-11-27T10:09:27+01:00",
    "lines": {
     "339bc6b28664": "alt",
     "c18655e1116f": "alt",
@@ -7888,7 +7899,7 @@
    "status": "nichts Passendes",
    "hash": "892ba5c5e2afd1538370bf547b6e2ec440e009cedd0c9c55f6c44959eb6fafde",
    "lastChange": "2026-11-04T14:54:44+01:00",
-   "checked": "2026-11-26T22:59:54+01:00",
+   "checked": "2026-11-27T10:09:28+01:00",
    "lines": {
     "36ba843664fd": "2026-10-28T10:34:27+01:00",
     "595acbadedf3": "2026-10-28T10:34:27+01:00",
@@ -7920,7 +7931,7 @@
    "status": "nichts Passendes",
    "hash": "c78019746416daa9a742f7ca8714c1a4fd85d3ad3ee4f8918ff4a6f7e8672bdf",
    "lastChange": "2026-11-02T18:40:15+01:00",
-   "checked": "2026-11-26T22:59:56+01:00",
+   "checked": "2026-11-27T10:09:32+01:00",
    "lines": {
     "b795be18a3eb": "2026-11-02T18:40:15+01:00",
     "6560e063fbd0": "alt"
@@ -7931,12 +7942,11 @@
    "name": "Sunnige Hof",
    "url": "https://sunnigehof.ch",
    "status": "nichts Passendes",
-   "hash": "3b096359a3fc1d5fdb734c07198cb424b2e07caa625f5e293ceeae1b64c16693",
-   "lastChange": "2026-11-25T04:49:13+01:00",
-   "checked": "2026-11-26T22:59:59+01:00",
+   "hash": "4a1529aa592abda16bf568128d4f9d97c1d74293d6d48108d2c1469f205a2e30",
+   "lastChange": "2026-11-27T10:09:37+01:00",
+   "checked": "2026-11-27T10:09:35+01:00",
    "lines": {
     "ccc88982ae65": "2026-11-12T23:31:00+01:00",
-    "1261a37038c6": "alt",
     "a0ccd125db78": "alt",
     "898571527a32": "alt",
     "caf505e0fc1c": "alt",
@@ -7964,7 +7974,7 @@
    "status": "nichts Passendes",
    "hash": "e10c0877baae1a01b960579442832c027a11f875d660b24ea20092d7181dface",
    "lastChange": "2026-10-15T10:50:53+02:00",
-   "checked": "2026-11-26T23:00:04+01:00",
+   "checked": "2026-11-27T10:09:38+01:00",
    "lines": {},
    "sizes": []
   },
@@ -7974,7 +7984,7 @@
    "status": "gesperrt",
    "hash": null,
    "lastChange": null,
-   "checked": "2026-11-26T23:00:06+01:00",
+   "checked": "2026-11-27T10:09:40+01:00",
    "error": "robots.txt erlaubt keinen automatischen Abruf"
   },
   "https://wsgz.ch/de/": {
@@ -7983,7 +7993,7 @@
    "status": "nichts Passendes",
    "hash": "b223145f6be194f4faf994320e4ea468990ebb23a3f20b183da9d9d1050a0690",
    "lastChange": "2026-10-15T10:50:55+02:00",
-   "checked": "2026-11-26T23:00:06+01:00",
+   "checked": "2026-11-27T10:09:40+01:00",
    "lines": {
     "51b83111b4af": "alt",
     "7de87a3723c9": "alt",
@@ -8001,7 +8011,7 @@
    "status": "nichts Passendes",
    "hash": "268871f7810e73ab0875ae0e46b5725f1c2d77d46971bfb6aac347ad805092a5",
    "lastChange": "2026-10-15T10:51:00+02:00",
-   "checked": "2026-11-26T23:00:09+01:00",
+   "checked": "2026-11-27T10:09:42+01:00",
    "lines": {
     "a9a62c879863": "alt"
    },
@@ -8013,7 +8023,7 @@
    "status": "nichts Passendes",
    "hash": "7601ea6886a7e95fdf229290a8174f59ad20268f1d445a32c6f195375b556aea",
    "lastChange": null,
-   "checked": "2026-11-26T23:00:11+01:00",
+   "checked": "2026-11-27T10:09:44+01:00",
    "lines": {},
    "sizes": []
   },
@@ -8021,35 +8031,20 @@
    "name": "Hofgarten (geho)",
    "url": "https://www.geho.ch/vermietung/",
    "status": "nichts Passendes",
-   "hash": "9b6682107ac9017db2080c4e47f9e4134605082002790e2a6c0e231c3b5a4f75",
-   "lastChange": "2026-11-26T23:00:13+01:00",
-   "checked": "2026-11-26T23:00:12+01:00",
+   "hash": "1a2e6b1601c7def0c7e67e6d8db084431b0fd4e58393229e83d661acdc791d13",
+   "lastChange": "2026-11-27T10:09:47+01:00",
+   "checked": "2026-11-27T10:09:46+01:00",
    "lines": {
     "1378866bb13f": "alt",
     "c11df6257386": "2026-11-26T23:00:13+01:00",
     "b5c47f3b4962": "2026-11-06T18:35:40+01:00",
-    "0db3d993ee49": "2026-11-02T14:55:38+01:00"
+    "0db3d993ee49": "2026-11-02T14:55:38+01:00",
+    "cb292753070f": "2026-11-27T10:09:47+01:00"
    },
    "sizes": []
   }
  },
  "runs": [
-  {
-   "at": "2026-11-15T08:17:20+01:00",
-   "ok": [
-    "Flatfox",
-    "ImmoStreet",
-    "alle-immobilien",
-    "RealAdvisor",
-    "immobilier.ch",
-    "Ron Orp",
-    "Genossenschaften"
-   ],
-   "failed": [
-    "Genossenschaften nicht lesbar: Frohheim, Zentralstrasse, Zürich 2 (BGZ2)"
-   ],
-   "new": 0
-  },
   {
    "at": "2026-11-15T16:57:06+01:00",
    "ok": [
@@ -8513,6 +8508,22 @@
     "Genossenschaften nicht lesbar: Aurora, BEP, Brunnenhof, BSZ Schönau, GISA, Heimelig, Luegisland, Turicum, Zentralstrasse, NENA1, Zürich 2 (BGZ2)"
    ],
    "new": 2
+  },
+  {
+   "at": "2026-11-27T10:09:48+01:00",
+   "ok": [
+    "Flatfox",
+    "RealAdvisor",
+    "immobilier.ch",
+    "Ron Orp",
+    "Genossenschaften"
+   ],
+   "failed": [
+    "ImmoStreet: Website blockiert (HTTP 403)",
+    "alle-immobilien: Website blockiert (HTTP 403)",
+    "Genossenschaften nicht lesbar: Aurora, BEP, Brunnenhof, BSZ Schönau, GISA, Heimelig, Luegisland, Turicum, Zentralstrasse, NENA1, Zürich 2 (BGZ2)"
+   ],
+   "new": 1
   }
  ],
  "flatfoxSkip": [
